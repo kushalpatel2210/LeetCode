@@ -13,10 +13,15 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
+      - name: Get Folder Names
+        id: folder_names
+        run: |
+          echo "::set-output name=names::$(ls -d */)"
+
       - name: Update ReadMe
         run: |
-          echo "## Solved LeetCode Questions" >> README.md
-          ls -d */ >> README.md
+          echo "## Solved LeetCode Problems" >> README.md
+          echo "${{ steps.folder_names.outputs.names }}" | awk -F/ '{for (i=1; i<=NF; i++) print "- " $i}' >> README.md
 
       - name: Commit and Push Changes
         run: |
