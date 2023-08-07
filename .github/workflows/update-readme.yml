@@ -28,3 +28,5 @@ jobs:
           git add README.md
           git commit -m "Update README with recent commits"
           git push
+        env:
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
