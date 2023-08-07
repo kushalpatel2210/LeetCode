@@ -33,15 +33,15 @@ jobs:
         run: |
           folder_list=$(echo ${{ steps.folder_names.outputs.names }} | sed 's/\[//; s/\]//; s/ /,/g')
           previous_folders=$PREVIOUS_FOLDERS
-            
-            new_folders=""
-            IFS=, read -ra new_folders_array <<< "$folder_list"
-            for folder in "${new_folders_array[@]}"; do
-              if [[ ! $previous_folders =~ (^|[ ,])$folder($|[ ,]) ]]; then
-                new_folders="$new_folders $folder"
-              fi
-            done
-            echo "::set-output name=filtered_folders::$new_folders"
+          
+          new_folders=""
+          IFS=, read -ra new_folders_array <<< "$folder_list"
+          for folder in "${new_folders_array[@]}"; do
+            if [[ ! $previous_folders =~ (^|[ ,])$folder($|[ ,]) ]]; then
+              new_folders="$new_folders $folder"
+            fi
+          done
+          echo "::set-output name=filtered_folders::$new_folders"
 
       - name: Update ReadMe with New Folders
         run: |
@@ -49,8 +49,9 @@ jobs:
           if [ -n "$NEW_FOLDERS" ]; then
             NEW_CONTENT=$(echo "$NEW_FOLDERS" | awk '{print "- " $0}')
             OLD_CONTENT=$(curl -H "Authorization: token ${{ secrets.PAT_TOKEN }}" -H "Accept: application/vnd.github.v3.raw" -s https://api.github.com/repos/${{ github.repository }}/contents/README.md)
-            NEW_CONTENT=$(echo -e "$OLD_CONTENT\n\n## Solved LeetCode Problems\n$NEW_CONTENT" | sed ':a;N;$!ba;s/\n/\\n/g' | sed 's/"/\\"/g')
-            PAYLOAD="{\"message\":\"Update README with folder names\",\"content\":\"$NEW_CONTENT\",\"sha\":\"$(echo "$OLD_CONTENT" | curl -s https://api.github.com/repos/${{ github.repository }}/contents/README.md | jq -r .sha)\"}"
+            NEW_CONTENT=$(echo -e "$OLD_CONTENT\n\n## Solved LeetCode Problems\n$NEW_CONTENT")
+            NEW_CONTENT_BASE64=$(echo -n "$NEW_CONTENT" | base64)
+            PAYLOAD="{\"message\":\"Update README with folder names\",\"content\":\"$NEW_CONTENT_BASE64\",\"sha\":\"$(echo "$OLD_CONTENT" | curl -s https://api.github.com/repos/${{ github.repository }}/contents/README.md | jq -r .sha)\"}"
             curl -X PUT -H "Authorization: token ${{ secrets.PAT_TOKEN }}" -H "Content-Type: application/json" -d "$PAYLOAD" https://api.github.com/repos/${{ github.repository }}/contents/README.md
           fi
 
