@@ -2,8 +2,8 @@ name: Update ReadMe with Commits
 
 on:
   push:
-    branches:
-      - main  # or your default branch
+    paths:
+      - "/**"
 
 jobs:
   update-readme:
