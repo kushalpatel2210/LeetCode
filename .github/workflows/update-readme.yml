@@ -13,40 +13,18 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Get Folder Names
-        id: folder_names
-        run: |
-          folder_list=$(python get_folders.py)
-          echo "::set-output name=names::$folder_list"
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
 
-      - name: Get Previously Added Folders
-        id: get_previous_folders
+      - name: Install Dependencies
         run: |
-          echo "PREVIOUS_FOLDERS=$(curl -H 'Authorization: token ${{ secrets.PAT_TOKEN }}' -H 'Accept: application/vnd.github.v3.raw' -s https://api.github.com/repos/${{ github.repository }}/contents/README.md | sed -n '/## Solved LeetCode Problems/,$!p; /## Solved LeetCode Problems/,$s/.*- \(.*\)/\1/p' | sed ':a;N;$!ba;s/\n/,/g')" >> $GITHUB_ENV
+          python -m pip install --upgrade pip
+          pip install PyGithub requests
 
-      - name: Filter New Folders
-        id: filter_folders
-        run: |
-          folder_list=$(echo ${{ steps.folder_names.outputs.names }} | sed 's/\[//; s/\]//; s/ /,/g')
-          previous_folders=$PREVIOUS_FOLDERS
-          
-          new_folders=""
-          IFS=, read -ra new_folders_array <<< "$folder_list"
-          for folder in "${new_folders_array[@]}"; do
-            if [[ ! $previous_folders =~ (^|[ ,])$folder($|[ ,]) ]]; then
-              new_folders="$new_folders $folder"
-            fi
-          done
-          echo "::set-output name=filtered_folders::$new_folders"
-
-      - name: Update ReadMe with New Folders
-        run: |
-          NEW_FOLDERS="${{ steps.filter_folders.outputs.filtered_folders }}"
-          if [ -n "$NEW_FOLDERS" ]; then
-            NEW_CONTENT=$(echo "$NEW_FOLDERS" | awk '{print "- " $0}')
-            PAYLOAD="{\"message\":\"Update README with folder names\",\"content\":\"$NEW_CONTENT\",\"sha\":\"$(curl -s https://api.github.com/repos/${{ github.repository }}/contents/README.md | jq -r .sha)\"}"
-            curl -X PUT -H "Authorization: token ${{ secrets.PAT_TOKEN }}" -H "Content-Type: application/json" -d "$PAYLOAD" https://api.github.com/repos/${{ github.repository }}/contents/README.md
-          fi
+      - name: Update ReadMe Content
+        run: python update_readme.py
 
       - name: Commit and Push Changes
         run: |
