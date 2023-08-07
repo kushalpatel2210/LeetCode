@@ -39,15 +39,15 @@ jobs:
           done
           echo "::set-output name=filtered_folders::$new_folders"
 
-    - name: Update ReadMe with New Folders
-      run: |
-        NEW_FOLDERS="${{ steps.filter_folders.outputs.filtered_folders }}"
-        if [ -n "$NEW_FOLDERS" ]; then
-          NEW_CONTENT=$(echo "$NEW_FOLDERS" | awk '{print "- " $0}')
-          PAYLOAD="{\"message\":\"Update README with folder names\",\"content\":\"$NEW_CONTENT\",\"sha\":\"$(curl -s https://api.github.com/repos/${{ github.repository }}/contents/README.md | jq -r .sha)\"}"
-          curl -X PUT -H "Authorization: token ${{ secrets.PAT_TOKEN }}" -H "Content-Type: application/json" -d "$PAYLOAD" https://api.github.com/repos/${{ github.repository }}/contents/README.md
-        fi
-        -
+      - name: Update ReadMe with New Folders
+        run: |
+          NEW_FOLDERS="${{ steps.filter_folders.outputs.filtered_folders }}"
+          if [ -n "$NEW_FOLDERS" ]; then
+            NEW_CONTENT=$(echo "$NEW_FOLDERS" | awk '{print "- " $0}')
+            PAYLOAD="{\"message\":\"Update README with folder names\",\"content\":\"$NEW_CONTENT\",\"sha\":\"$(curl -s https://api.github.com/repos/${{ github.repository }}/contents/README.md | jq -r .sha)\"}"
+            curl -X PUT -H "Authorization: token ${{ secrets.PAT_TOKEN }}" -H "Content-Type: application/json" -d "$PAYLOAD" https://api.github.com/repos/${{ github.repository }}/contents/README.md
+          fi
+
       - name: Commit and Push Changes
         run: |
           git config --local user.email "action@github.com"
