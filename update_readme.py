@@ -10,12 +10,16 @@ branch_name = "main"  # Change to your default branch name
 file_path = "README.md"
 
 # Fetch folder names
-folder_names = os.popen("python get_folders.py").read().strip().split('\n')
+folder_names = [name for name in os.listdir() if os.path.isdir(name)]
+
+# Define folders to exclude
+folders_to_exclude = [".git", ".github"]  # Add folder names to exclude here
 
 # Construct updated content
 new_content = "## Solved LeetCode Problems\n"
 for folder in folder_names:
-    new_content += f"- {folder}\n"
+    if folder not in folders_to_exclude:
+        new_content += f"- {folder}\n"
 
 # Get GitHub API token from environment variable
 github_token = os.environ["GITHUB_TOKEN"]

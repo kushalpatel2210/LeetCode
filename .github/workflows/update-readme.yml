@@ -28,13 +28,3 @@ jobs:
 
       - name: Update ReadMe Content
         run: python update_readme.py
-
-      - name: Commit and Push Changes
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add README.md
-          git commit -m "Update README with recent commits"
-          git push origin main
-        env:
-          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
