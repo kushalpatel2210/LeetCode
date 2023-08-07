@@ -1,5 +1,6 @@
 ## Solved LeetCode Problems
 - 0002-add-two-numbers
+- 0013-roman-to-integer
 - 0021-merge-two-sorted-lists
 - 0026-remove-duplicates-from-sorted-array
 - 0027-remove-element
