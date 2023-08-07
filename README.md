@@ -16,6 +16,7 @@
 - 0125-valid-palindrome
 - 0134-gas-station
 - 0141-linked-list-cycle
+- 0167-two-sum-ii-input-array-is-sorted
 - 0169-majority-element
 - 0189-rotate-array
 - 0206-reverse-linked-list
