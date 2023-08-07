@@ -1,4 +1,5 @@
 ## Solved LeetCode Problems
+- 0001-two-sum
 - 0002-add-two-numbers
 - 0003-longest-substring-without-repeating-characters
 - 0011-container-with-most-water
