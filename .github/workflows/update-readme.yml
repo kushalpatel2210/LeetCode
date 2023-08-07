@@ -15,11 +15,8 @@ jobs:
 
       - name: Update ReadMe
         run: |
-          echo "## Solved LeetCode Problems" >> README.md
-          git log --pretty=format:"- %s [%h](https://github.com/kushalpatel2210/LeetCode/commit/%H)" >> README.md
-          git diff --name-only ${{ github.event.before }}..${{ github.sha }} | sort -u | while read -r file; do
-            echo "- Updated: [$file](https://github.com/kushalpatel2210/LeetCode/commit/${{ github.sha }})" >> README.md
-          done
+          echo "## Solved LeetCode Questions" >> README.md
+          ls -d */ >> README.md
 
       - name: Commit and Push Changes
         run: |
