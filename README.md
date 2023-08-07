@@ -1,14 +1,14 @@
 ## Solved LeetCode Problems
+- 0002-add-two-numbers
+- 0021-merge-two-sorted-lists
+- 0026-remove-duplicates-from-sorted-array
+- 0027-remove-element
+- 0080-remove-duplicates-from-sorted-array-ii
+- 0088-merge-sorted-array
+- 0121-best-time-to-buy-and-sell-stock
+- 0122-best-time-to-buy-and-sell-stock-ii
 - 0141-linked-list-cycle
+- 0169-majority-element
 - 0189-rotate-array
 - 0206-reverse-linked-list
-- 0027-remove-element
 - 0908-middle-of-the-linked-list
-- 0169-majority-element
-- 0026-remove-duplicates-from-sorted-array
-- 0002-add-two-numbers
-- 0080-remove-duplicates-from-sorted-array-ii
-- 0122-best-time-to-buy-and-sell-stock-ii
-- 0121-best-time-to-buy-and-sell-stock
-- 0088-merge-sorted-array
-- 0021-merge-two-sorted-lists
