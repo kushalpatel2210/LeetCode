@@ -19,10 +19,6 @@ jobs:
           folder_list=$(python get_folders.py)
           echo "::set-output name=names::$folder_list"
 
-      - name: Show Folder Names
-        run: |
-          echo "Folder names: ${{ steps.folder_names.outputs.names }}"
-
       - name: Get Previously Added Folders
         id: get_previous_folders
         run: |
@@ -43,18 +39,15 @@ jobs:
           done
           echo "::set-output name=filtered_folders::$new_folders"
 
-      - name: Update ReadMe with New Folders
-        run: |
-          NEW_FOLDERS="${{ steps.filter_folders.outputs.filtered_folders }}"
-          if [ -n "$NEW_FOLDERS" ]; then
-            NEW_CONTENT=$(echo "$NEW_FOLDERS" | awk '{print "- " $0}')
-            OLD_CONTENT=$(curl -H "Authorization: token ${{ secrets.PAT_TOKEN }}" -H "Accept: application/vnd.github.v3.raw" -s https://api.github.com/repos/${{ github.repository }}/contents/README.md)
-            NEW_CONTENT=$(echo -e "$OLD_CONTENT\n\n## Solved LeetCode Problems\n$NEW_CONTENT")
-            NEW_CONTENT_BASE64=$(echo -n "$NEW_CONTENT" | base64)
-            PAYLOAD="{\"message\":\"Update README with folder names\",\"content\":\"$NEW_CONTENT_BASE64\",\"sha\":\"$(echo "$OLD_CONTENT" | curl -s https://api.github.com/repos/${{ github.repository }}/contents/README.md | jq -r .sha)\"}"
-            curl -X PUT -H "Authorization: token ${{ secrets.PAT_TOKEN }}" -H "Content-Type: application/json" -d "$PAYLOAD" https://api.github.com/repos/${{ github.repository }}/contents/README.md
-          fi
-
+    - name: Update ReadMe with New Folders
+      run: |
+        NEW_FOLDERS="${{ steps.filter_folders.outputs.filtered_folders }}"
+        if [ -n "$NEW_FOLDERS" ]; then
+          NEW_CONTENT=$(echo "$NEW_FOLDERS" | awk '{print "- " $0}')
+          PAYLOAD="{\"message\":\"Update README with folder names\",\"content\":\"$NEW_CONTENT\",\"sha\":\"$(curl -s https://api.github.com/repos/${{ github.repository }}/contents/README.md | jq -r .sha)\"}"
+          curl -X PUT -H "Authorization: token ${{ secrets.PAT_TOKEN }}" -H "Content-Type: application/json" -d "$PAYLOAD" https://api.github.com/repos/${{ github.repository }}/contents/README.md
+        fi
+        -
       - name: Commit and Push Changes
         run: |
           git config --local user.email "action@github.com"
