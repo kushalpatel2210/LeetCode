@@ -1,1 +1,1 @@
-# LeetCode-DSA\nCollection of LeetCode questions!
+## Solved LeetCode Problems
