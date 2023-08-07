@@ -9,6 +9,9 @@ jobs:
   update-readme:
     runs-on: ubuntu-latest
 
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Set the GITHUB_TOKEN environment variable
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
