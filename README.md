@@ -7,6 +7,7 @@
 - 0027-remove-element
 - 0045-jump-game-ii
 - 0055-jump-game
+- 0058-length-of-last-word
 - 0080-remove-duplicates-from-sorted-array-ii
 - 0088-merge-sorted-array
 - 0121-best-time-to-buy-and-sell-stock
