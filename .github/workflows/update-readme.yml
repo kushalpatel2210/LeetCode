@@ -20,7 +20,7 @@ jobs:
 
       - name: Update ReadMe
         run: |
-          FOLDER_LIST=$(echo "${{ steps.folder_names.outputs.names }}" | awk -F/ '{for (i=1; i<=NF; i++) print "- " $i}')
+          FOLDER_LIST="${{ steps.folder_names.outputs.names }}"
           OLD_CONTENT=$(curl -H "Authorization: token ${{ secrets.PAT_TOKEN }}" -H "Accept: application/vnd.github.v3.raw" -s https://api.github.com/repos/${{ github.repository }}/contents/README.md)
           NEW_CONTENT=$(echo -e "$OLD_CONTENT\n\n## Solved LeetCode Problems\n$FOLDER_LIST")
           curl -X PUT -H "Authorization: token ${{ secrets.PAT_TOKEN }}" -H "Content-Type: application/json" -d '{"message":"Update README with folder names", "content":"'"$(echo -n "$NEW_CONTENT" | base64)"'", "sha":"'"$(echo "$OLD_CONTENT" | curl -s https://api.github.com/repos/${{ github.repository }}/contents/README.md | jq -r .sha)"'"}' https://api.github.com/repos/${{ github.repository }}/contents/README.md
