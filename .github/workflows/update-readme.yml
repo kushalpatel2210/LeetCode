@@ -27,6 +27,6 @@ jobs:
           git config --local user.name "GitHub Action"
           git add README.md
           git commit -m "Update README with recent commits"
-          git push
+          git push origin main
         env:
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
