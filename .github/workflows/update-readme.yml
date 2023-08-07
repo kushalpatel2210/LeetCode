@@ -31,19 +31,21 @@ jobs:
       - name: Filter New Folders
         id: filter_folders
         run: |
-          import json
-          
-          folder_list = ${{ steps.folder_names.outputs.names }}
-          previous_folders = os.environ.get('PREVIOUS_FOLDERS', '').split(',')
-          
-          new_folders = [folder for folder in folder_list if folder not in previous_folders]
-          print(json.dumps(new_folders))
-        env:
-          PREVIOUS_FOLDERS: ${{ env.PREVIOUS_FOLDERS }}
+          folder_list=$(echo ${{ steps.folder_names.outputs.names }} | sed 's/\[//; s/\]//; s/ /,/g')
+          previous_folders=$PREVIOUS_FOLDERS
+            
+            new_folders=""
+            IFS=, read -ra new_folders_array <<< "$folder_list"
+            for folder in "${new_folders_array[@]}"; do
+              if [[ ! $previous_folders =~ (^|[ ,])$folder($|[ ,]) ]]; then
+                new_folders="$new_folders $folder"
+              fi
+            done
+            echo "::set-output name=filtered_folders::$new_folders"
 
       - name: Update ReadMe with New Folders
         run: |
-          NEW_FOLDERS="${{ steps.filter_folders.outputs.stdout }}"
+          NEW_FOLDERS="${{ steps.filter_folders.outputs.filtered_folders }}"
           if [ -n "$NEW_FOLDERS" ]; then
             NEW_CONTENT=$(echo "$NEW_FOLDERS" | awk '{print "- " $0}')
             OLD_CONTENT=$(curl -H "Authorization: token ${{ secrets.PAT_TOKEN }}" -H "Accept: application/vnd.github.v3.raw" -s https://api.github.com/repos/${{ github.repository }}/contents/README.md)
