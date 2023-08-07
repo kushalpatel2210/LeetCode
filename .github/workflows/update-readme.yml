@@ -18,6 +18,10 @@ jobs:
         run: |
           echo "::set-output name=names::$(ls -d */)"
 
+      - name: Show Folder Names
+        run: |
+          echo "Folder names: ${{ steps.folder_names.outputs.names }}"
+
       - name: Update ReadMe
         run: |
           FOLDER_LIST="${{ steps.folder_names.outputs.names }}"
