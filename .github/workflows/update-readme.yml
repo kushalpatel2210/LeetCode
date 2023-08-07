@@ -21,11 +21,18 @@ jobs:
       - name: Update ReadMe
         run: |
           FOLDER_LIST=$(echo "${{ steps.folder_names.outputs.names }}" | awk -F/ '{for (i=1; i<=NF; i++) print "- " $i}')
-          if grep -q "## Solved LeetCode Problems" README.md; then
-            sed -i '/## Solved LeetCode Problems/,$d' README.md
-          fi
-          echo "## Solved LeetCode Problems" >> README.md
-          echo "${FOLDER_LIST}" >> README.md
+          
+          # Fetch current README content
+          README_CONTENT=$(curl -H "Authorization: token ${{ secrets.PAT_TOKEN }}" https://api.github.com/repos/${{ github.repository }}/contents/README.md)
+          
+          # Extract the existing content (excluding the Folders section)
+          EXISTING_CONTENT=$(echo "$README_CONTENT" | jq -r '.content' | base64 -d | sed -n '/## Solved LeetCode Problems/,$!p')
+          
+          # Construct updated content
+          NEW_CONTENT=$(echo -e "$EXISTING_CONTENT\n\n## Solved LeetCode Problems\n$FOLDER_LIST")
+          
+          # Update README content
+          curl -X PUT -H "Authorization: token ${{ secrets.PAT_TOKEN }}" -d "{\"message\": \"Update README with folder names\", \"content\": \"$(echo "$NEW_CONTENT" | base64 | tr -d '\n')\", \"sha\": $(echo "$README_CONTENT" | jq -r '.sha')}" https://api.github.com/repos/${{ github.repository }}/contents/README.md
 
       - name: Commit and Push Changes
         run: |
