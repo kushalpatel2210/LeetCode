@@ -26,13 +26,24 @@ jobs:
       - name: Get Previously Added Folders
         id: get_previous_folders
         run: |
-          echo "PREVIOUS_FOLDERS=$(curl -H 'Authorization: token ${{ secrets.PAT_TOKEN }}' -H 'Accept: application/vnd.github.v3.raw' -s https://api.github.com/repos/${{ github.repository }}/contents/README.md | sed -n '/## Solved LeetCode Problems/,$!p; /## Solved LeetCode Problems/,$s/.*- \(.*\)/\1/p' | sed ':a;N;$!ba;s/\n/ /g')" >> $GITHUB_ENV
+          echo "PREVIOUS_FOLDERS=$(curl -H 'Authorization: token ${{ secrets.PAT_TOKEN }}' -H 'Accept: application/vnd.github.v3.raw' -s https://api.github.com/repos/${{ github.repository }}/contents/README.md | sed -n '/## Solved LeetCode Problems/,$!p; /## Solved LeetCode Problems/,$s/.*- \(.*\)/\1/p' | sed ':a;N;$!ba;s/\n/,/g')" >> $GITHUB_ENV
+
+      - name: Filter New Folders
+        id: filter_folders
+        run: |
+          import json
+          
+          folder_list = ${{ steps.folder_names.outputs.names }}
+          previous_folders = os.environ.get('PREVIOUS_FOLDERS', '').split(',')
+          
+          new_folders = [folder for folder in folder_list if folder not in previous_folders]
+          print(json.dumps(new_folders))
+        env:
+          PREVIOUS_FOLDERS: ${{ env.PREVIOUS_FOLDERS }}
 
       - name: Update ReadMe with New Folders
         run: |
-          PREVIOUS_FOLDERS="${{ env.PREVIOUS_FOLDERS }}"
-          FOLDER_LIST="${{ steps.folder_names.outputs.names }}"
-          NEW_FOLDERS=$(echo "$FOLDER_LIST" | grep -v -F "$PREVIOUS_FOLDERS")
+          NEW_FOLDERS="${{ steps.filter_folders.outputs.stdout }}"
           if [ -n "$NEW_FOLDERS" ]; then
             NEW_CONTENT=$(echo "$NEW_FOLDERS" | awk '{print "- " $0}')
             OLD_CONTENT=$(curl -H "Authorization: token ${{ secrets.PAT_TOKEN }}" -H "Accept: application/vnd.github.v3.raw" -s https://api.github.com/repos/${{ github.repository }}/contents/README.md)
