@@ -23,12 +23,22 @@ jobs:
         run: |
           echo "Folder names: ${{ steps.folder_names.outputs.names }}"
 
-      - name: Update ReadMe
+      - name: Get Previously Added Folders
+        id: get_previous_folders
         run: |
+          echo "PREVIOUS_FOLDERS=$(curl -H 'Authorization: token ${{ secrets.PAT_TOKEN }}' -H 'Accept: application/vnd.github.v3.raw' -s https://api.github.com/repos/${{ github.repository }}/contents/README.md | sed -n '/## Solved LeetCode Problems/,$!p; /## Solved LeetCode Problems/,$s/.*- \(.*\)/\1/p' | sed ':a;N;$!ba;s/\n/ /g')" >> $GITHUB_ENV
+
+      - name: Update ReadMe with New Folders
+        run: |
+          PREVIOUS_FOLDERS="${{ env.PREVIOUS_FOLDERS }}"
           FOLDER_LIST="${{ steps.folder_names.outputs.names }}"
-          OLD_CONTENT=$(curl -H "Authorization: token ${{ secrets.PAT_TOKEN }}" -H "Accept: application/vnd.github.v3.raw" -s https://api.github.com/repos/${{ github.repository }}/contents/README.md)
-          NEW_CONTENT=$(echo -e "$OLD_CONTENT" | sed -n '/## Solved LeetCode Problems/,$!p; /## Solved LeetCode Problems/,$s/.*/'"$FOLDER_LIST"'/' | sed ':a;N;$!ba;s/\n/\\n/g')
-          curl -X PUT -H "Authorization: token ${{ secrets.PAT_TOKEN }}" -H "Content-Type: application/json" -d '{"message":"Update README with folder names", "content":"'"$(echo -n "$NEW_CONTENT" | base64)"'", "sha":"'"$(echo "$OLD_CONTENT" | curl -s https://api.github.com/repos/${{ github.repository }}/contents/README.md | jq -r .sha)"'"}' https://api.github.com/repos/${{ github.repository }}/contents/README.md
+          NEW_FOLDERS=$(echo "$FOLDER_LIST" | grep -v -F "$PREVIOUS_FOLDERS")
+          if [ -n "$NEW_FOLDERS" ]; then
+            NEW_CONTENT=$(echo "$NEW_FOLDERS" | awk '{print "- " $0}')
+            OLD_CONTENT=$(curl -H "Authorization: token ${{ secrets.PAT_TOKEN }}" -H "Accept: application/vnd.github.v3.raw" -s https://api.github.com/repos/${{ github.repository }}/contents/README.md)
+            NEW_CONTENT=$(echo -e "$OLD_CONTENT\n\n## Solved LeetCode Problems\n$NEW_CONTENT" | sed ':a;N;$!ba;s/\n/\\n/g')
+            curl -X PUT -H "Authorization: token ${{ secrets.PAT_TOKEN }}" -H "Content-Type: application/json" -d '{"message":"Update README with folder names", "content":"'"$(echo -n "$NEW_CONTENT" | base64)"'", "sha":"'"$(echo "$OLD_CONTENT" | curl -s https://api.github.com/repos/${{ github.repository }}/contents/README.md | jq -r .sha)"'"}' https://api.github.com/repos/${{ github.repository }}/contents/README.md
+          fi
 
       - name: Commit and Push Changes
         run: |
