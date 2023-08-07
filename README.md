@@ -9,6 +9,7 @@
 - 0027-remove-element
 - 0028-find-the-index-of-the-first-occurrence-in-a-string
 - 0045-jump-game-ii
+- 0049-group-anagrams
 - 0055-jump-game
 - 0058-length-of-last-word
 - 0080-remove-duplicates-from-sorted-array-ii
