@@ -16,7 +16,10 @@ folder_names = [name for name in os.listdir() if os.path.isdir(name)]
 folders_to_exclude = [".git", ".github"]  # Add folder names to exclude here
 
 # Sort folder names based on the first 4 digits as numbers
-sorted_folder_names = sorted(folder_names, key=lambda x: int(x[:4]))
+sorted_folder_names = sorted(
+    (folder for folder in folder_names if folder[:4].isdigit()),
+    key=lambda x: int(x[:4])
+)
 
 # Construct updated content
 new_content = "## Solved LeetCode Problems\n"
@@ -37,7 +40,7 @@ old_content = base64.b64decode(readme.content).decode("utf-8")
 if new_content != old_content:
     new_content_base64 = base64.b64encode(new_content.encode("utf-8")).decode("utf-8")
     payload = {
-        "message": "Update README with folder names",
+        "message": "Update README with LeetCode Problem",
         "content": new_content_base64,
         "sha": readme.sha,
         "branch": branch_name
