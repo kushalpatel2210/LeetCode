@@ -15,9 +15,12 @@ folder_names = [name for name in os.listdir() if os.path.isdir(name)]
 # Define folders to exclude
 folders_to_exclude = [".git", ".github"]  # Add folder names to exclude here
 
+# Sort folder names based on the first 4 digits as numbers
+sorted_folder_names = sorted(folder_names, key=lambda x: int(x[:4]))
+
 # Construct updated content
 new_content = "## Solved LeetCode Problems\n"
-for folder in folder_names:
+for folder in sorted_folder_names:
     if folder not in folders_to_exclude:
         new_content += f"- {folder}\n"
 
