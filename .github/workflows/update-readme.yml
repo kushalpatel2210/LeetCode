@@ -16,9 +16,8 @@ jobs:
       - name: Get Folder Names
         id: folder_names
         run: |
-          IFS=$'\n' GLOBIGNORE='*' command eval 'FOLDER_LIST=($(ls -d */))'
-          FOLDER_LIST_STRING=$(printf "%s\n" "${FOLDER_LIST[@]}")
-          echo "::set-output name=names::$FOLDER_LIST_STRING"
+          folder_list=$(python get_folders.py)
+          echo "::set-output name=names::$folder_list"
 
       - name: Show Folder Names
         run: |
@@ -30,7 +29,6 @@ jobs:
           OLD_CONTENT=$(curl -H "Authorization: token ${{ secrets.PAT_TOKEN }}" -H "Accept: application/vnd.github.v3.raw" -s https://api.github.com/repos/${{ github.repository }}/contents/README.md)
           NEW_CONTENT=$(echo -e "$OLD_CONTENT" | sed -n '/## Solved LeetCode Problems/,$!p; /## Solved LeetCode Problems/,$s/.*/'"$FOLDER_LIST"'/' | sed ':a;N;$!ba;s/\n/\\n/g')
           curl -X PUT -H "Authorization: token ${{ secrets.PAT_TOKEN }}" -H "Content-Type: application/json" -d '{"message":"Update README with folder names", "content":"'"$(echo -n "$NEW_CONTENT" | base64)"'", "sha":"'"$(echo "$OLD_CONTENT" | curl -s https://api.github.com/repos/${{ github.repository }}/contents/README.md | jq -r .sha)"'"}' https://api.github.com/repos/${{ github.repository }}/contents/README.md
-
 
       - name: Commit and Push Changes
         run: |
