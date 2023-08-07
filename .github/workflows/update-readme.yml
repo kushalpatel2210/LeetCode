@@ -20,8 +20,12 @@ jobs:
 
       - name: Update ReadMe
         run: |
+          FOLDER_LIST=$(echo "${{ steps.folder_names.outputs.names }}" | awk -F/ '{for (i=1; i<=NF; i++) print "- " $i}')
+          if grep -q "## Solved LeetCode Problems" README.md; then
+            sed -i '/## Solved LeetCode Problems/,$d' README.md
+          fi
           echo "## Solved LeetCode Problems" >> README.md
-          echo "${{ steps.folder_names.outputs.names }}" | awk -F/ '{for (i=1; i<=NF; i++) print "- " $i}' >> README.md
+          echo "${FOLDER_LIST}" >> README.md
 
       - name: Commit and Push Changes
         run: |
