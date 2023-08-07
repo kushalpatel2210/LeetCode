@@ -3,6 +3,7 @@
 - 0021-merge-two-sorted-lists
 - 0026-remove-duplicates-from-sorted-array
 - 0027-remove-element
+- 0055-jump-game
 - 0080-remove-duplicates-from-sorted-array-ii
 - 0088-merge-sorted-array
 - 0121-best-time-to-buy-and-sell-stock
