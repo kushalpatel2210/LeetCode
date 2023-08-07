@@ -13,4 +13,5 @@
 - 0169-majority-element
 - 0189-rotate-array
 - 0206-reverse-linked-list
+- 0274-h-index
 - 0908-middle-of-the-linked-list
