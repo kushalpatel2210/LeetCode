@@ -27,6 +27,7 @@
 - 0205-isomorphic-strings
 - 0206-reverse-linked-list
 - 0209-minimum-size-subarray-sum
+- 0219-contains-duplicate-ii
 - 0238-product-of-array-except-self
 - 0242-valid-anagram
 - 0274-h-index
