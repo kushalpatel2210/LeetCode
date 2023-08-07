@@ -1,1 +1,14 @@
 ## Solved LeetCode Problems
+- 0141-linked-list-cycle
+- 0189-rotate-array
+- .git
+- 0206-reverse-linked-list
+- 0027-remove-element
+- .github
+- 0908-middle-of-the-linked-list
+- 0169-majority-element
+- 0026-remove-duplicates-from-sorted-array
+- 0002-add-two-numbers
+- 0080-remove-duplicates-from-sorted-array-ii
+- 0088-merge-sorted-array
+- 0021-merge-two-sorted-lists
