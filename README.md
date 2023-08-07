@@ -10,5 +10,6 @@
 - 0026-remove-duplicates-from-sorted-array
 - 0002-add-two-numbers
 - 0080-remove-duplicates-from-sorted-array-ii
+- 0121-best-time-to-buy-and-sell-stock
 - 0088-merge-sorted-array
 - 0021-merge-two-sorted-lists
