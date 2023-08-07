@@ -21,6 +21,7 @@
 - 0167-two-sum-ii-input-array-is-sorted
 - 0169-majority-element
 - 0189-rotate-array
+- 0205-isomorphic-strings
 - 0206-reverse-linked-list
 - 0209-minimum-size-subarray-sum
 - 0238-product-of-array-except-self
