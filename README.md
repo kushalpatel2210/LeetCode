@@ -20,6 +20,7 @@
 - 0125-valid-palindrome
 - 0128-longest-consecutive-sequence
 - 0134-gas-station
+- 0138-copy-list-with-random-pointer
 - 0141-linked-list-cycle
 - 0167-two-sum-ii-input-array-is-sorted
 - 0169-majority-element
