@@ -5,6 +5,7 @@
 - 0011-container-with-most-water
 - 0012-integer-to-roman
 - 0013-roman-to-integer
+- 0019-remove-nth-node-from-end-of-list
 - 0021-merge-two-sorted-lists
 - 0026-remove-duplicates-from-sorted-array
 - 0027-remove-element
