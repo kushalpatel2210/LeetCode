@@ -41,6 +41,7 @@
 - 0380-insert-delete-getrandom-o1
 - 0383-ransom-note
 - 0392-is-subsequence
+- 0782-jewels-and-stones
 - 0908-middle-of-the-linked-list
 - 1205-defanging-an-ip-address
 - 2137-final-value-of-variable-after-performing-operations
