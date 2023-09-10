@@ -45,6 +45,7 @@
 - 0908-middle-of-the-linked-list
 - 1205-defanging-an-ip-address
 - 1341-split-a-string-in-balanced-strings
+- 1580-shuffle-the-array
 - 1651-shuffle-string
 - 1797-goal-parser-interpretation
 - 1899-count-items-matching-a-rule
