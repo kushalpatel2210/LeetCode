@@ -48,4 +48,5 @@
 - 1651-shuffle-string
 - 1797-goal-parser-interpretation
 - 1899-count-items-matching-a-rule
+- 2048-build-array-from-permutation
 - 2137-final-value-of-variable-after-performing-operations
