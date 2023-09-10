@@ -44,5 +44,6 @@
 - 0782-jewels-and-stones
 - 0908-middle-of-the-linked-list
 - 1205-defanging-an-ip-address
+- 1341-split-a-string-in-balanced-strings
 - 1797-goal-parser-interpretation
 - 2137-final-value-of-variable-after-performing-operations
