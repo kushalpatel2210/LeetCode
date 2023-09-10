@@ -47,4 +47,5 @@
 - 1341-split-a-string-in-balanced-strings
 - 1651-shuffle-string
 - 1797-goal-parser-interpretation
+- 1899-count-items-matching-a-rule
 - 2137-final-value-of-variable-after-performing-operations
