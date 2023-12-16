@@ -43,6 +43,7 @@
 - 0392-is-subsequence
 - 0782-jewels-and-stones
 - 0908-middle-of-the-linked-list
+- 1071-greatest-common-divisor-of-strings
 - 1205-defanging-an-ip-address
 - 1341-split-a-string-in-balanced-strings
 - 1580-shuffle-the-array
