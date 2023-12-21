@@ -46,6 +46,7 @@
 - 1071-greatest-common-divisor-of-strings
 - 1205-defanging-an-ip-address
 - 1341-split-a-string-in-balanced-strings
+- 1431-kids-with-the-greatest-number-of-candies
 - 1580-shuffle-the-array
 - 1651-shuffle-string
 - 1768-merge-strings-alternately
