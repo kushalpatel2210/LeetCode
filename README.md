@@ -41,6 +41,7 @@
 - 0380-insert-delete-getrandom-o1
 - 0383-ransom-note
 - 0392-is-subsequence
+- 0605-can-place-flowers
 - 0782-jewels-and-stones
 - 0908-middle-of-the-linked-list
 - 1071-greatest-common-divisor-of-strings
