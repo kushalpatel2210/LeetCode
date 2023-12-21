@@ -39,6 +39,7 @@
 - 0242-valid-anagram
 - 0274-h-index
 - 0290-word-pattern
+- 0334-increasing-triplet-subsequence
 - 0345-reverse-vowels-of-a-string
 - 0380-insert-delete-getrandom-o1
 - 0383-ransom-note
