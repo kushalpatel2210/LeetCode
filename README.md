@@ -38,6 +38,7 @@
 - 0238-product-of-array-except-self
 - 0242-valid-anagram
 - 0274-h-index
+- 0283-move-zeroes
 - 0290-word-pattern
 - 0334-increasing-triplet-subsequence
 - 0345-reverse-vowels-of-a-string
