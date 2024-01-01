@@ -1,31 +1,43 @@
 class Solution {
     public boolean isSubsequence(String s, String t) {
-        int sPointer = 0, tPointer = 0;
+        int lengthofs = s.length();
+        int lengthoft = t.length();
+        int currentIndexofs = 0;
+        int currentIndexoft = 0;
+        
+        while (currentIndexoft < lengthoft && currentIndexofs < lengthofs) {
+            if(s.charAt(currentIndexofs) == t.charAt(currentIndexoft)) {
+                currentIndexofs++;
+            }
 
-        if (s.length() == 0) {
-            return true;
+            currentIndexoft++;
         }
 
-        if (t.length() == 0) {
-            return false;
-        }
+        return currentIndexofs == lengthofs;
+    }
+}
 
-        while(sPointer < s.length() && tPointer < t.length()) {
-            Character sChar = s.charAt(sPointer);
-            Character tChar = t.charAt(tPointer);
+/*
+// Solution 2
+class Solution {
+    public boolean isSubsequence(String s, String t) {
+        int currentIndexoft = 0;
+        int currentIndexofs = 0;
 
-            if (!tChar.equals(sChar)) {
-                tPointer++;
-            } else {
-                sPointer++;
-                tPointer++;
+        for (int i = 0; i < s.length(); i++) {
+            Character cs = s.charAt(currentIndexofs);
+
+            while(currentIndexoft < t.length()) {
+                if (cs == t.charAt(currentIndexoft)) {
+                    currentIndexoft++;
+                    currentIndexofs++;
+                    break;
+                }
+                currentIndexoft++;
             }
         }
 
-        if(sPointer == s.length()) {
-            return true;
-        } else {
-            return false;
-        }
+        return currentIndexofs == s.length();
     }
 }
+*/
