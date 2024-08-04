@@ -33,6 +33,7 @@
 - 0205-isomorphic-strings
 - 0206-reverse-linked-list
 - 0209-minimum-size-subarray-sum
+- 0217-contains-duplicate
 - 0219-contains-duplicate-ii
 - 0228-summary-ranges
 - 0238-product-of-array-except-self
@@ -63,19 +64,3 @@
 - 2137-final-value-of-variable-after-performing-operations
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0217-contains-duplicate](https://github.com/kushalpatel2210/LeetCode/tree/master/0217-contains-duplicate) |
-## Hash Table
-|  |
-| ------- |
-| [0217-contains-duplicate](https://github.com/kushalpatel2210/LeetCode/tree/master/0217-contains-duplicate) |
-## Sorting
-|  |
-| ------- |
-| [0217-contains-duplicate](https://github.com/kushalpatel2210/LeetCode/tree/master/0217-contains-duplicate) |
-<!---LeetCode Topics End-->
