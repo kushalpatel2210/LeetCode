@@ -51,6 +51,7 @@
 - 0782-jewels-and-stones
 - 0908-middle-of-the-linked-list
 - 1071-greatest-common-divisor-of-strings
+- 1146-greatest-common-divisor-of-strings
 - 1205-defanging-an-ip-address
 - 1341-split-a-string-in-balanced-strings
 - 1431-kids-with-the-greatest-number-of-candies
@@ -65,15 +66,3 @@
 - 2137-final-value-of-variable-after-performing-operations
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Math
-|  |
-| ------- |
-| [1146-greatest-common-divisor-of-strings](https://github.com/kushalpatel2210/LeetCode/tree/master/1146-greatest-common-divisor-of-strings) |
-## String
-|  |
-| ------- |
-| [1146-greatest-common-divisor-of-strings](https://github.com/kushalpatel2210/LeetCode/tree/master/1146-greatest-common-divisor-of-strings) |
-<!---LeetCode Topics End-->
