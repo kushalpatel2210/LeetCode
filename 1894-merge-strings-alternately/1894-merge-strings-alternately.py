@@ -1,18 +1,15 @@
 class Solution:
     def mergeAlternately(self, word1: str, word2: str) -> str:
-        word_list_1 = list(word1)
-        word_list_2 = list(word2)
-        alternate_list = list()
+        word1_len, word2_len = len(word1), len(word2)
+        combined = []
 
         for i in range(len(word1)):
-            alternate_list.append(word_list_1[i])
-            if i < len(word2):
-                alternate_list.append(word_list_2[i])
+            combined.append(word1[i])
+            if i < word2_len:
+                combined.append(word2[i])
+
+        if word2_len > word1_len:
+            combined.append(word2[word1_len:])
         
-        if len(word2) > len(word1):
-            alternate_list.extend(word_list_2[len(word1):])
-        
-        merged_string = "".join(alternate_list)
-        
-        return merged_string
+        return ''.join(combined)
         
