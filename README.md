@@ -69,3 +69,15 @@
 - 2137-final-value-of-variable-after-performing-operations
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [0643-maximum-average-subarray-i](https://github.com/kushalpatel2210/LeetCode/tree/master/0643-maximum-average-subarray-i) |
+## Sliding Window
+|  |
+| ------- |
+| [0643-maximum-average-subarray-i](https://github.com/kushalpatel2210/LeetCode/tree/master/0643-maximum-average-subarray-i) |
+<!---LeetCode Topics End-->
