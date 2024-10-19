@@ -71,3 +71,23 @@
 - 2137-final-value-of-variable-after-performing-operations
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [1046-max-consecutive-ones-iii](https://github.com/kushalpatel2210/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
+## Binary Search
+|  |
+| ------- |
+| [1046-max-consecutive-ones-iii](https://github.com/kushalpatel2210/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
+## Sliding Window
+|  |
+| ------- |
+| [1046-max-consecutive-ones-iii](https://github.com/kushalpatel2210/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
+## Prefix Sum
+|  |
+| ------- |
+| [1046-max-consecutive-ones-iii](https://github.com/kushalpatel2210/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
+<!---LeetCode Topics End-->
