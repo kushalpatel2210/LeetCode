@@ -5,6 +5,19 @@ class Solution:
         """
         start = 0
 
+        for num in nums:
+            if num != 0:
+                nums[start] = num
+                start += 1
+        
+        while start < len(nums):
+            nums[start] = 0
+            start += 1
+
+        """
+        # High run time
+        start = 0
+
         while start < len(nums):
             if nums[start] != 0:
                 start += 1
@@ -17,4 +30,4 @@ class Solution:
                 nums[start] = nums[end]
                 nums[end] = 0
                 start += 1
-        
+        """
