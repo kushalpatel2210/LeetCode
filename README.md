@@ -68,3 +68,23 @@
 - 2137-final-value-of-variable-after-performing-operations
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [1798-max-number-of-k-sum-pairs](https://github.com/kushalpatel2210/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
+## Hash Table
+|  |
+| ------- |
+| [1798-max-number-of-k-sum-pairs](https://github.com/kushalpatel2210/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
+## Two Pointers
+|  |
+| ------- |
+| [1798-max-number-of-k-sum-pairs](https://github.com/kushalpatel2210/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
+## Sorting
+|  |
+| ------- |
+| [1798-max-number-of-k-sum-pairs](https://github.com/kushalpatel2210/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
+<!---LeetCode Topics End-->
