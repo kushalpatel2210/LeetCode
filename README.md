@@ -72,3 +72,19 @@
 - 2137-final-value-of-variable-after-performing-operations
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/kushalpatel2210/LeetCode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
+## Dynamic Programming
+|  |
+| ------- |
+| [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/kushalpatel2210/LeetCode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
+## Sliding Window
+|  |
+| ------- |
+| [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/kushalpatel2210/LeetCode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
+<!---LeetCode Topics End-->
