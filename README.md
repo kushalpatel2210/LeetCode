@@ -51,6 +51,7 @@
 - 0605-can-place-flowers
 - 0643-maximum-average-subarray-i
 - 0724-find-pivot-index
+- 0735-asteroid-collision
 - 0782-jewels-and-stones
 - 0908-middle-of-the-linked-list
 - 1046-max-consecutive-ones-iii
@@ -80,19 +81,3 @@
 - 2470-removing-stars-from-a-string
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0735-asteroid-collision](https://github.com/kushalpatel2210/LeetCode/tree/master/0735-asteroid-collision) |
-## Stack
-|  |
-| ------- |
-| [0735-asteroid-collision](https://github.com/kushalpatel2210/LeetCode/tree/master/0735-asteroid-collision) |
-## Simulation
-|  |
-| ------- |
-| [0735-asteroid-collision](https://github.com/kushalpatel2210/LeetCode/tree/master/0735-asteroid-collision) |
-<!---LeetCode Topics End-->
