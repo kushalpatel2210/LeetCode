@@ -58,6 +58,7 @@
 - 1146-greatest-common-divisor-of-strings
 - 1205-defanging-an-ip-address
 - 1341-split-a-string-in-balanced-strings
+- 1392-find-the-difference-of-two-arrays
 - 1431-kids-with-the-greatest-number-of-candies
 - 1528-kids-with-the-greatest-number-of-candies
 - 1567-maximum-number-of-vowels-in-a-substring-of-given-length
@@ -75,15 +76,3 @@
 - 2137-final-value-of-variable-after-performing-operations
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [1392-find-the-difference-of-two-arrays](https://github.com/kushalpatel2210/LeetCode/tree/master/1392-find-the-difference-of-two-arrays) |
-## Hash Table
-|  |
-| ------- |
-| [1392-find-the-difference-of-two-arrays](https://github.com/kushalpatel2210/LeetCode/tree/master/1392-find-the-difference-of-two-arrays) |
-<!---LeetCode Topics End-->
