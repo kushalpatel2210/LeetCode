@@ -66,6 +66,7 @@
 - 1768-merge-strings-alternately
 - 1797-goal-parser-interpretation
 - 1798-max-number-of-k-sum-pairs
+- 1833-find-the-highest-altitude
 - 1894-merge-strings-alternately
 - 1899-count-items-matching-a-rule
 - 2048-build-array-from-permutation
@@ -73,15 +74,3 @@
 - 2137-final-value-of-variable-after-performing-operations
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [1833-find-the-highest-altitude](https://github.com/kushalpatel2210/LeetCode/tree/master/1833-find-the-highest-altitude) |
-## Prefix Sum
-|  |
-| ------- |
-| [1833-find-the-highest-altitude](https://github.com/kushalpatel2210/LeetCode/tree/master/1833-find-the-highest-altitude) |
-<!---LeetCode Topics End-->
