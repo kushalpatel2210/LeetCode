@@ -51,6 +51,7 @@
 - 0443-string-compression
 - 0605-can-place-flowers
 - 0643-maximum-average-subarray-i
+- 0649-dota2-senate
 - 0724-find-pivot-index
 - 0735-asteroid-collision
 - 0782-jewels-and-stones
@@ -83,19 +84,3 @@
 - 2470-removing-stars-from-a-string
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## String
-|  |
-| ------- |
-| [0649-dota2-senate](https://github.com/kushalpatel2210/LeetCode/tree/master/0649-dota2-senate) |
-## Greedy
-|  |
-| ------- |
-| [0649-dota2-senate](https://github.com/kushalpatel2210/LeetCode/tree/master/0649-dota2-senate) |
-## Queue
-|  |
-| ------- |
-| [0649-dota2-senate](https://github.com/kushalpatel2210/LeetCode/tree/master/0649-dota2-senate) |
-<!---LeetCode Topics End-->
