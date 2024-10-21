@@ -55,6 +55,7 @@
 - 0735-asteroid-collision
 - 0782-jewels-and-stones
 - 0908-middle-of-the-linked-list
+- 0969-number-of-recent-calls
 - 1046-max-consecutive-ones-iii
 - 1071-greatest-common-divisor-of-strings
 - 1146-greatest-common-divisor-of-strings
@@ -82,19 +83,3 @@
 - 2470-removing-stars-from-a-string
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Design
-|  |
-| ------- |
-| [0969-number-of-recent-calls](https://github.com/kushalpatel2210/LeetCode/tree/master/0969-number-of-recent-calls) |
-## Queue
-|  |
-| ------- |
-| [0969-number-of-recent-calls](https://github.com/kushalpatel2210/LeetCode/tree/master/0969-number-of-recent-calls) |
-## Data Stream
-|  |
-| ------- |
-| [0969-number-of-recent-calls](https://github.com/kushalpatel2210/LeetCode/tree/master/0969-number-of-recent-calls) |
-<!---LeetCode Topics End-->
