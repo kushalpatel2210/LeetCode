@@ -83,3 +83,19 @@
 - 2470-removing-stars-from-a-string
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## String
+|  |
+| ------- |
+| [0649-dota2-senate](https://github.com/kushalpatel2210/LeetCode/tree/master/0649-dota2-senate) |
+## Greedy
+|  |
+| ------- |
+| [0649-dota2-senate](https://github.com/kushalpatel2210/LeetCode/tree/master/0649-dota2-senate) |
+## Queue
+|  |
+| ------- |
+| [0649-dota2-senate](https://github.com/kushalpatel2210/LeetCode/tree/master/0649-dota2-senate) |
+<!---LeetCode Topics End-->
