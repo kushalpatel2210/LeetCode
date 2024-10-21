@@ -88,3 +88,19 @@
 - 2470-removing-stars-from-a-string
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Tree
+|  |
+| ------- |
+| [0904-leaf-similar-trees](https://github.com/kushalpatel2210/LeetCode/tree/master/0904-leaf-similar-trees) |
+## Depth-First Search
+|  |
+| ------- |
+| [0904-leaf-similar-trees](https://github.com/kushalpatel2210/LeetCode/tree/master/0904-leaf-similar-trees) |
+## Binary Tree
+|  |
+| ------- |
+| [0904-leaf-similar-trees](https://github.com/kushalpatel2210/LeetCode/tree/master/0904-leaf-similar-trees) |
+<!---LeetCode Topics End-->
