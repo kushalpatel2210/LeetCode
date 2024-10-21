@@ -57,6 +57,7 @@
 - 0724-find-pivot-index
 - 0735-asteroid-collision
 - 0782-jewels-and-stones
+- 0904-leaf-similar-trees
 - 0908-middle-of-the-linked-list
 - 0969-number-of-recent-calls
 - 1046-max-consecutive-ones-iii
@@ -88,19 +89,3 @@
 - 2470-removing-stars-from-a-string
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Tree
-|  |
-| ------- |
-| [0904-leaf-similar-trees](https://github.com/kushalpatel2210/LeetCode/tree/master/0904-leaf-similar-trees) |
-## Depth-First Search
-|  |
-| ------- |
-| [0904-leaf-similar-trees](https://github.com/kushalpatel2210/LeetCode/tree/master/0904-leaf-similar-trees) |
-## Binary Tree
-|  |
-| ------- |
-| [0904-leaf-similar-trees](https://github.com/kushalpatel2210/LeetCode/tree/master/0904-leaf-similar-trees) |
-<!---LeetCode Topics End-->
