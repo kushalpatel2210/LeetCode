@@ -61,6 +61,7 @@
 - 0735-asteroid-collision
 - 0782-jewels-and-stones
 - 0783-search-in-a-binary-search-tree
+- 0871-keys-and-rooms
 - 0904-leaf-similar-trees
 - 0908-middle-of-the-linked-list
 - 0969-number-of-recent-calls
@@ -95,19 +96,3 @@
 - 2470-removing-stars-from-a-string
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Depth-First Search
-|  |
-| ------- |
-| [0871-keys-and-rooms](https://github.com/kushalpatel2210/LeetCode/tree/master/0871-keys-and-rooms) |
-## Breadth-First Search
-|  |
-| ------- |
-| [0871-keys-and-rooms](https://github.com/kushalpatel2210/LeetCode/tree/master/0871-keys-and-rooms) |
-## Graph
-|  |
-| ------- |
-| [0871-keys-and-rooms](https://github.com/kushalpatel2210/LeetCode/tree/master/0871-keys-and-rooms) |
-<!---LeetCode Topics End-->
