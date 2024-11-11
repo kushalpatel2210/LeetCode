@@ -97,3 +97,19 @@
 - 2470-removing-stars-from-a-string
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Hash Table
+|  |
+| ------- |
+| [0242-valid-anagram](https://github.com/kushalpatel2210/LeetCode/tree/master/0242-valid-anagram) |
+## String
+|  |
+| ------- |
+| [0242-valid-anagram](https://github.com/kushalpatel2210/LeetCode/tree/master/0242-valid-anagram) |
+## Sorting
+|  |
+| ------- |
+| [0242-valid-anagram](https://github.com/kushalpatel2210/LeetCode/tree/master/0242-valid-anagram) |
+<!---LeetCode Topics End-->
