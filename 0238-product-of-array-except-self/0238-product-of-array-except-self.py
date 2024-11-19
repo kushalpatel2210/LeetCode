@@ -1,25 +1,24 @@
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
-        left_product_list, right_product_list = list(), list()
-        left_product, right_product = 1, 1
-        result = list()
+        product_except_self, left_products, right_products = list(), list(), list()
+        left_product = right_product = 1
 
-        for i in range(len(nums)):
-            if i == 0:
-                left_product_list.append(left_product)
+        for index, value in enumerate(nums):
+            if index == 0:
+                left_products.append(left_product)
             else:
-                left_product *= nums[i - 1]
-                left_product_list.append(left_product)
+                left_product *= nums[index - 1]
+                left_products.append(left_product)
         
-        for i in range(len(nums) - 1, -1, -1):
-            if i == len(nums) - 1:
-                right_product_list.append(right_product)
-            else: 
-                right_product *= nums[i + 1]
-                right_product_list.append(right_product)
-        right_product_list.reverse()
-        
-        for i in range(len(nums)):
-            result.append(left_product_list[i] * right_product_list[i])
+        for index in range(len(nums) -1, -1, -1):
+            if index == len(nums) - 1:
+                right_products.append(1)
+            else:
+                right_product *= nums[index + 1]
+                right_products.append(right_product)
+        right_products.reverse()
 
-        return result
+        for i in range(len(nums)):
+            product_except_self.append(left_products[i] * right_products[i])
+        
+        return product_except_self
