@@ -5,6 +5,7 @@
 - 0011-container-with-most-water
 - 0012-integer-to-roman
 - 0013-roman-to-integer
+- 0015-3sum
 - 0019-remove-nth-node-from-end-of-list
 - 0021-merge-two-sorted-lists
 - 0026-remove-duplicates-from-sorted-array
@@ -98,19 +99,3 @@
 - 2470-removing-stars-from-a-string
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0015-3sum](https://github.com/kushalpatel2210/LeetCode/tree/master/0015-3sum) |
-## Two Pointers
-|  |
-| ------- |
-| [0015-3sum](https://github.com/kushalpatel2210/LeetCode/tree/master/0015-3sum) |
-## Sorting
-|  |
-| ------- |
-| [0015-3sum](https://github.com/kushalpatel2210/LeetCode/tree/master/0015-3sum) |
-<!---LeetCode Topics End-->
