@@ -7,6 +7,7 @@
 - 0013-roman-to-integer
 - 0015-3sum
 - 0019-remove-nth-node-from-end-of-list
+- 0020-valid-parentheses
 - 0021-merge-two-sorted-lists
 - 0026-remove-duplicates-from-sorted-array
 - 0027-remove-element
@@ -100,15 +101,3 @@
 - 2470-removing-stars-from-a-string
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## String
-|  |
-| ------- |
-| [0020-valid-parentheses](https://github.com/kushalpatel2210/LeetCode/tree/master/0020-valid-parentheses) |
-## Stack
-|  |
-| ------- |
-| [0020-valid-parentheses](https://github.com/kushalpatel2210/LeetCode/tree/master/0020-valid-parentheses) |
-<!---LeetCode Topics End-->
