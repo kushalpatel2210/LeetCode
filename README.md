@@ -29,6 +29,7 @@
 - 0138-copy-list-with-random-pointer
 - 0141-linked-list-cycle
 - 0151-reverse-words-in-a-string
+- 0153-find-minimum-in-rotated-sorted-array
 - 0167-two-sum-ii-input-array-is-sorted
 - 0169-majority-element
 - 0189-rotate-array
@@ -101,15 +102,3 @@
 - 2470-removing-stars-from-a-string
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0153-find-minimum-in-rotated-sorted-array](https://github.com/kushalpatel2210/LeetCode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
-## Binary Search
-|  |
-| ------- |
-| [0153-find-minimum-in-rotated-sorted-array](https://github.com/kushalpatel2210/LeetCode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
-<!---LeetCode Topics End-->
