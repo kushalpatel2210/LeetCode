@@ -7,7 +7,7 @@ class Solution:
             if nums[mid] == target:
                 return mid
 
-                        # Determine if the left side is sorted
+            # Determine if the left side is sorted
             if nums[left] <= nums[mid]:
                 # Target is within the left sorted portion
                 if nums[left] <= target < nums[mid]:
