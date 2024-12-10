@@ -8,13 +8,13 @@ class Solution:
         if head is None:
             return None
         
-        prev = None 
-        curr = head
+        prev = None
 
-        while curr:
-            temp = curr.next
-            curr.next = prev
-            prev = curr
-            curr = temp
+        while head:
+            temp = head.next
+            head.next = prev
+            prev = head
+            head = temp
         
         return prev
+
