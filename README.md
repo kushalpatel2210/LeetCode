@@ -29,6 +29,7 @@
 - 0134-gas-station
 - 0138-copy-list-with-random-pointer
 - 0141-linked-list-cycle
+- 0142-linked-list-cycle-ii
 - 0143-reorder-list
 - 0151-reverse-words-in-a-string
 - 0153-find-minimum-in-rotated-sorted-array
@@ -104,19 +105,3 @@
 - 2470-removing-stars-from-a-string
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Hash Table
-|  |
-| ------- |
-| [0142-linked-list-cycle-ii](https://github.com/kushalpatel2210/LeetCode/tree/master/0142-linked-list-cycle-ii) |
-## Linked List
-|  |
-| ------- |
-| [0142-linked-list-cycle-ii](https://github.com/kushalpatel2210/LeetCode/tree/master/0142-linked-list-cycle-ii) |
-## Two Pointers
-|  |
-| ------- |
-| [0142-linked-list-cycle-ii](https://github.com/kushalpatel2210/LeetCode/tree/master/0142-linked-list-cycle-ii) |
-<!---LeetCode Topics End-->
