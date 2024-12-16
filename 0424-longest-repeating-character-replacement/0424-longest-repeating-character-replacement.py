@@ -13,9 +13,11 @@ class Solution:
                 # shrink window 
                 freq[s[i]] -= 1 
                 i += 1
-            
-            if j - i + 1 > maxLength:
-                maxLength = j - i + 1
+
+
+            maxLength = max(maxLength, j - i + 1)
+            # if j - i + 1 > maxLength:
+            #     maxLength = j - i + 1
 
         return maxLength
 
