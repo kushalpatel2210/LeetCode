@@ -12,8 +12,6 @@ class Solution:
             while j - i + 1 - max(freq.values()) > k:
                 # shrink window 
                 freq[s[i]] -= 1 
-                # if freq[s[i]] == 0:
-                #     del freq[s[i]]
                 i += 1
             
             if j - i + 1 > maxLength:
