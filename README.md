@@ -13,6 +13,7 @@
 - 0027-remove-element
 - 0028-find-the-index-of-the-first-occurrence-in-a-string
 - 0033-search-in-rotated-sorted-array
+- 0034-find-first-and-last-position-of-element-in-sorted-array
 - 0045-jump-game-ii
 - 0049-group-anagrams
 - 0055-jump-game
@@ -108,15 +109,3 @@
 - 2552-maximum-sum-of-distinct-subarrays-with-length-k
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/kushalpatel2210/LeetCode/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
-## Binary Search
-|  |
-| ------- |
-| [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/kushalpatel2210/LeetCode/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
-<!---LeetCode Topics End-->
