@@ -10,9 +10,6 @@ class Solution:
                 else:
                     left = mid + 1
             return left
-        
-        if not nums:
-            return [-1, -1]
     
         # Find the first occurrence of the target
         start = binary_search(lambda mid: nums[mid] >= target)
