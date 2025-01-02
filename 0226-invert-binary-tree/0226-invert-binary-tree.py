@@ -10,11 +10,11 @@ class Solution:
             if not node:
                 return
             
-            left_subtree = dfs_post_order(node.right)
-            right_subtree = dfs_post_order(node.left)
-            node.left = left_subtree
-            node.right = right_subtree
-            
+            right_subtree = dfs_post_order(node.right)
+            left_subtree = dfs_post_order(node.left)
+            node.left = right_subtree
+            node.right = left_subtree
+
             return node
             
         return dfs_post_order(root)
