@@ -7,13 +7,14 @@
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
         
-        def max_depth(node):
-            if node is None:
+        def dfs_post_order(node):
+            if not node:
                 return 0
             
-            left_depth = max_depth(node.left)
-            right_depth = max_depth(node.right)
+            left_subtree = dfs_post_order(node.left)
+            right_subtree = dfs_post_order(node.right)
 
-            return max(left_depth, right_depth) + 1
-        
-        return max_depth(root)
+            # visit Node
+            return max(left_subtree, right_subtree) + 1
+
+        return dfs_post_order(root)
