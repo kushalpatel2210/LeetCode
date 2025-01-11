@@ -66,6 +66,7 @@
 - 0424-longest-repeating-character-replacement
 - 0437-path-sum-iii
 - 0443-string-compression
+- 0543-diameter-of-binary-tree
 - 0547-number-of-provinces
 - 0572-subtree-of-another-tree
 - 0605-can-place-flowers
@@ -112,19 +113,3 @@
 - 2552-maximum-sum-of-distinct-subarrays-with-length-k
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Tree
-|  |
-| ------- |
-| [0543-diameter-of-binary-tree](https://github.com/kushalpatel2210/LeetCode/tree/master/0543-diameter-of-binary-tree) |
-## Depth-First Search
-|  |
-| ------- |
-| [0543-diameter-of-binary-tree](https://github.com/kushalpatel2210/LeetCode/tree/master/0543-diameter-of-binary-tree) |
-## Binary Tree
-|  |
-| ------- |
-| [0543-diameter-of-binary-tree](https://github.com/kushalpatel2210/LeetCode/tree/master/0543-diameter-of-binary-tree) |
-<!---LeetCode Topics End-->
