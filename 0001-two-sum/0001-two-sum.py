@@ -7,3 +7,5 @@ class Solution:
             if num in dict:
                 return [i, dict[num]]
             dict[diff] = i
+
+        return None
