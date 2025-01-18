@@ -1,6 +1,7 @@
+from collections import Counter
+
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
-        list1, list2 = list(s), list(t)
-        list1.sort()
-        list2.sort()
-        return list1 == list2
+        countOfs, countOft = Counter(s), Counter(t)
+        
+        return countOfs == countOft
