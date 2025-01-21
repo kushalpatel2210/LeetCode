@@ -2,11 +2,10 @@ from collections import defaultdict
 
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        dictionary = defaultdict(list)
+        grp_anagrams = defaultdict(list)
 
-        for str in strs:
-            sorted_str = ''.join(sorted(str))
-            dictionary[sorted_str].append(str)
+        for word in strs:
+            key = tuple(sorted(word))
+            grp_anagrams[key].append(word)
         
-        return list(dictionary.values())
-        
+        return list(grp_anagrams.values())
