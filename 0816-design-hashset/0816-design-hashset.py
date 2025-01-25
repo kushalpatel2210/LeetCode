@@ -4,11 +4,11 @@ class MyHashSet:
         self.hashSet = list()
 
     def add(self, key: int) -> None:
-        if not self.contains(key):
+        if key not in self.hashSet:
             self.hashSet.append(key)
 
     def remove(self, key: int) -> None:
-        if self.contains(key):
+        if key in self.hashSet:
             self.hashSet.remove(key)
 
     def contains(self, key: int) -> bool:
