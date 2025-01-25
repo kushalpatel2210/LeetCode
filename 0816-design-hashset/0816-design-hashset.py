@@ -1,10 +1,11 @@
 class MyHashSet:
 
     def __init__(self):
-        self.hashSet = set()
+        self.hashSet = list()
 
     def add(self, key: int) -> None:
-        self.hashSet.add(key)
+        if not self.contains(key):
+            self.hashSet.append(key)
 
     def remove(self, key: int) -> None:
         if self.contains(key):
