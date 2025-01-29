@@ -14,6 +14,7 @@
 - 0028-find-the-index-of-the-first-occurrence-in-a-string
 - 0033-search-in-rotated-sorted-array
 - 0034-find-first-and-last-position-of-element-in-sorted-array
+- 0036-valid-sudoku
 - 0045-jump-game-ii
 - 0049-group-anagrams
 - 0055-jump-game
@@ -118,19 +119,3 @@
 - 2552-maximum-sum-of-distinct-subarrays-with-length-k
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0036-valid-sudoku](https://github.com/kushalpatel2210/LeetCode/tree/master/0036-valid-sudoku) |
-## Hash Table
-|  |
-| ------- |
-| [0036-valid-sudoku](https://github.com/kushalpatel2210/LeetCode/tree/master/0036-valid-sudoku) |
-## Matrix
-|  |
-| ------- |
-| [0036-valid-sudoku](https://github.com/kushalpatel2210/LeetCode/tree/master/0036-valid-sudoku) |
-<!---LeetCode Topics End-->
