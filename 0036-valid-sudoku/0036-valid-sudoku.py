@@ -1,36 +1,20 @@
+from collections import defaultdict
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
-        
-        # Check Each Row
-        for row in board:
-            duplicate = []
-            for value in row:
-                if value != '.':
-                    if value in duplicate:
-                        return False
-                    duplicate.append(value)
-        
-        # Check Each Column
-        for i in range(len(board)):
-            duplicate = []
-            for j in range(len(board)):
-                value = board[j][i]
-                if value != '.':
-                    if value in duplicate:
-                        return False
-                    duplicate.append(value)
-        
-        # Check Each Box
-        for square in range(9):
-            duplicate = []
-            for i in range(3):
-                for j in range(3):
-                    row = (square // 3) * 3 + i
-                    col = (square % 3) * 3 + j
-                    val = board[row][col]
-                    if val != '.':
-                        if val in duplicate:
-                            return False
-                        duplicate.append(val)
+        rows = defaultdict(set)
+        cols = defaultdict(set)
+        square = defaultdict(set) # key (r // 3, c // 3)
 
+        for row in range(9):
+            for col in range(9):
+                val = board[row][col]
+
+                if val != '.':
+                    if (val in rows[row] or val in cols[col] or val in square[(row // 3, col // 3)]):
+                        return False 
+
+                    rows[row].add(val)
+                    cols[col].add(val)
+                    square[(row // 3, col // 3)].add(val)
+        
         return True
