@@ -72,6 +72,7 @@
 - 0443-string-compression
 - 0543-diameter-of-binary-tree
 - 0547-number-of-provinces
+- 0560-subarray-sum-equals-k
 - 0572-subtree-of-another-tree
 - 0605-can-place-flowers
 - 0643-maximum-average-subarray-i
@@ -120,19 +121,3 @@
 - 2552-maximum-sum-of-distinct-subarrays-with-length-k
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0560-subarray-sum-equals-k](https://github.com/kushalpatel2210/LeetCode/tree/master/0560-subarray-sum-equals-k) |
-## Hash Table
-|  |
-| ------- |
-| [0560-subarray-sum-equals-k](https://github.com/kushalpatel2210/LeetCode/tree/master/0560-subarray-sum-equals-k) |
-## Prefix Sum
-|  |
-| ------- |
-| [0560-subarray-sum-equals-k](https://github.com/kushalpatel2210/LeetCode/tree/master/0560-subarray-sum-equals-k) |
-<!---LeetCode Topics End-->
