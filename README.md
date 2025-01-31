@@ -119,3 +119,23 @@
 - 2552-maximum-sum-of-distinct-subarrays-with-length-k
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [0229-majority-element-ii](https://github.com/kushalpatel2210/LeetCode/tree/master/0229-majority-element-ii) |
+## Hash Table
+|  |
+| ------- |
+| [0229-majority-element-ii](https://github.com/kushalpatel2210/LeetCode/tree/master/0229-majority-element-ii) |
+## Sorting
+|  |
+| ------- |
+| [0229-majority-element-ii](https://github.com/kushalpatel2210/LeetCode/tree/master/0229-majority-element-ii) |
+## Counting
+|  |
+| ------- |
+| [0229-majority-element-ii](https://github.com/kushalpatel2210/LeetCode/tree/master/0229-majority-element-ii) |
+<!---LeetCode Topics End-->
