@@ -1,5 +1,24 @@
 class Solution:
     def mergeAlternately(self, word1: str, word2: str) -> str:
+        m, n = len(word1), len(word2)
+        i = j = 0
+        res = []
+
+        while j < m or j <n:
+            if i < m:
+                res.append(word1[i])
+            
+            if j < n:
+                res.append(word2[i])
+            
+            i += 1
+            j += 1
+        
+        return "".join(res)
+
+'''
+class Solution:
+    def mergeAlternately(self, word1: str, word2: str) -> str:
         start1 = start2 = 0
         mergedString = ''
 
@@ -15,3 +34,4 @@ class Solution:
             mergedString += word2[start2::]
 
         return mergedString
+'''
