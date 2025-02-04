@@ -6,6 +6,24 @@ class Solution:
         people.sort()
 
         while l <= r:
+            remaining = limit - people[r]
+            r -= 1 
+            count += 1
+
+            if l <= r and people[l] <= remaining:
+                l += 1
+             
+        return count
+
+'''
+class Solution:
+    def numRescueBoats(self, people: List[int], limit: int) -> int:
+        n = len(people)
+        l, r = 0, n - 1 
+        count = 0
+        people.sort()
+
+        while l <= r:
             if l == r:
                 count += 1
                 return count
@@ -20,3 +38,4 @@ class Solution:
             count += 1       
              
         return count
+'''
