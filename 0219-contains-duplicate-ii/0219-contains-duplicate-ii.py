@@ -1,5 +1,17 @@
 class Solution:
     def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
+        hashMap = {}
+
+        for i in range(len(nums)):
+            if nums[i] in hashMap and i - hashMap[nums[i]] <= k:
+                return True
+            hashMap[nums[i]] = i
+
+        return False
+
+'''
+class Solution:
+    def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
         L = 0 
         window = set()
 
@@ -12,6 +24,7 @@ class Solution:
             window.add(nums[R])
         
         return False
+'''
 
 '''
 class Solution:
