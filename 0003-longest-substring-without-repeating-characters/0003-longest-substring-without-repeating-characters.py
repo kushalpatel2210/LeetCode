@@ -9,7 +9,7 @@ class Solution:
             currChar = s[r]
             freq[currChar] += 1
 
-            while freq[currChar] != 1:
+            while freq[currChar] > 1:
                 freq[s[l]] -= 1
                 l += 1
             
