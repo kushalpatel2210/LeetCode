@@ -19,7 +19,6 @@ class Solution:
                     del store[s2[l]]
                 l += 1
 
-            # print(f"l {l} r {r} store {store}")
             if counterS1 == store:
                 return True
         
