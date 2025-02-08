@@ -82,6 +82,7 @@
 - 0649-dota2-senate
 - 0658-find-k-closest-elements
 - 0680-valid-palindrome-ii
+- 0682-baseball-game
 - 0724-find-pivot-index
 - 0735-asteroid-collision
 - 0782-jewels-and-stones
@@ -127,19 +128,3 @@
 - 2552-maximum-sum-of-distinct-subarrays-with-length-k
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0682-baseball-game](https://github.com/kushalpatel2210/LeetCode/tree/master/0682-baseball-game) |
-## Stack
-|  |
-| ------- |
-| [0682-baseball-game](https://github.com/kushalpatel2210/LeetCode/tree/master/0682-baseball-game) |
-## Simulation
-|  |
-| ------- |
-| [0682-baseball-game](https://github.com/kushalpatel2210/LeetCode/tree/master/0682-baseball-game) |
-<!---LeetCode Topics End-->
