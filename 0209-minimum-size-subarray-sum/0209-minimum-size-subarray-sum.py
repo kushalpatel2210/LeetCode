@@ -1,18 +1,16 @@
 class Solution:
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
-        i = 0 
-        minLength = float('inf')
-        currentSum = 0
+        l = 0
+        maxSum = 0
+        minSubSize = float('inf')
 
-        for j in range(len(nums)):
-            currentSum += nums[j]
-
-            # condition
-            while currentSum >= target:
-                minLength = min(minLength, j - i + 1)
-
-                # Shrink window 
-                currentSum -= nums[i]
-                i += 1
+        for r in range(len(nums)):
+            maxSum += nums[r]
+            # print(f"r {r} maxSum {maxSum}")
+            while maxSum >= target:
+                # print(f"inside l {l} maxSum")
+                minSubSize = min(minSubSize, r - l + 1)
+                maxSum -= nums[l]
+                l += 1
         
-        return minLength if minLength != float('inf') else 0
+        return 0 if minSubSize == float('inf') else minSubSize
