@@ -6,9 +6,7 @@ class Solution:
 
         for r in range(len(nums)):
             maxSum += nums[r]
-            # print(f"r {r} maxSum {maxSum}")
             while maxSum >= target:
-                # print(f"inside l {l} maxSum")
                 minSubSize = min(minSubSize, r - l + 1)
                 maxSum -= nums[l]
                 l += 1
