@@ -3,21 +3,28 @@ from collections import deque
 class MyStack:
 
     def __init__(self):
-        self.stack = deque()        
+        self.q1 = deque()
+        self.q2 = deque()        
 
     def push(self, x: int) -> None:
-        self.stack.append(x)
+        self.q2.append(x)
+
+        while self.q1:
+            self.q2.append(self.q1.popleft())
+
+        self.q1, self.q2 = self.q2, self.q1
 
     def pop(self) -> int:
-        element = self.stack.pop()
-        return element
+        return self.q1.popleft()
+        
 
     def top(self) -> int:
-        return self.stack[-1]
+        return self.q1[0]
+        
 
     def empty(self) -> bool:
-        return len(self.stack) == 0
-        
+        return len(self.q1) == 0
+
 
 # Your MyStack object will be instantiated and called as such:
 # obj = MyStack()
