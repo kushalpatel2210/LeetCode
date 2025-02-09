@@ -37,6 +37,7 @@
 - 0141-linked-list-cycle
 - 0142-linked-list-cycle-ii
 - 0143-reorder-list
+- 0150-evaluate-reverse-polish-notation
 - 0151-reverse-words-in-a-string
 - 0153-find-minimum-in-rotated-sorted-array
 - 0155-min-stack
@@ -131,19 +132,3 @@
 - 2552-maximum-sum-of-distinct-subarrays-with-length-k
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0150-evaluate-reverse-polish-notation](https://github.com/kushalpatel2210/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
-## Math
-|  |
-| ------- |
-| [0150-evaluate-reverse-polish-notation](https://github.com/kushalpatel2210/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
-## Stack
-|  |
-| ------- |
-| [0150-evaluate-reverse-polish-notation](https://github.com/kushalpatel2210/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
-<!---LeetCode Topics End-->
