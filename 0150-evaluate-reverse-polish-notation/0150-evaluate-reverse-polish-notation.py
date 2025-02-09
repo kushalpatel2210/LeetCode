@@ -3,7 +3,7 @@ class Solution:
         stack = []
 
         for token in tokens:
-            if token == '+' or token == '-' or token == '/' or token == '*':
+            if token in '-+*/':
                 pop1 = stack.pop()
                 pop2 = stack.pop()
                 res = 0
