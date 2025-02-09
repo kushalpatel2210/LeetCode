@@ -39,6 +39,7 @@
 - 0143-reorder-list
 - 0151-reverse-words-in-a-string
 - 0153-find-minimum-in-rotated-sorted-array
+- 0155-min-stack
 - 0167-two-sum-ii-input-array-is-sorted
 - 0169-majority-element
 - 0189-rotate-array
@@ -130,15 +131,3 @@
 - 2552-maximum-sum-of-distinct-subarrays-with-length-k
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Stack
-|  |
-| ------- |
-| [0155-min-stack](https://github.com/kushalpatel2210/LeetCode/tree/master/0155-min-stack) |
-## Design
-|  |
-| ------- |
-| [0155-min-stack](https://github.com/kushalpatel2210/LeetCode/tree/master/0155-min-stack) |
-<!---LeetCode Topics End-->
