@@ -6,10 +6,9 @@ class Solution:
         outputStack = []
         simplified = '/'
         pattern = r"[a-zA-Z._]+"
-        print(stack)
+
         while stack:
             curr = stack.pop()
-            print(curr)
 
             if curr == '' or curr == '.':
                 continue
@@ -25,9 +24,7 @@ class Solution:
                         count -= 1
             else:
                 outputStack.append(curr)
-        
-        print(outputStack)
-        
+                
         simplified += '/'.join(reversed(outputStack))
 
         return simplified
