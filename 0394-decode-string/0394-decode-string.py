@@ -6,14 +6,14 @@ class Solution:
             if s[i] != ']':
                 stack.append(s[i])
             else:
-                substr = ''
-                while stack[-1] != '[':
-                    substr = stack.pop() + substr
+                string = ""
+                while stack and stack[-1] != '[':
+                    string = stack.pop() + string
                 stack.pop()
 
-                k = ''
+                k = ""
                 while stack and stack[-1].isdigit():
                     k = stack.pop() + k
-                stack.append(int(k) * substr)
+                stack.append(int(k) * string)
         
         return "".join(stack)
