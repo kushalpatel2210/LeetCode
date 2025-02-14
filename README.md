@@ -21,6 +21,7 @@
 - 0049-group-anagrams
 - 0055-jump-game
 - 0058-length-of-last-word
+- 0069-sqrtx
 - 0071-simplify-path
 - 0076-minimum-window-substring
 - 0080-remove-duplicates-from-sorted-array-ii
@@ -140,15 +141,3 @@
 - 2552-maximum-sum-of-distinct-subarrays-with-length-k
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Math
-|  |
-| ------- |
-| [0069-sqrtx](https://github.com/kushalpatel2210/LeetCode/tree/master/0069-sqrtx) |
-## Binary Search
-|  |
-| ------- |
-| [0069-sqrtx](https://github.com/kushalpatel2210/LeetCode/tree/master/0069-sqrtx) |
-<!---LeetCode Topics End-->
