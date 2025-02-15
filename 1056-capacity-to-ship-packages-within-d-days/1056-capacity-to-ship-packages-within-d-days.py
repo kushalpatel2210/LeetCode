@@ -16,20 +16,14 @@ class Solution:
             while i < totalShipments:
                 currentWeight += weights[i]
 
-                if totalDays > days:
-                    break
-
                 if currentWeight <= m:
                     if i == totalShipments - 1:
                         totalDays += 1
                     i += 1
                     continue
-                # print(f" i {i} currentWeight {currentWeight}")
 
                 totalDays += 1
                 currentWeight = 0
-
-            # print(f"l {l} r {r} m {m} totalDays {totalDays}")
 
             if totalDays > days:
                 l = m + 1
