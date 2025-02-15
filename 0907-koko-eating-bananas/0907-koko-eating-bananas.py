@@ -13,7 +13,6 @@ class Solution:
             for pile in piles:
                 totalIterations += math.ceil(pile / m)
             
-            # print(f"totalIterations {totalIterations} l {l} r {r} mid {m}")
             if totalIterations > h:
                 l = m + 1
             else:
