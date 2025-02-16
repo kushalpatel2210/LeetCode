@@ -9,26 +9,27 @@ class TimeMap:
        self.hashMap[key].append((value, timestamp))
 
     def get(self, key: str, timestamp: int) -> str:
-        if key in self.hashMap:
-            l, r = 0, len(self.hashMap[key]) - 1 
-            diff = float('inf')
-            element = ""
-            # print(f"l {l} r {r}")
-            while l <= r:
-                m = l + (r - l) // 2
-                val, time = self.hashMap[key][m]
-                
-                if time <= timestamp and timestamp - time < diff:
-                    element = val
-                
-                if time < timestamp:
-                    l = m + 1
-                else:
-                    r = m - 1
+        l, r = 0, len(self.hashMap[key]) - 1 
+        diff = float('inf')
+        element = ""
+        # print(f"l {l} r {r}")
+        while l <= r:
+            m = l + (r - l) // 2
+            val, time = self.hashMap[key][m]
+            
+            if time <= timestamp and timestamp - time < diff:
+                element = val
+            
+            if time < timestamp:
+                l = m + 1
+            else:
+                r = m - 1
 
-            return element
-        else:
-            return ""
+        return element
+        # if key in self.hashMap:
+           
+        # else:
+        #     return ""
     
 
 # Your TimeMap object will be instantiated and called as such:
