@@ -12,7 +12,7 @@ class TimeMap:
         l, r = 0, len(self.hashMap[key]) - 1 
         diff = float('inf')
         element = ""
-        # print(f"l {l} r {r}")
+        
         while l <= r:
             m = l + (r - l) // 2
             val, time = self.hashMap[key][m]
@@ -26,11 +26,6 @@ class TimeMap:
                 r = m - 1
 
         return element
-        # if key in self.hashMap:
-           
-        # else:
-        #     return ""
-    
 
 # Your TimeMap object will be instantiated and called as such:
 # obj = TimeMap()
