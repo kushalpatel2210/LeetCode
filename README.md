@@ -26,6 +26,7 @@
 - 0074-search-a-2d-matrix
 - 0076-minimum-window-substring
 - 0080-remove-duplicates-from-sorted-array-ii
+- 0081-search-in-rotated-sorted-array-ii
 - 0082-remove-duplicates-from-sorted-list-ii
 - 0088-merge-sorted-array
 - 0092-reverse-linked-list-ii
@@ -144,15 +145,3 @@
 - 2552-maximum-sum-of-distinct-subarrays-with-length-k
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0081-search-in-rotated-sorted-array-ii](https://github.com/kushalpatel2210/LeetCode/tree/master/0081-search-in-rotated-sorted-array-ii) |
-## Binary Search
-|  |
-| ------- |
-| [0081-search-in-rotated-sorted-array-ii](https://github.com/kushalpatel2210/LeetCode/tree/master/0081-search-in-rotated-sorted-array-ii) |
-<!---LeetCode Topics End-->
