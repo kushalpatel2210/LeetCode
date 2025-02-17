@@ -9,6 +9,7 @@ class Solution:
             return None
         
         newHead = head
+        
         if head.next:
             newHead = self.reverseList(head.next)
             head.next.next = head
