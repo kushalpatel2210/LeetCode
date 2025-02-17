@@ -15,12 +15,8 @@ class Solution:
             else:
                 head.next = list2
                 list2 = list2.next
-            head = head.next
-        
-        if list1:
-            head.next = list1
-         
-        if list2:
-            head.next = list2
-        
+            head = head.next  
+
+        head.next = list1 or list2
+
         return curr.next
