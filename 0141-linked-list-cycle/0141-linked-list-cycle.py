@@ -4,10 +4,9 @@
 #         self.val = x
 #         self.next = None
 
-# Using Fast and Slow pointer
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
-        slow, fast = head, head
+        slow = fast = head
 
         while fast and fast.next:
             slow = slow.next
@@ -17,19 +16,3 @@ class Solution:
                 return True
         
         return False
-
-'''
-# Using set 
-class Solution:
-    def hasCycle(self, head: Optional[ListNode]) -> bool:
-        nodes = set()
-
-        while head:
-            if head not in nodes:
-                nodes.add(head)
-                head = head.next
-            else:
-                return True
-        
-        return False
-'''
