@@ -8,22 +8,20 @@ class Solution:
         """
         Do not return anything, modify head in-place instead.
         """
-        if not head:
-            return None
-
-        node = head 
-        stack = list()
-
-        while node:
-            stack.append(node)
-            node = node.next
+        stack = []
+        length = 0
+        dummy = head
         
+        while dummy:
+            length += 1
+            stack.append(dummy)
+            dummy = dummy.next
+
         curr = head
-        n = len(stack)
-        for _ in range((n - 1) // 2):
-            top = stack.pop()
-            top.next = curr.next
-            curr.next = top
-            curr = top.next
+        for _ in range((length - 1) // 2):
+            pop = stack.pop()
+            pop.next = curr.next
+            curr.next = pop
+            curr = pop.next
         
         stack.pop().next = None
