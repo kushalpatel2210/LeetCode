@@ -5,6 +5,14 @@
 #         self.next = next
 class Solution:
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        if not head or not head.next:
+            return head
+        head.next = self.deleteDuplicates(head.next)
+        return head if head.val != head.next.val else head.next
+
+'''
+class Solution:
+    def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
         node = ListNode(0, head)
         curr = node.next
 
@@ -15,6 +23,7 @@ class Solution:
                 curr = curr.next
         
         return node.next
+'''
 
 '''
 class Solution:
