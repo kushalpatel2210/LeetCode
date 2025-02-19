@@ -51,6 +51,7 @@
 - 0189-rotate-array
 - 0199-binary-tree-right-side-view
 - 0202-happy-number
+- 0203-remove-linked-list-elements
 - 0205-isomorphic-strings
 - 0206-reverse-linked-list
 - 0209-minimum-size-subarray-sum
@@ -147,15 +148,3 @@
 - 2552-maximum-sum-of-distinct-subarrays-with-length-k
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Linked List
-|  |
-| ------- |
-| [0203-remove-linked-list-elements](https://github.com/kushalpatel2210/LeetCode/tree/master/0203-remove-linked-list-elements) |
-## Recursion
-|  |
-| ------- |
-| [0203-remove-linked-list-elements](https://github.com/kushalpatel2210/LeetCode/tree/master/0203-remove-linked-list-elements) |
-<!---LeetCode Topics End-->
