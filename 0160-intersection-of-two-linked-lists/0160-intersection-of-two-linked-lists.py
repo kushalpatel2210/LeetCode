@@ -7,6 +7,14 @@
 class Solution:
     def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> Optional[ListNode]:
         nodeA, nodeB = headA, headB
+
+        while nodeA != nodeB:
+            nodeA = nodeA.next if nodeA else headB
+            nodeB = nodeB.next if nodeB else headA
+        return nodeA
+
+'''
+nodeA, nodeB = headA, headB
         seen = set()
 
         while nodeA:
@@ -19,3 +27,4 @@ class Solution:
             nodeB = nodeB.next
         
         return None
+'''
