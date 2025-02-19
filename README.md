@@ -47,6 +47,7 @@
 - 0151-reverse-words-in-a-string
 - 0153-find-minimum-in-rotated-sorted-array
 - 0155-min-stack
+- 0160-intersection-of-two-linked-lists
 - 0167-two-sum-ii-input-array-is-sorted
 - 0169-majority-element
 - 0189-rotate-array
@@ -149,19 +150,3 @@
 - 2552-maximum-sum-of-distinct-subarrays-with-length-k
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Hash Table
-|  |
-| ------- |
-| [0160-intersection-of-two-linked-lists](https://github.com/kushalpatel2210/LeetCode/tree/master/0160-intersection-of-two-linked-lists) |
-## Linked List
-|  |
-| ------- |
-| [0160-intersection-of-two-linked-lists](https://github.com/kushalpatel2210/LeetCode/tree/master/0160-intersection-of-two-linked-lists) |
-## Two Pointers
-|  |
-| ------- |
-| [0160-intersection-of-two-linked-lists](https://github.com/kushalpatel2210/LeetCode/tree/master/0160-intersection-of-two-linked-lists) |
-<!---LeetCode Topics End-->
