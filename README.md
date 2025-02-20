@@ -132,6 +132,7 @@
 - 1580-shuffle-the-array
 - 1586-longest-subarray-of-1s-after-deleting-one-element
 - 1651-shuffle-string
+- 1765-merge-in-between-linked-lists
 - 1768-merge-strings-alternately
 - 1777-determine-if-two-strings-are-close
 - 1797-goal-parser-interpretation
@@ -150,11 +151,3 @@
 - 2552-maximum-sum-of-distinct-subarrays-with-length-k
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Linked List
-|  |
-| ------- |
-| [1765-merge-in-between-linked-lists](https://github.com/kushalpatel2210/LeetCode/tree/master/1765-merge-in-between-linked-lists) |
-<!---LeetCode Topics End-->
