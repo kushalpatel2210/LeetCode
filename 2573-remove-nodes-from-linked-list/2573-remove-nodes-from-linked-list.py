@@ -5,6 +5,25 @@
 #         self.next = next
 class Solution:
     def removeNodes(self, head: Optional[ListNode]) -> Optional[ListNode]:        
+        stack = []
+        node = ListNode(0, head)
+
+        while head:
+            while stack and stack[-1] < head.val:
+                stack.pop()
+            stack.append(head.val)
+            head = head.next
+        
+        curr = res = ListNode()
+        for val in stack:
+            curr.next = ListNode(val)
+            curr = curr.next
+
+        return res.next
+
+'''
+class Solution:
+    def removeNodes(self, head: Optional[ListNode]) -> Optional[ListNode]:        
         def reverse(node):
             prev = None
             while node:
@@ -27,3 +46,4 @@ class Solution:
         res = reverse(reversedList.next)
 
         return res 
+'''
