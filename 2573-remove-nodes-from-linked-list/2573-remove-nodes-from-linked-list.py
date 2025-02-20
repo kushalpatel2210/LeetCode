@@ -6,8 +6,6 @@
 class Solution:
     def removeNodes(self, head: Optional[ListNode]) -> Optional[ListNode]:        
         def reverse(node):
-            nonlocal minVal
-
             prev = None
             while node:
                 tmp = node.next
