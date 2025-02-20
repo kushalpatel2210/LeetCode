@@ -16,14 +16,12 @@ class Solution:
             node2 = node2.next
 
         while list1:
-            # print(i)
             if i == a:
                 curr = list1
-                # print(curr)
 
                 for _ in range(b - a + 2):
                     list1 = list1.next
-                # print(list1)
+                    
                 curr.next = list2
                 lastNode.next.next = list1
                 return node1.next
