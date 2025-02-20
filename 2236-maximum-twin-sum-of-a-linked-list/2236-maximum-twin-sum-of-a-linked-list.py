@@ -5,24 +5,18 @@
 #         self.next = next
 class Solution:
     def pairSum(self, head: Optional[ListNode]) -> int:
-        curr = head 
-        maxSum = 0
-        store = dict()
-        i = 0
+        lst = list()
+        node = ListNode(0, head)
+        node = node.next
+        maxSum = float('-inf')
 
-        while curr:
-            store[i] = curr.val
-            curr = curr.next
-            i += 1
-        
-        curr = head
-        start = 0
-        
-        while curr:
-            twinIdx = i - 1 - start
-            currSum = curr.val + store[twinIdx]
+        while node:
+            lst.append(node.val)
+            node = node.next
+
+        n = len(lst) 
+        for i in range(n // 2):
+            currSum = lst[i] + lst[n - i - 1]
             maxSum = max(maxSum, currSum)
-            curr = curr.next
-            start += 1
 
         return maxSum
