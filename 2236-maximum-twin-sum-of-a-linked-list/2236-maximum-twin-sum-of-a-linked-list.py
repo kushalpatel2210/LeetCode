@@ -5,6 +5,37 @@
 #         self.next = next
 class Solution:
     def pairSum(self, head: Optional[ListNode]) -> int:
+        maxSum = float('-inf')
+
+        # find middle
+        slow = fast = head
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
+        
+        #reverse second half
+        second = slow
+        prev = None
+        while second:
+            temp = second.next
+            second.next = prev
+            prev = second
+            second = temp
+        
+        second = prev
+        
+        # find maxSum 
+        while second:
+            currSum = head.val + second.val
+            maxSum = max(maxSum, currSum)
+            head = head.next
+            second = second.next
+
+        return maxSum
+
+'''
+class Solution:
+    def pairSum(self, head: Optional[ListNode]) -> int:
         lst = list()
         node = ListNode(0, head)
         node = node.next
@@ -20,3 +51,5 @@ class Solution:
             maxSum = max(maxSum, currSum)
 
         return maxSum
+
+'''
