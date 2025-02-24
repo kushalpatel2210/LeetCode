@@ -6,15 +6,17 @@
 #         self.right = right
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
-        
-        def dfs_post_order(node):
+        height = float('-inf')
+
+        def dfs(node):
             if not node:
                 return 0
             
-            left_subtree = dfs_post_order(node.left)
-            right_subtree = dfs_post_order(node.right)
+            left = 1 + dfs(node.left)
+            right = 1 + dfs(node.right)
+            height = max(left, right)
 
-            # visit Node
-            return max(left_subtree, right_subtree) + 1
+            return height
+        
+        return dfs(root)
 
-        return dfs_post_order(root)
