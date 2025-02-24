@@ -5,16 +5,15 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:        
+    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
         def dfs_post_order(node):
             if not node:
                 return
             
-            right_subtree = dfs_post_order(node.right)
-            left_subtree = dfs_post_order(node.left)
-            node.left = right_subtree
-            node.right = left_subtree
-
-            return node
+            left = dfs_post_order(node.left)
+            right = dfs_post_order(node.right)
+            node.left, node.right = right, left
             
+            return node
+        
         return dfs_post_order(root)
