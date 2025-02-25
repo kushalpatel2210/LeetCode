@@ -17,9 +17,10 @@ class Solution:
             
             left = dfs(node.left)
             right = dfs(node.right)
- 
+             
             if abs(left - right) > 1:
                 result = False
+                return False
             
             return 1 + max(left, right)
 
