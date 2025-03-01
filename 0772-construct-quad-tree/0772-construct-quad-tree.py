@@ -20,7 +20,7 @@ class Solution:
                     if grid[r][c] != grid[r + i][c + j]:
                         allSame = False
                         break
-            
+
             if allSame:
                 return Node(grid[r][c], True)
             
