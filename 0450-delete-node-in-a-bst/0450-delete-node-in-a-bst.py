@@ -6,6 +6,40 @@
 #         self.right = right
 class Solution:
     def findSuccessor(self, node):
+        currNode = node.left
+        while currNode and currNode.right:
+            currNode = currNode.right
+        return currNode
+
+    def deleteNode(self, root: Optional[TreeNode], key: int) -> Optional[TreeNode]:
+        if not root:
+            return root
+        
+        if key < root.val:
+            root.left = self.deleteNode(root.left, key)
+        elif key > root.val:
+            root.right = self.deleteNode(root.right, key)
+        else:
+            # Found node
+
+            # left child is none
+            if not root.left:
+                return root.right
+            
+            # right child is none
+            if not root.right:
+                return root.left
+
+            # both child presents
+            successorNode = self.findSuccessor(root)
+            root.val = successorNode.val
+            root.left = self.deleteNode(root.left, successorNode.val)
+        
+        return root
+
+'''
+class Solution:
+    def findSuccessor(self, node):
         currNode = node.right
         while currNode and currNode.left:
             currNode = currNode.left
@@ -36,3 +70,4 @@ class Solution:
             root.right = self.deleteNode(root.right, successorNode.val)
         
         return root
+'''
