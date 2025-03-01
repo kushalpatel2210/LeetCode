@@ -33,6 +33,7 @@
 - 0092-reverse-linked-list-ii
 - 0094-binary-tree-inorder-traversal
 - 0100-same-tree
+- 0102-binary-tree-level-order-traversal
 - 0104-maximum-depth-of-binary-tree
 - 0110-balanced-binary-tree
 - 0121-best-time-to-buy-and-sell-stock
@@ -161,19 +162,3 @@
 - 2573-remove-nodes-from-linked-list
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Tree
-|  |
-| ------- |
-| [0102-binary-tree-level-order-traversal](https://github.com/kushalpatel2210/LeetCode/tree/master/0102-binary-tree-level-order-traversal) |
-## Breadth-First Search
-|  |
-| ------- |
-| [0102-binary-tree-level-order-traversal](https://github.com/kushalpatel2210/LeetCode/tree/master/0102-binary-tree-level-order-traversal) |
-## Binary Tree
-|  |
-| ------- |
-| [0102-binary-tree-level-order-traversal](https://github.com/kushalpatel2210/LeetCode/tree/master/0102-binary-tree-level-order-traversal) |
-<!---LeetCode Topics End-->
