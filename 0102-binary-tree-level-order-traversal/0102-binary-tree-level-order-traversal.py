@@ -15,18 +15,18 @@ class Solution:
 
         while queue:
             lenQ = len(queue)
-            curr = []
+            level = []
             
             for _ in range(lenQ):
                 node = queue.popleft()       
 
                 if node:
-                    curr.append(node.val)
+                    level.append(node.val)
                     queue.append(node.left)
                     queue.append(node.right)
             
-            if len(curr) >= 1:
-                res.append(curr)
+            if level:
+                res.append(level)
             currentLevel += 1
 
         return res
