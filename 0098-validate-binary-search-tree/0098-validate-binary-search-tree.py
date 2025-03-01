@@ -9,7 +9,7 @@ class Solution:
         def isValid(node, left, right):
             if not node:
                 return True
-            
+
             if not (left < node.val < right): 
                 return False 
             
