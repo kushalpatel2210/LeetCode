@@ -108,6 +108,7 @@
 - 0739-daily-temperatures
 - 0782-jewels-and-stones
 - 0783-search-in-a-binary-search-tree
+- 0784-insert-into-a-binary-search-tree
 - 0792-binary-search
 - 0816-design-hashset
 - 0817-design-hashmap
@@ -159,19 +160,3 @@
 - 2573-remove-nodes-from-linked-list
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Tree
-|  |
-| ------- |
-| [0784-insert-into-a-binary-search-tree](https://github.com/kushalpatel2210/LeetCode/tree/master/0784-insert-into-a-binary-search-tree) |
-## Binary Search Tree
-|  |
-| ------- |
-| [0784-insert-into-a-binary-search-tree](https://github.com/kushalpatel2210/LeetCode/tree/master/0784-insert-into-a-binary-search-tree) |
-## Binary Tree
-|  |
-| ------- |
-| [0784-insert-into-a-binary-search-tree](https://github.com/kushalpatel2210/LeetCode/tree/master/0784-insert-into-a-binary-search-tree) |
-<!---LeetCode Topics End-->
