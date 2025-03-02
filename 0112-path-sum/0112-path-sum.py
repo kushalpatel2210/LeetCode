@@ -16,7 +16,7 @@ class Solution:
             nonlocal currSum, hasPathSum
 
             if not node:
-                return
+                return hasPathSum
 
             currSum += node.val
             dfs(node.left)
