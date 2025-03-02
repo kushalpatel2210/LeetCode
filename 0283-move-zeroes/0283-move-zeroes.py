@@ -13,21 +13,4 @@ class Solution:
         while start < len(nums):
             nums[start] = 0
             start += 1
-
-        """
-        # High run time
-        start = 0
-
-        while start < len(nums):
-            if nums[start] != 0:
-                start += 1
-            else: 
-                end = start
-                while nums[end] == 0 and end < len(nums):
-                    if end == len(nums) - 1:
-                        break
-                    end += 1
-                nums[start] = nums[end]
-                nums[end] = 0
-                start += 1
-        """
+            
