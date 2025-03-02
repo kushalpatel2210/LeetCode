@@ -126,6 +126,7 @@
 - 0908-middle-of-the-linked-list
 - 0917-boats-to-save-people
 - 0931-maximum-frequency-stack
+- 0932-monotonic-array
 - 0937-online-stock-span
 - 0948-sort-an-array
 - 0969-number-of-recent-calls
@@ -166,11 +167,3 @@
 - 2573-remove-nodes-from-linked-list
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0932-monotonic-array](https://github.com/kushalpatel2210/LeetCode/tree/master/0932-monotonic-array) |
-<!---LeetCode Topics End-->
