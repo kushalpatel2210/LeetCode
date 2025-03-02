@@ -167,3 +167,19 @@
 - 2573-remove-nodes-from-linked-list
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [2112-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/kushalpatel2210/LeetCode/tree/master/2112-minimum-difference-between-highest-and-lowest-of-k-scores) |
+## Sliding Window
+|  |
+| ------- |
+| [2112-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/kushalpatel2210/LeetCode/tree/master/2112-minimum-difference-between-highest-and-lowest-of-k-scores) |
+## Sorting
+|  |
+| ------- |
+| [2112-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/kushalpatel2210/LeetCode/tree/master/2112-minimum-difference-between-highest-and-lowest-of-k-scores) |
+<!---LeetCode Topics End-->
