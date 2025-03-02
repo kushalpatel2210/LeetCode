@@ -7,6 +7,27 @@
 class Solution:
     def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
         elements = []
+        element = 0
+
+        def dfs(node):
+            nonlocal element 
+            if not node:
+                return
+            
+            dfs(node.left)
+            if len(elements) < k:
+                elements.append(node.val)
+            dfs(node.right)
+
+            return elements[-1]
+        
+        return dfs(root)
+
+'''
+# Brute force solution
+class Solution:
+    def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
+        elements = []
 
         def dfs(node):
             if not node:
@@ -19,3 +40,4 @@ class Solution:
         dfs(root)
         elements.sort()
         return elements[k - 1]
+'''
