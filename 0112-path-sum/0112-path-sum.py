@@ -16,7 +16,7 @@ class Solution:
             nonlocal currSum, hasPathSum
 
             if not node:
-                return hasPathSum
+                return
 
             currSum += node.val
             dfs(node.left)
@@ -24,9 +24,7 @@ class Solution:
             
             if not node.left and not node.right and currSum == targetSum:
                 hasPathSum = True
+            currSum -= node.val      
 
-            currSum -= node.val
-
-            return hasPathSum
-        
-        return dfs(root)
+        dfs(root)
+        return hasPathSum
