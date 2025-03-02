@@ -7,10 +7,8 @@
 class Solution:
     def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
         elements = []
-        element = 0
 
         def dfs(node):
-            nonlocal element 
             if not node:
                 return
             
