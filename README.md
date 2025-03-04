@@ -145,6 +145,7 @@
 - 1341-split-a-string-in-balanced-strings
 - 1392-find-the-difference-of-two-arrays
 - 1431-kids-with-the-greatest-number-of-candies
+- 1450-delete-leaves-with-a-given-value
 - 1528-kids-with-the-greatest-number-of-candies
 - 1544-count-good-nodes-in-binary-tree
 - 1567-maximum-number-of-vowels-in-a-substring-of-given-length
@@ -172,19 +173,3 @@
 - 2573-remove-nodes-from-linked-list
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Tree
-|  |
-| ------- |
-| [1450-delete-leaves-with-a-given-value](https://github.com/kushalpatel2210/LeetCode/tree/master/1450-delete-leaves-with-a-given-value) |
-## Depth-First Search
-|  |
-| ------- |
-| [1450-delete-leaves-with-a-given-value](https://github.com/kushalpatel2210/LeetCode/tree/master/1450-delete-leaves-with-a-given-value) |
-## Binary Tree
-|  |
-| ------- |
-| [1450-delete-leaves-with-a-given-value](https://github.com/kushalpatel2210/LeetCode/tree/master/1450-delete-leaves-with-a-given-value) |
-<!---LeetCode Topics End-->
