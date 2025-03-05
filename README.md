@@ -140,6 +140,7 @@
 - 1056-capacity-to-ship-packages-within-d-days
 - 1071-greatest-common-divisor-of-strings
 - 1116-maximum-level-sum-of-a-binary-tree
+- 1127-last-stone-weight
 - 1146-greatest-common-divisor-of-strings
 - 1205-defanging-an-ip-address
 - 1319-unique-number-of-occurrences
@@ -174,15 +175,3 @@
 - 2573-remove-nodes-from-linked-list
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [1127-last-stone-weight](https://github.com/kushalpatel2210/LeetCode/tree/master/1127-last-stone-weight) |
-## Heap (Priority Queue)
-|  |
-| ------- |
-| [1127-last-stone-weight](https://github.com/kushalpatel2210/LeetCode/tree/master/1127-last-stone-weight) |
-<!---LeetCode Topics End-->
