@@ -5,7 +5,7 @@ class Twitter:
 
     def __init__(self):
         self.followers = defaultdict(set)
-        self.postedTweets = defaultdict(list) # {followerId: (time, (userId, tweetId))}
+        self.postedTweets = defaultdict(list)
         self.time = 0
 
     def postTweet(self, userId: int, tweetId: int) -> None:
@@ -22,7 +22,6 @@ class Twitter:
         if userId in self.followers:
             followersList = self.followers[userId]
         followersList.add(userId) 
-        print(followersList)   
 
         for follower in followersList:
             followerPostedTweets = self.postedTweets[follower]
