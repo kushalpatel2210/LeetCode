@@ -14,10 +14,9 @@ class Twitter:
 
     def getNewsFeed(self, userId: int) -> List[int]:
         tweets = []
+        maxHeap = []
         totalTweets = 10
         followersList = set()
-        otherTweets = []
-        maxHeap = []
 
         if userId in self.followers:
             followersList = self.followers[userId]
