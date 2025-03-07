@@ -178,3 +178,19 @@
 - 2573-remove-nodes-from-linked-list
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [1962-single-threaded-cpu](https://github.com/kushalpatel2210/LeetCode/tree/master/1962-single-threaded-cpu) |
+## Sorting
+|  |
+| ------- |
+| [1962-single-threaded-cpu](https://github.com/kushalpatel2210/LeetCode/tree/master/1962-single-threaded-cpu) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [1962-single-threaded-cpu](https://github.com/kushalpatel2210/LeetCode/tree/master/1962-single-threaded-cpu) |
+<!---LeetCode Topics End-->
