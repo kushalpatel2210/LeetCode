@@ -9,7 +9,6 @@ class Solution:
         destinations = [] # (end, passengers)
         while passengerTrips:
             start, end, passengers = heapq.heappop(passengerTrips)
-            # print(f"start {start} end {end} passengers {passengers} capacity {capacity}")
             
             while destinations and destinations[0][0] <= start:
                 _, cap = heapq.heappop(destinations)
