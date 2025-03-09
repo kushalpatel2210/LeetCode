@@ -14,7 +14,6 @@ class Solution:
             if not maxHeap:
                 return res
             n = len(res)
-            print(f"res {res}")
             if n < 2:
                 count, char = heapq.heappop(maxHeap)
                 res += char
@@ -23,16 +22,13 @@ class Solution:
                     heapq.heappush(maxHeap, (count, char))
             else:
                 first, second = res[n - 1], res[n - 2]
-                print(f"inside else first {first} second {second}")
                 count, char = heapq.heappop(maxHeap)
                 if first != second or not (first == second == char):
-                    print("inside if")
                     res += char
                     count += 1
                     if count < 0:
                         heapq.heappush(maxHeap, (count, char))
                 elif maxHeap and first == second == char: 
-                    print("inside elif")
                     count2, char2 = heapq.heappop(maxHeap)
                     res += char2
                     count2 += 1
@@ -41,7 +37,6 @@ class Solution:
                     if count < 0:
                         heapq.heappush(maxHeap, (count, char))
                 else:
-                    print("inside else")
                     return res
 
         return res  
