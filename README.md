@@ -147,6 +147,7 @@
 - 1127-last-stone-weight
 - 1146-greatest-common-divisor-of-strings
 - 1205-defanging-an-ip-address
+- 1304-longest-happy-string
 - 1319-unique-number-of-occurrences
 - 1341-split-a-string-in-balanced-strings
 - 1392-find-the-difference-of-two-arrays
@@ -180,19 +181,3 @@
 - 2573-remove-nodes-from-linked-list
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## String
-|  |
-| ------- |
-| [1304-longest-happy-string](https://github.com/kushalpatel2210/LeetCode/tree/master/1304-longest-happy-string) |
-## Greedy
-|  |
-| ------- |
-| [1304-longest-happy-string](https://github.com/kushalpatel2210/LeetCode/tree/master/1304-longest-happy-string) |
-## Heap (Priority Queue)
-|  |
-| ------- |
-| [1304-longest-happy-string](https://github.com/kushalpatel2210/LeetCode/tree/master/1304-longest-happy-string) |
-<!---LeetCode Topics End-->
