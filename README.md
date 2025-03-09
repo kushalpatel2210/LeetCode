@@ -180,3 +180,19 @@
 - 2573-remove-nodes-from-linked-list
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## String
+|  |
+| ------- |
+| [1304-longest-happy-string](https://github.com/kushalpatel2210/LeetCode/tree/master/1304-longest-happy-string) |
+## Greedy
+|  |
+| ------- |
+| [1304-longest-happy-string](https://github.com/kushalpatel2210/LeetCode/tree/master/1304-longest-happy-string) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [1304-longest-happy-string](https://github.com/kushalpatel2210/LeetCode/tree/master/1304-longest-happy-string) |
+<!---LeetCode Topics End-->
