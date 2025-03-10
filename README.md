@@ -25,6 +25,7 @@
 - 0071-simplify-path
 - 0074-search-a-2d-matrix
 - 0076-minimum-window-substring
+- 0078-subsets
 - 0080-remove-duplicates-from-sorted-array-ii
 - 0081-search-in-rotated-sorted-array-ii
 - 0082-remove-duplicates-from-sorted-list-ii
@@ -182,19 +183,3 @@
 - 2573-remove-nodes-from-linked-list
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0078-subsets](https://github.com/kushalpatel2210/LeetCode/tree/master/0078-subsets) |
-## Backtracking
-|  |
-| ------- |
-| [0078-subsets](https://github.com/kushalpatel2210/LeetCode/tree/master/0078-subsets) |
-## Bit Manipulation
-|  |
-| ------- |
-| [0078-subsets](https://github.com/kushalpatel2210/LeetCode/tree/master/0078-subsets) |
-<!---LeetCode Topics End-->
