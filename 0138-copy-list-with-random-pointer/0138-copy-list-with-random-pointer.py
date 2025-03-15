@@ -1,4 +1,3 @@
-from collections import defaultdict
 """
 # Definition for a Node.
 class Node:
@@ -10,35 +9,22 @@ class Node:
 
 class Solution:
     def copyRandomList(self, head: 'Optional[Node]') -> 'Optional[Node]':
-        hashMap = defaultdict(lambda: Node(0))
-        hashMap[None] = None
+        copy = head
+        res = headNode = node = Node(0)
+        dct = {}
 
-        curr = head
-        while curr:
-            hashMap[curr].val = curr.val
-            hashMap[curr].next = hashMap[curr.next]
-            hashMap[curr].random = hashMap[curr.random]
-            curr = curr.next
-        
-        return hashMap[head]
-        
-'''
-class Solution:
-    def copyRandomList(self, head: 'Optional[Node]') -> 'Optional[Node]':
-        hashMap = {}
-        curr = node = head 
-
-        if not head:
-            return None
-
-        while curr:
-            hashMap[curr] = Node(curr.val)
-            curr = curr.next
-
-        while node:
-            hashMap[node].next = hashMap[node.next] if node.next else None
-            hashMap[node].random = hashMap[node.random] if node.random else None
+        while head:
+            node.next = Node(head.val, head.next)
+            dct[head] = node.next
+            head = head.next
             node = node.next
+        
+        headNode = headNode.next
+        while copy:
+            if copy.random:
+                headNode.random = dct[copy.random]
+            copy = copy.next
+            headNode = headNode.next
+        
+        return res.next
 
-        return hashMap[head]
-'''
