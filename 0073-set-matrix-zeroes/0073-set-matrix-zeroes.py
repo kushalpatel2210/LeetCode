@@ -5,7 +5,7 @@ class Solution:
         """
         r = len(matrix)
         c = len(matrix[0])
-        rows, cols = set(), set()
+        rows, cols = set(), set() # Rows and Cols that has zero value
         
         for i in range(r):
             for j in range(c):
