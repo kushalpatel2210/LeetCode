@@ -26,6 +26,7 @@
 - 0058-length-of-last-word
 - 0069-sqrtx
 - 0071-simplify-path
+- 0073-set-matrix-zeroes
 - 0074-search-a-2d-matrix
 - 0076-minimum-window-substring
 - 0077-combinations
@@ -190,19 +191,3 @@
 - 2576-minimum-penalty-for-a-shop
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0073-set-matrix-zeroes](https://github.com/kushalpatel2210/LeetCode/tree/master/0073-set-matrix-zeroes) |
-## Hash Table
-|  |
-| ------- |
-| [0073-set-matrix-zeroes](https://github.com/kushalpatel2210/LeetCode/tree/master/0073-set-matrix-zeroes) |
-## Matrix
-|  |
-| ------- |
-| [0073-set-matrix-zeroes](https://github.com/kushalpatel2210/LeetCode/tree/master/0073-set-matrix-zeroes) |
-<!---LeetCode Topics End-->
