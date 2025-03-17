@@ -192,3 +192,11 @@
 - 2576-minimum-penalty-for-a-shop
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [1231-replace-elements-with-greatest-element-on-right-side](https://github.com/kushalpatel2210/LeetCode/tree/master/1231-replace-elements-with-greatest-element-on-right-side) |
+<!---LeetCode Topics End-->
