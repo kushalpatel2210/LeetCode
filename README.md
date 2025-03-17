@@ -156,6 +156,7 @@
 - 1146-greatest-common-divisor-of-strings
 - 1184-car-pooling
 - 1205-defanging-an-ip-address
+- 1231-replace-elements-with-greatest-element-on-right-side
 - 1304-longest-happy-string
 - 1319-unique-number-of-occurrences
 - 1341-split-a-string-in-balanced-strings
@@ -192,11 +193,3 @@
 - 2576-minimum-penalty-for-a-shop
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [1231-replace-elements-with-greatest-element-on-right-side](https://github.com/kushalpatel2210/LeetCode/tree/master/1231-replace-elements-with-greatest-element-on-right-side) |
-<!---LeetCode Topics End-->
