@@ -204,6 +204,7 @@
 ## String
 |  |
 | ------- |
+| [0058-length-of-last-word](https://github.com/kushalpatel2210/LeetCode/tree/master/0058-length-of-last-word) |
 | [0392-is-subsequence](https://github.com/kushalpatel2210/LeetCode/tree/master/0392-is-subsequence) |
 ## Dynamic Programming
 |  |
