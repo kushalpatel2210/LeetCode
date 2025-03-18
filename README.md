@@ -194,3 +194,19 @@
 - 2576-minimum-penalty-for-a-shop
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Two Pointers
+|  |
+| ------- |
+| [0392-is-subsequence](https://github.com/kushalpatel2210/LeetCode/tree/master/0392-is-subsequence) |
+## String
+|  |
+| ------- |
+| [0392-is-subsequence](https://github.com/kushalpatel2210/LeetCode/tree/master/0392-is-subsequence) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0392-is-subsequence](https://github.com/kushalpatel2210/LeetCode/tree/master/0392-is-subsequence) |
+<!---LeetCode Topics End-->
