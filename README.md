@@ -47,6 +47,7 @@
 - 0108-convert-sorted-array-to-binary-search-tree
 - 0110-balanced-binary-tree
 - 0112-path-sum
+- 0118-pascals-triangle
 - 0121-best-time-to-buy-and-sell-stock
 - 0122-best-time-to-buy-and-sell-stock-ii
 - 0125-valid-palindrome
@@ -194,15 +195,3 @@
 - 2576-minimum-penalty-for-a-shop
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0118-pascals-triangle](https://github.com/kushalpatel2210/LeetCode/tree/master/0118-pascals-triangle) |
-## Dynamic Programming
-|  |
-| ------- |
-| [0118-pascals-triangle](https://github.com/kushalpatel2210/LeetCode/tree/master/0118-pascals-triangle) |
-<!---LeetCode Topics End-->
