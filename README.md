@@ -146,6 +146,7 @@
 - 0932-monotonic-array
 - 0937-online-stock-span
 - 0948-sort-an-array
+- 0965-unique-email-addresses
 - 0969-number-of-recent-calls
 - 1014-k-closest-points-to-origin
 - 1023-time-based-key-value-store
@@ -196,19 +197,3 @@
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
 - 3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0965-unique-email-addresses](https://github.com/kushalpatel2210/LeetCode/tree/master/0965-unique-email-addresses) |
-## Hash Table
-|  |
-| ------- |
-| [0965-unique-email-addresses](https://github.com/kushalpatel2210/LeetCode/tree/master/0965-unique-email-addresses) |
-## String
-|  |
-| ------- |
-| [0965-unique-email-addresses](https://github.com/kushalpatel2210/LeetCode/tree/master/0965-unique-email-addresses) |
-<!---LeetCode Topics End-->
