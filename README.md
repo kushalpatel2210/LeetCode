@@ -199,3 +199,19 @@
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
 - 3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [2231-find-first-palindromic-string-in-the-array](https://github.com/kushalpatel2210/LeetCode/tree/master/2231-find-first-palindromic-string-in-the-array) |
+## Two Pointers
+|  |
+| ------- |
+| [2231-find-first-palindromic-string-in-the-array](https://github.com/kushalpatel2210/LeetCode/tree/master/2231-find-first-palindromic-string-in-the-array) |
+## String
+|  |
+| ------- |
+| [2231-find-first-palindromic-string-in-the-array](https://github.com/kushalpatel2210/LeetCode/tree/master/2231-find-first-palindromic-string-in-the-array) |
+<!---LeetCode Topics End-->
