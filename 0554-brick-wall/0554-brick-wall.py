@@ -2,7 +2,7 @@ from collections import defaultdict
 class Solution:
     def leastBricks(self, wall: List[List[int]]) -> int:
         res = float('inf')
-        totalLength = sum(wall[0])
+        totalWidth = sum(wall[0])
         hashMap = defaultdict(int)
 
         for bricks in wall:
@@ -15,7 +15,7 @@ class Solution:
             return len(wall)
 
         for intersection, noOfIntersections in hashMap.items():
-            if intersection < totalLength:
+            if intersection < totalWidth:
                 res = min(res, len(wall) - noOfIntersections)
 
         return res
