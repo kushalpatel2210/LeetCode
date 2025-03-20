@@ -113,6 +113,7 @@
 - 0535-encode-and-decode-tinyurl
 - 0543-diameter-of-binary-tree
 - 0547-number-of-provinces
+- 0554-brick-wall
 - 0560-subarray-sum-equals-k
 - 0567-permutation-in-string
 - 0572-subtree-of-another-tree
@@ -198,15 +199,3 @@
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
 - 3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0554-brick-wall](https://github.com/kushalpatel2210/LeetCode/tree/master/0554-brick-wall) |
-## Hash Table
-|  |
-| ------- |
-| [0554-brick-wall](https://github.com/kushalpatel2210/LeetCode/tree/master/0554-brick-wall) |
-<!---LeetCode Topics End-->
