@@ -10,6 +10,5 @@ class Solution:
                     stack.pop()
                 else: 
                     stack.append(char)
-        print(stack)
-                
+                                    
         return "".join(stack)
