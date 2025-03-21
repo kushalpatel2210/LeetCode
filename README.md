@@ -176,6 +176,7 @@
 - 1586-longest-subarray-of-1s-after-deleting-one-element
 - 1621-number-of-subsequences-that-satisfy-the-given-sum-condition
 - 1651-shuffle-string
+- 1666-make-the-string-great
 - 1765-merge-in-between-linked-lists
 - 1768-merge-strings-alternately
 - 1777-determine-if-two-strings-are-close
@@ -203,15 +204,3 @@
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
 - 3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## String
-|  |
-| ------- |
-| [1666-make-the-string-great](https://github.com/kushalpatel2210/LeetCode/tree/master/1666-make-the-string-great) |
-## Stack
-|  |
-| ------- |
-| [1666-make-the-string-great](https://github.com/kushalpatel2210/LeetCode/tree/master/1666-make-the-string-great) |
-<!---LeetCode Topics End-->
