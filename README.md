@@ -151,6 +151,7 @@
 - 0948-sort-an-array
 - 0965-unique-email-addresses
 - 0969-number-of-recent-calls
+- 0983-validate-stack-sequences
 - 1014-k-closest-points-to-origin
 - 1023-time-based-key-value-store
 - 1046-max-consecutive-ones-iii
@@ -204,19 +205,3 @@
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
 - 3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0983-validate-stack-sequences](https://github.com/kushalpatel2210/LeetCode/tree/master/0983-validate-stack-sequences) |
-## Stack
-|  |
-| ------- |
-| [0983-validate-stack-sequences](https://github.com/kushalpatel2210/LeetCode/tree/master/0983-validate-stack-sequences) |
-## Simulation
-|  |
-| ------- |
-| [0983-validate-stack-sequences](https://github.com/kushalpatel2210/LeetCode/tree/master/0983-validate-stack-sequences) |
-<!---LeetCode Topics End-->
