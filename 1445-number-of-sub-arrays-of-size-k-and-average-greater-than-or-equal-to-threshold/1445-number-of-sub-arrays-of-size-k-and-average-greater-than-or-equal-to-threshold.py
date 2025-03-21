@@ -7,15 +7,14 @@ class Solution:
         for r in range(len(arr)):
             currSum += arr[r]
 
+            # expand Window until received size of k 
             if r - l + 1 < k:
-                # print(f"r {r} arr[r] {arr[r]}")
                 continue
-            
-            # print(f"l {l} r {r} currSum {currSum}")
-            
+                        
             if currSum / k >= threshold:
                 res += 1
 
+            # Shrink Window
             currSum -= arr[l]
             l += 1
 
