@@ -100,6 +100,7 @@
 - 0345-reverse-vowels-of-a-string
 - 0347-top-k-frequent-elements
 - 0355-design-twitter
+- 0367-valid-perfect-square
 - 0374-guess-number-higher-or-lower
 - 0380-insert-delete-getrandom-o1
 - 0383-ransom-note
@@ -207,15 +208,3 @@
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
 - 3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Math
-|  |
-| ------- |
-| [0367-valid-perfect-square](https://github.com/kushalpatel2210/LeetCode/tree/master/0367-valid-perfect-square) |
-## Binary Search
-|  |
-| ------- |
-| [0367-valid-perfect-square](https://github.com/kushalpatel2210/LeetCode/tree/master/0367-valid-perfect-square) |
-<!---LeetCode Topics End-->
