@@ -107,6 +107,7 @@
 - 0394-decode-string
 - 0424-longest-repeating-character-replacement
 - 0437-path-sum-iii
+- 0441-arranging-coins
 - 0443-string-compression
 - 0450-delete-node-in-a-bst
 - 0455-assign-cookies
@@ -205,15 +206,3 @@
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
 - 3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Math
-|  |
-| ------- |
-| [0441-arranging-coins](https://github.com/kushalpatel2210/LeetCode/tree/master/0441-arranging-coins) |
-## Binary Search
-|  |
-| ------- |
-| [0441-arranging-coins](https://github.com/kushalpatel2210/LeetCode/tree/master/0441-arranging-coins) |
-<!---LeetCode Topics End-->
