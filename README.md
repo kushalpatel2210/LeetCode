@@ -180,6 +180,7 @@
 - 1567-maximum-number-of-vowels-in-a-substring-of-given-length
 - 1580-shuffle-the-array
 - 1586-longest-subarray-of-1s-after-deleting-one-element
+- 1619-path-crossing
 - 1621-number-of-subsequences-that-satisfy-the-given-sum-condition
 - 1635-number-of-good-pairs
 - 1651-shuffle-string
@@ -211,15 +212,3 @@
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
 - 3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Hash Table
-|  |
-| ------- |
-| [1619-path-crossing](https://github.com/kushalpatel2210/LeetCode/tree/master/1619-path-crossing) |
-## String
-|  |
-| ------- |
-| [1619-path-crossing](https://github.com/kushalpatel2210/LeetCode/tree/master/1619-path-crossing) |
-<!---LeetCode Topics End-->
