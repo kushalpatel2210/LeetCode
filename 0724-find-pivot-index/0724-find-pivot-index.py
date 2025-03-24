@@ -8,8 +8,6 @@ class Solution:
             leftSum += 0 if i == 0 else nums[i - 1]
             rightSum = totalSum - leftSum - nums[i] if i < len(nums) - 1 else 0
 
-            print(leftSum, rightSum)
-
             if leftSum == rightSum:
                 return i
 
