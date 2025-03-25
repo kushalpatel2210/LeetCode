@@ -205,6 +205,7 @@
 - 2216-delete-the-middle-node-of-a-linked-list
 - 2231-find-first-palindromic-string-in-the-array
 - 2236-maximum-twin-sum-of-a-linked-list
+- 2346-largest-3-same-digit-number-in-string
 - 2428-equal-row-and-column-pairs
 - 2470-removing-stars-from-a-string
 - 2478-longest-nice-subarray
@@ -214,11 +215,3 @@
 - 2876-number-of-employees-who-met-the-target
 - 2917-count-pairs-whose-sum-is-less-than-target
 - 3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## String
-|  |
-| ------- |
-| [2346-largest-3-same-digit-number-in-string](https://github.com/kushalpatel2210/LeetCode/tree/master/2346-largest-3-same-digit-number-in-string) |
-<!---LeetCode Topics End-->
