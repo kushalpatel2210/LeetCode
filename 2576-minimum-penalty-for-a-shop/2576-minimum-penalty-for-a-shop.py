@@ -1,21 +1,21 @@
 class Solution:
     def bestClosingTime(self, customers: str) -> int:
-        n = len(customers)
-        count_y = customers.count('Y')
-        count_n = 0
+        no_of_y = customers.count('Y')
+        no_of_n = 0
         penalty = float('inf')
-        closing_hour = 0
+        res = 0
 
-        for i in range(n + 1):
-            curr_penalty = count_y + count_n
-            if curr_penalty < penalty:
-                penalty = curr_penalty
-                closing_hour = i
+        for i in range(len(customers) + 1):
+            curr_penalty = no_of_y + no_of_n
             
-            if i < n:
+            if curr_penalty < penalty:
+                res = i
+                penalty = curr_penalty
+
+            if i < len(customers):
                 if customers[i] == 'Y':
-                    count_y -= 1
-                if customers[i] == 'N':
-                    count_n += 1
-        
-        return closing_hour
+                    no_of_y -= 1
+                else:
+                    no_of_n += 1
+                
+        return res
