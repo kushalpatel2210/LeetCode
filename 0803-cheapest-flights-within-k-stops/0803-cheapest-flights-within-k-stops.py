@@ -2,7 +2,7 @@ class Solution:
     def findCheapestPrice(self, n: int, flights: List[List[int]], src: int, dst: int, k: int) -> int:
         adj = defaultdict(list)
         prices = [float('inf')] * n
-        # prices[src] = 0
+        prices[src] = 0
 
         for source, destination, cost in flights:
             adj[source].append((destination, cost)) # node, weight
