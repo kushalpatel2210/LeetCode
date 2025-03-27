@@ -217,3 +217,19 @@
 - 2888-minimum-index-of-a-valid-split
 - 2917-count-pairs-whose-sum-is-less-than-target
 - 3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [2888-minimum-index-of-a-valid-split](https://github.com/kushalpatel2210/LeetCode/tree/master/2888-minimum-index-of-a-valid-split) |
+## Hash Table
+|  |
+| ------- |
+| [2888-minimum-index-of-a-valid-split](https://github.com/kushalpatel2210/LeetCode/tree/master/2888-minimum-index-of-a-valid-split) |
+## Sorting
+|  |
+| ------- |
+| [2888-minimum-index-of-a-valid-split](https://github.com/kushalpatel2210/LeetCode/tree/master/2888-minimum-index-of-a-valid-split) |
+<!---LeetCode Topics End-->
