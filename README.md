@@ -215,6 +215,7 @@
 - 2552-maximum-sum-of-distinct-subarrays-with-length-k
 - 2573-remove-nodes-from-linked-list
 - 2576-minimum-penalty-for-a-shop
+- 2743-debounce
 - 2876-number-of-employees-who-met-the-target
 - 2888-minimum-index-of-a-valid-split
 - 2917-count-pairs-whose-sum-is-less-than-target
