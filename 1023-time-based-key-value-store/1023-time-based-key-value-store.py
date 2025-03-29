@@ -11,14 +11,21 @@ class TimeMap:
         
 
     def get(self, key: str, timestamp: int) -> str:
-        if key in self.map:
-            values = self.map[key]
-            for i in range(len(values) - 1, -1 , -1):
-                if values[i][1] <= timestamp:
-                    return values[i][0]
-        
-        return ""
+        l, r = 0, len(self.map[key]) - 1
+        element = ""
+        diff = float('inf')
 
+        while l <= r:
+            mid = l + (r - l) // 2
+            val, time = self.map[key][mid]
+            
+            if time <= timestamp:
+                element = val
+                l = mid + 1
+            else:
+                r = mid - 1
+        
+        return element
 
 # Your TimeMap object will be instantiated and called as such:
 # obj = TimeMap()
