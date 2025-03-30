@@ -2,17 +2,18 @@ class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
         res = []
 
-        def dfs(i, curr, total):
+        def dfs(i, currPath, total):
             if total == target:
-                res.append(curr.copy())
+                res.append(currPath.copy())
                 return
+
             if i >= len(candidates) or total > target:
                 return
             
-            curr.append(candidates[i])
-            dfs(i, curr, total + candidates[i])
-            curr.pop()
-            dfs(i + 1, curr, total)
+            currPath.append(candidates[i])
+            dfs(i, currPath, total + candidates[i])
+            currPath.pop()
+            dfs(i + 1, currPath, total)
         
         dfs(0, [], 0)
         return res
