@@ -23,7 +23,7 @@ class AuthenticationManager:
     def countUnexpiredTokens(self, currentTime: int) -> int:
         while self.minHeap and self.minHeap[0][0] <= currentTime:
             expiry, tokenId = heapq.heappop(self.minHeap)
-            if self.hashMap[tokenId] == expiry:
+            if self.hashMap[tokenId] <= expiry:
                 del self.hashMap[tokenId]
         return len(self.hashMap)
 
