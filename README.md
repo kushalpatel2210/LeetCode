@@ -221,3 +221,23 @@
 - 2888-minimum-index-of-a-valid-split
 - 2917-count-pairs-whose-sum-is-less-than-target
 - 3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Hash Table
+|  |
+| ------- |
+| [1905-design-authentication-manager](https://github.com/kushalpatel2210/LeetCode/tree/master/1905-design-authentication-manager) |
+## Linked List
+|  |
+| ------- |
+| [1905-design-authentication-manager](https://github.com/kushalpatel2210/LeetCode/tree/master/1905-design-authentication-manager) |
+## Design
+|  |
+| ------- |
+| [1905-design-authentication-manager](https://github.com/kushalpatel2210/LeetCode/tree/master/1905-design-authentication-manager) |
+## Doubly-Linked List
+|  |
+| ------- |
+| [1905-design-authentication-manager](https://github.com/kushalpatel2210/LeetCode/tree/master/1905-design-authentication-manager) |
+<!---LeetCode Topics End-->
