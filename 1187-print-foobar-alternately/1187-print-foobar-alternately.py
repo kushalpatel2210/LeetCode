@@ -1,24 +1,25 @@
-from threading import Lock
+from threading import Semaphore
 
 class FooBar:
     def __init__(self, n):
         self.n = n
-        self.l1 = Lock()
-        self.l2 = Lock()
-        self.l2.acquire()
-
+        self.sem_foo = Semaphore(1)
+        self.sem_bar = Semaphore(0)
+ 
 
     def foo(self, printFoo: 'Callable[[], None]') -> None:
+        
         for i in range(self.n):
-            self.l1.acquire()
+            self.sem_foo.acquire()
             # printFoo() outputs "foo". Do not change or remove this line.
             printFoo()
-            self.l2.release()
+            self.sem_bar.release()
 
 
     def bar(self, printBar: 'Callable[[], None]') -> None:
+        
         for i in range(self.n):
-            self.l2.acquire()
+            self.sem_bar.acquire()
             # printBar() outputs "bar". Do not change or remove this line.
             printBar()
-            self.l1.release()
+            self.sem_foo.release()
