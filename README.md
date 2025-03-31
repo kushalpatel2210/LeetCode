@@ -170,6 +170,7 @@
 - 1127-last-stone-weight
 - 1146-greatest-common-divisor-of-strings
 - 1184-car-pooling
+- 1187-print-foobar-alternately
 - 1203-print-in-order
 - 1205-defanging-an-ip-address
 - 1231-replace-elements-with-greatest-element-on-right-side
@@ -223,11 +224,3 @@
 - 2888-minimum-index-of-a-valid-split
 - 2917-count-pairs-whose-sum-is-less-than-target
 - 3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Concurrency
-|  |
-| ------- |
-| [1187-print-foobar-alternately](https://github.com/kushalpatel2210/LeetCode/tree/master/1187-print-foobar-alternately) |
-<!---LeetCode Topics End-->
