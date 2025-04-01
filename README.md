@@ -173,6 +173,7 @@
 - 1187-print-foobar-alternately
 - 1203-print-in-order
 - 1205-defanging-an-ip-address
+- 1216-print-zero-even-odd
 - 1231-replace-elements-with-greatest-element-on-right-side
 - 1304-longest-happy-string
 - 1319-unique-number-of-occurrences
@@ -224,11 +225,3 @@
 - 2888-minimum-index-of-a-valid-split
 - 2917-count-pairs-whose-sum-is-less-than-target
 - 3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Concurrency
-|  |
-| ------- |
-| [1216-print-zero-even-odd](https://github.com/kushalpatel2210/LeetCode/tree/master/1216-print-zero-even-odd) |
-<!---LeetCode Topics End-->
