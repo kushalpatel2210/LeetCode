@@ -3,29 +3,34 @@ import heapq
 class AuthenticationManager:
 
     def __init__(self, timeToLive: int):
+        self.authManager = dict() # tokenId, expiry
+        self.minHeap = [] #(expiryTime, tokenId)
         self.ttl = timeToLive
-        self.hashMap = dict()
-        self.minHeap = [] # (expirationTime, key)
+
 
     def generate(self, tokenId: str, currentTime: int) -> None:
-        tokenExpiration = currentTime + self.ttl
-        self.hashMap[tokenId] = tokenExpiration
-        heapq.heappush(self.minHeap, (tokenExpiration, tokenId))
+        tokenExpiry = currentTime + self.ttl
+        self.authManager[tokenId] = tokenExpiry
+        heapq.heappush(self.minHeap, (tokenExpiry, tokenId))
 
     def renew(self, tokenId: str, currentTime: int) -> None:
-        if tokenId in self.hashMap:
-            tokenExpiry = self.hashMap[tokenId]
-            if tokenExpiry > currentTime:
-                tokenNewExpiry = currentTime + self.ttl
-                self.hashMap[tokenId] = tokenNewExpiry
-                heapq.heappush(self.minHeap, (tokenNewExpiry, tokenId))
+        if tokenId in self.authManager:
+            currExpiryOfToken = self.authManager[tokenId]
+            if currExpiryOfToken > currentTime:
+                newExpiry = currentTime + self.ttl
+                self.authManager[tokenId] = newExpiry
+                heapq.heappush(self.minHeap, (newExpiry, tokenId))
 
     def countUnexpiredTokens(self, currentTime: int) -> int:
         while self.minHeap and self.minHeap[0][0] <= currentTime:
             expiry, tokenId = heapq.heappop(self.minHeap)
-            if self.hashMap[tokenId] <= expiry:
-                del self.hashMap[tokenId]
-        return len(self.hashMap)
+            if tokenId in self.authManager and self.authManager[tokenId] <= currentTime:
+                del self.authManager[tokenId]
+        
+        return len(self.authManager)
+
+        
+
 
 # Your AuthenticationManager object will be instantiated and called as such:
 # obj = AuthenticationManager(timeToLive)
