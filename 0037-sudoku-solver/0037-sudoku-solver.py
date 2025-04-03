@@ -2,36 +2,28 @@ from collections import defaultdict
 
 class Solution:
     def solveSudoku(self, board: List[List[str]]) -> None:
+        """
+        Do not return anything, modify board in-place instead.
+        """
         self.board = board
-        self.row= defaultdict(set)
-        self.col= defaultdict(set)
-        self.box= defaultdict(set)
-        self.empty=[]
+        self.rows = defaultdict(set)
+        self.cols = defaultdict(set)
+        self.squares = defaultdict(set)
+        self.empty = [] # (row, col) with empty spaces
         self.initialize()
         self.solve(0)
 
-    def initialize(self): 
+    def initialize(self):
         for r in range(9):
             for c in range(9):
-                val = self.board[r][c]
-                if val != ".":
-                    self.row[r].add(val)
-                    self.col[c].add(val)
-                    self.box[(r //3, c // 3)].add(val)
+                num = self.board[r][c]
+
+                if num != '.':
+                    self.rows[r].add(num)
+                    self.cols[c].add(num)
+                    self.squares[(r // 3, c // 3)].add(num)
                 else:
-                    self.empty.append((r,c))
-    
-    def add(self, r, c, val):
-        self.board[r][c] = val
-        self.row[r].add(val)
-        self.col[c].add(val)
-        self.box[(r // 3, c // 3)].add(val)
-    
-    def remove(self, r, c, val):
-        self.board[r][c] = '.'
-        self.row[r].remove(val)
-        self.col[c].remove(val)
-        self.box[(r // 3, c // 3)].remove(val)
+                    self.empty.append((r, c))
 
     def solve(self, index):
         if index == len(self.empty):
@@ -39,15 +31,28 @@ class Solution:
         
         r, c = self.empty[index]
 
-        for val in "123456789":
-            if self.isSafe(r, c, val):
-                self.add(r, c, val)
+        for num in '123456789':
+            if self.isValid(r, c, num):
+                self.add(r, c, num)
                 if self.solve(index + 1):
                     return True
-                self.remove(r, c, val)
+                self.remove(r, c, num)
+
         return False
-                        
-    def isSafe(self,r,c,val):
-        if val in self.row[r] or val in self.col[c] or val in self.box[(r // 3, c // 3)]:
+    
+    def add(self, r, c, num):
+        self.board[r][c] = num
+        self.rows[r].add(num)
+        self.cols[c].add(num)
+        self.squares[(r // 3, c // 3)].add(num)
+    
+    def remove(self, r, c, num):
+        self.board[r][c] = '.'
+        self.rows[r].remove(num)
+        self.cols[c].remove(num)
+        self.squares[(r // 3, c // 3)].remove(num)
+
+    def isValid(self, r, c, num):
+        if num in self.rows[r] or num in self.cols[c] or num in self.squares[(r // 3, c // 3)]:
             return False
         return True
