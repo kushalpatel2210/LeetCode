@@ -6,16 +6,16 @@ class Solution:
         cols = defaultdict(set)
         squares = defaultdict(set)
 
-        for i in range(9):
-            for j in range(9):
-                val = board[i][j]
-                
+        for r in range(9):
+            for c in range(9):
+                val = board[r][c]
+
                 if val != '.':
-                    if val in rows[i] or val in cols[j] or val in squares[(i // 3, j // 3)]:
+                    if val in rows[r] or val in cols[c] or val in squares[(r // 3, c // 3)]:
                         return False
                     
-                    rows[i].add(val)
-                    cols[j].add(val)
-                    squares[(i // 3, j // 3)].add(val)
-            
+                    rows[r].add(val)
+                    cols[c].add(val)
+                    squares[(r // 3, c // 3)].add(val)
+        
         return True
