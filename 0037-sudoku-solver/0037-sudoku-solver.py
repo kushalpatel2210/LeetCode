@@ -1,57 +1,42 @@
 class Solution:
-    def solveSudoku(self, board: List[List[str]]) -> None:
-        """
-        This function solves a Sudoku puzzle using Depth First Search (DFS).
-        The given board is modified in-place to fill in the Sudoku solution.
-        """
-
-        def dfs(position: int):
-            # Base case: if all empty positions are filled, set completion flag to True
-            if position == len(empty_positions):
-                self.is_solved = True
-                return
-          
-            # Get the next position from the list of empty positions
-            row_index, col_index = empty_positions[position]
-
-            # Try placing all possible values (1-9) in the current empty cell
-            for value in range(9):
-                if (not rows_used[row_index][value] and 
-                        not cols_used[col_index][value] and 
-                        not blocks_used[row_index // 3][col_index // 3][value]):
-                  
-                    # Mark the value as used in the row, column, and 3x3 block
-                    rows_used[row_index][value] = cols_used[col_index][value] = blocks_used[row_index // 3][col_index // 3][value] = True
-                    board[row_index][col_index] = str(value + 1)
-
-                    # Recursively try to solve the rest of the puzzle
-                    dfs(position + 1)
-
-                    # Undo the move if it didn't lead to a solution
-                    rows_used[row_index][value] = cols_used[col_index][value] = blocks_used[row_index // 3][col_index // 3][value] = False
-
-                # If puzzle is solved, exit early
-                if self.is_solved:
-                    return
-
-        # Initialize tracking for used numbers in each row, column and block
-        rows_used = [[False] * 9 for _ in range(9)]
-        cols_used = [[False] * 9 for _ in range(9)]
-        blocks_used = [[[False] * 9 for _a in range(3)] for _b in range(3)]
-
-        empty_positions = []  # List to track the positions of empty cells
-        self.is_solved = False  # Flag to indicate when the puzzle is solved
-
-        # Process the Sudoku board to fill tracking structures and find empty cells
-        for row in range(9):
-            for col in range(9):
-                if board[row][col] == '.':
-                    # Save the position of the empty cell
-                    empty_positions.append((row, col))
+    def initialize(self,board):
+        
+        for i in range(9):
+            for j in range(9):
+                if board[i][j]!=".":
+                    self.row[i].add(board[i][j])
+                    self.col[j].add(board[i][j])
+                    self.box[(i//3)*3+(j//3)].add(board[i][j])
                 else:
-                    # Mark the value as used in the row, column, and block
-                    value = int(board[row][col]) - 1
-                    rows_used[row][value] = cols_used[col][value] = blocks_used[row // 3][col // 3][value] = True
+                    self.empty.append((i,j))
+    def solve(self,board,index):
+        if index==len(self.empty):
+            return True
+        i,j=self.empty[index]
 
-        # Start the recursive DFS to solve the Sudoku
-        dfs(0)
+        
+        for c in "123456789":
+            if self.isSafe(i,j,c):
+                board[i][j]=c
+                self.row[i].add(c)
+                self.col[j].add(c)
+                self.box[(i//3)*3+(j//3)].add(c)
+                if self.solve(board,index+1):
+                    return True
+                board[i][j]="."
+                self.row[i].remove(c)
+                self.col[j].remove(c)
+                self.box[(i//3)*3+(j//3)].remove(c)
+        return False
+                        
+    def isSafe(self,i,j,c):
+        if c in self.row[i] or c in self.col[j] or c in self.box[(i//3)*3+(j//3)]:
+            return False
+        return True
+    def solveSudoku(self, board: List[List[str]]) -> None:
+        self.row=[set() for _ in range(9)]
+        self.col=[set() for _ in range(9)]
+        self.box=[set() for _ in range(9)]
+        self.empty=[]
+        self.initialize(board)
+        self.solve(board,0)
