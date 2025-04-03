@@ -14,8 +14,9 @@ class Solution:
                     if val in rows[r] or val in cols[c] or val in squares[(r // 3, c // 3)]:
                         return False
                     
+                    # append values
                     rows[r].add(val)
                     cols[c].add(val)
-                    squares[(r // 3, c // 3)].add(val)
+                    squares[(r //3, c // 3)].add(val)
         
         return True
