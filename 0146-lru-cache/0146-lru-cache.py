@@ -1,50 +1,48 @@
-class ListNode:
+class ListNode: # Doubly linked list
+
     def __init__(self, key=0, val=0):
         self.key, self.val = key, val
-        self.prev = self.next = None
+        self.next = self.prev = None
+
 
 class LRUCache:
 
     def __init__(self, capacity: int):
         self.cap = capacity
-        self.cache = dict() # (key, ref#ListNode)
+        self.cache = dict() # key, ref to listnode
         self.start, self.end = ListNode(), ListNode()
-        self.start.next, self.end.prev = self.end, self.start
+        self.start.next, self.end.prev = self.end, self.start # Connect start and end
     
-    # Remove node
     def remove(self, node):
         prev, nxt = node.prev, node.next
         prev.next, nxt.prev = nxt, prev
     
-    # insert at the end
-    def insert(self, node):
-        prev, end = self.end.prev, self.end
-        prev.next, end.prev = node, node
-        node.prev, node.next = prev, end
+    def insert(self, node): # insert it at the end 
+        prev, nxt = self.end.prev, self.end
+        prev.next = nxt.prev = node
+        node.next, node.prev = nxt, prev
 
     def get(self, key: int) -> int:
         if key in self.cache:
             node = self.cache[key]
-            # remove
-            self.remove(node)
-            # insert
-            self.insert(node)
-            return self.cache[key].val
+            self.remove(node) # remove
+            self.insert(node) # insert
+            return node.val
         return -1
         
 
     def put(self, key: int, value: int) -> None:
         if key in self.cache:
-            # remove        
-            self.remove(self.cache[key])
+            self.remove(self.cache[key]) # remove
         self.cache[key] = ListNode(key, value)
-        self.insert(self.cache[key])
+        self.insert(self.cache[key]) # insert
 
         if len(self.cache) > self.cap:
-            # remove least recently used
             lru = self.start.next
             self.remove(lru)
             del self.cache[lru.key]
+                    
+
 
 # Your LRUCache object will be instantiated and called as such:
 # obj = LRUCache(capacity)
