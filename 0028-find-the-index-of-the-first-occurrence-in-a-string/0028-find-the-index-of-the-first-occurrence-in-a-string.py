@@ -1,22 +1,18 @@
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
-        haystackLst = list(haystack)
-        m = len(haystack)
-        n = len(needle)
-
+        lenh, lenn = len(haystack), len(needle)
+        
         if haystack == needle:
             return 0
-        if n > len(haystack):
+        
+        if lenn > lenh:
             return -1
         
-        for i in range(m - n + 1):
-            if "".join(haystackLst[i : i + n]) == needle:
+        for i in range(lenh - lenn + 1):
+            window = i + lenn
+            if haystack[i:window] == needle:
                 return i
+        
+        return -1
 
-        return - 1
-
-'''
-class Solution:
-    def strStr(self, haystack: str, needle: str) -> int:
-        return haystack.find(needle)
-'''
+        
