@@ -6,10 +6,10 @@ class Solution:
 
         prev, curr = 1, 2
 
-        for i in range(n - 1):
+        for i in range(n - 2):
             prev, curr = curr, prev + curr
         
-        return prev
+        return curr
 
 '''
 # DP - Top-up: Memoization
