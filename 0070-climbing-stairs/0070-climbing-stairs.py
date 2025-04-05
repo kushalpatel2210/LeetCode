@@ -1,16 +1,15 @@
-# DP - Bottom-up: Tabulation
+# DP - Bottom-up: memory optimized
 class Solution:
     def climbStairs(self, n: int) -> int:
         if n <= 2:
             return n
 
-        dp = [0] * (n + 1)
-        dp[1], dp[2] = 1, 2
+        prev, curr = 1, 2
 
-        for i in range(3, n + 1):
-            dp[i] = dp[i - 1] + dp[i - 2]
+        for i in range(n - 1):
+            prev, curr = curr, prev + curr
         
-        return dp[n]
+        return prev
 
 '''
 # DP - Top-up: Memoization
@@ -28,4 +27,18 @@ class Solution:
                 return memo[currStep]
 
         return steps(n)
+
+# DP - Bottom-up: Tabulation
+class Solution:
+    def climbStairs(self, n: int) -> int:
+        if n <= 2:
+            return n
+
+        dp = [0] * (n + 1)
+        dp[1], dp[2] = 1, 2
+
+        for i in range(3, n + 1):
+            dp[i] = dp[i - 1] + dp[i - 2]
+        
+        return dp[n]
 '''
