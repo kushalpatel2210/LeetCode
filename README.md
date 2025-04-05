@@ -5,6 +5,7 @@
 - 0011-container-with-most-water
 - 0012-integer-to-roman
 - 0013-roman-to-integer
+- 0014-longest-common-prefix
 - 0015-3sum
 - 0018-4sum
 - 0019-remove-nth-node-from-end-of-list
@@ -228,15 +229,3 @@
 - 2888-minimum-index-of-a-valid-split
 - 2917-count-pairs-whose-sum-is-less-than-target
 - 3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## String
-|  |
-| ------- |
-| [0014-longest-common-prefix](https://github.com/kushalpatel2210/LeetCode/tree/master/0014-longest-common-prefix) |
-## Trie
-|  |
-| ------- |
-| [0014-longest-common-prefix](https://github.com/kushalpatel2210/LeetCode/tree/master/0014-longest-common-prefix) |
-<!---LeetCode Topics End-->
