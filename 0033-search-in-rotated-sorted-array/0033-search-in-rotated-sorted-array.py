@@ -14,7 +14,7 @@ class Solution:
                     l = m + 1
             else:
                 if target <= nums[r] and target > nums[m]:
-                    l = r - 1
+                    l = m + 1
                 else:
                     r = m - 1
         
