@@ -4,10 +4,13 @@ class Solution:
         nums.sort()
 
         for i, num in enumerate(nums):
-            l, r = i + 1, len(nums) - 1
+            if num > 0:
+                break
 
             if i > 0 and num == nums[i - 1]:
                 continue
+                            
+            l, r = i + 1, len(nums) - 1
             
             while l < r:
                 currSum = num + nums[l] + nums[r]
