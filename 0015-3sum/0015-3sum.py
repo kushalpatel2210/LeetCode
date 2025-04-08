@@ -4,7 +4,7 @@ class Solution:
         nums.sort()
 
         for i, num in enumerate(nums):
-            if num > 0:
+            if num > 0: # because nums is sorted
                 break
 
             if i > 0 and num == nums[i - 1]:
