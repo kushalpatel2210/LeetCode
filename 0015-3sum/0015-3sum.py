@@ -13,6 +13,8 @@ class Solution:
                     res.add((num, nums[l], nums[r]))
                     l += 1
                     r -= 1
+                    while l <= r and nums[l] == nums[l - 1]:
+                        l += 1
                 elif currSum > 0:
                     r -= 1
                 else:
