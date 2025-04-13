@@ -98,6 +98,7 @@
 - 0290-word-pattern
 - 0300-longest-increasing-subsequence
 - 0304-range-sum-query-2d-immutable
+- 0322-coin-change
 - 0328-odd-even-linked-list
 - 0334-increasing-triplet-subsequence
 - 0337-house-robber-iii
@@ -234,19 +235,3 @@
 - 2888-minimum-index-of-a-valid-split
 - 2917-count-pairs-whose-sum-is-less-than-target
 - 3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0322-coin-change](https://github.com/kushalpatel2210/LeetCode/tree/master/0322-coin-change) |
-## Dynamic Programming
-|  |
-| ------- |
-| [0322-coin-change](https://github.com/kushalpatel2210/LeetCode/tree/master/0322-coin-change) |
-## Breadth-First Search
-|  |
-| ------- |
-| [0322-coin-change](https://github.com/kushalpatel2210/LeetCode/tree/master/0322-coin-change) |
-<!---LeetCode Topics End-->
