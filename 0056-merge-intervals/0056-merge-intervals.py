@@ -5,7 +5,7 @@ class Solution:
         return end - start >= 0
 
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
-        intervals.sort()
+        intervals.sort(key=lambda pair:pair[0])
         res = [intervals[0]]
 
         for interval in intervals:
