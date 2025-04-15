@@ -237,3 +237,23 @@
 - 2888-minimum-index-of-a-valid-split
 - 2917-count-pairs-whose-sum-is-less-than-target
 - 3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Depth-First Search
+|  |
+| ------- |
+| [0210-course-schedule-ii](https://github.com/kushalpatel2210/LeetCode/tree/master/0210-course-schedule-ii) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0210-course-schedule-ii](https://github.com/kushalpatel2210/LeetCode/tree/master/0210-course-schedule-ii) |
+## Graph
+|  |
+| ------- |
+| [0210-course-schedule-ii](https://github.com/kushalpatel2210/LeetCode/tree/master/0210-course-schedule-ii) |
+## Topological Sort
+|  |
+| ------- |
+| [0210-course-schedule-ii](https://github.com/kushalpatel2210/LeetCode/tree/master/0210-course-schedule-ii) |
+<!---LeetCode Topics End-->
