@@ -16,14 +16,15 @@ class Solution:
 
             for i in range(currLevel):
                 node = q.popleft()
-
-                if node and i == currLevel - 1:
-                    res.append(node.val)
                 
-                if node and node.left:
-                    q.append(node.left)
-                
-                if node and node.right:
-                    q.append(node.right)
+                if node:
+                    if i == currLevel - 1:
+                        res.append(node.val)
+                    
+                    if node.left:
+                        q.append(node.left)
+                    
+                    if node.right:
+                        q.append(node.right)
         
         return res
