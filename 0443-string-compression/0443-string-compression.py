@@ -1,18 +1,21 @@
 class Solution:
     def compress(self, chars: List[str]) -> int:
-        i = 0
-        counter = 1
+        read, write = 0, 0
 
-        for j in range(1, len(chars) + 1):
-            if j < len(chars) and chars[j] == chars[j - 1]:
-                counter += 1
-            else:
-                chars[i] = chars[j - 1]
-                i += 1
-                if counter > 1:
-                    for k in str(counter):
-                        chars[i] = k
-                        i += 1
-                counter = 1
+        while read < len(chars):
+            char = chars[read]
+            count = 0
+
+            while read < len(chars) and chars[read] == char:
+                read += 1
+                count += 1
+            
+            chars[write] = char
+            write += 1
+
+            if count > 1:
+                for digit in str(count):
+                    chars[write] = digit
+                    write += 1
         
-        return i
+        return write
