@@ -1,22 +1,25 @@
+import math
+
 class Solution:
     def minEatingSpeed(self, piles: List[int], h: int) -> int:
-        totalBananas = sum(piles)
-        minSpeed = math.ceil(totalBananas / h)
+        minSpeed = 1
         maxSpeed = max(piles)
-        l, r = minSpeed, maxSpeed
-        minEatSpeed = float('inf')
+        speed = float('inf')
 
-        while l <= r:
-            m = l + (r - l) // 2
-            totalIterations = 0
-
+        def canFinishPiles(speed):
+            currHours = 0
             for pile in piles:
-                totalIterations += math.ceil(pile / m)
-            
-            if totalIterations > h:
-                l = m + 1
-            else:
-                minEatSpeed = min(minEatSpeed, m)
-                r = m - 1 
+                currHours += math.ceil(pile/speed)
+            return currHours <= h
 
-        return minEatSpeed
+        while minSpeed <= maxSpeed:
+            midSpeed = minSpeed + (maxSpeed - minSpeed) // 2
+            canKokoFinishPiles = canFinishPiles(midSpeed)
+
+            if canKokoFinishPiles:
+                speed = min(speed, midSpeed)
+                maxSpeed = midSpeed - 1
+            else:
+                minSpeed = midSpeed + 1
+        
+        return speed
