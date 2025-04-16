@@ -11,29 +11,24 @@ class Solution:
             return []
 
         q = deque([root])
-        currLevel = 0
         res = []
 
         while q:
             currLength = len(q)
-            currLevel += 1
-            currLevelValues = []
+            level = []
 
             for _ in range(currLength):
                 node = q.popleft()
 
                 if node:
-                    currLevelValues.append(node.val)
-                
-                if node: 
+                    level.append(node.val)
                     q.append(node.left)
                     q.append(node.right)
         
-            if currLevelValues:
-                if currLevel % 2 == 0:
-                    res.append(currLevelValues[::-1])
-                else:
-                    res.append(currLevelValues)
+            if level:
+                if len(res) % 2:
+                    level.reverse()
+                res.append(level)
         
         return res
                     
