@@ -32,6 +32,7 @@
 - 0071-simplify-path
 - 0073-set-matrix-zeroes
 - 0074-search-a-2d-matrix
+- 0075-sort-colors
 - 0076-minimum-window-substring
 - 0077-combinations
 - 0078-subsets
@@ -239,19 +240,3 @@
 - 2888-minimum-index-of-a-valid-split
 - 2917-count-pairs-whose-sum-is-less-than-target
 - 3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0075-sort-colors](https://github.com/kushalpatel2210/LeetCode/tree/master/0075-sort-colors) |
-## Two Pointers
-|  |
-| ------- |
-| [0075-sort-colors](https://github.com/kushalpatel2210/LeetCode/tree/master/0075-sort-colors) |
-## Sorting
-|  |
-| ------- |
-| [0075-sort-colors](https://github.com/kushalpatel2210/LeetCode/tree/master/0075-sort-colors) |
-<!---LeetCode Topics End-->
