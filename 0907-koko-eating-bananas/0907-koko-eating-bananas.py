@@ -14,9 +14,9 @@ class Solution:
 
         while minSpeed <= maxSpeed:
             midSpeed = minSpeed + (maxSpeed - minSpeed) // 2
-            canKokoFinishPiles = canFinishPiles(midSpeed)
+            KokoCanFinishPiles = canFinishPiles(midSpeed)
 
-            if canKokoFinishPiles:
+            if KokoCanFinishPiles:
                 speed = min(speed, midSpeed)
                 maxSpeed = midSpeed - 1
             else:
