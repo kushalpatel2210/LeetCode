@@ -35,6 +35,7 @@ class Solution:
             currNode = reverse(firstPtr.next, lastPtr)
             firstPtr.next = currNode
         else:
+            # reversal started at head
             head = reverse(head, lastPtr)
 
         return head
