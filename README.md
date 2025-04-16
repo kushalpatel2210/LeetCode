@@ -241,3 +241,23 @@
 - 2888-minimum-index-of-a-valid-split
 - 2917-count-pairs-whose-sum-is-less-than-target
 - 3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [2165-plates-between-candles](https://github.com/kushalpatel2210/LeetCode/tree/master/2165-plates-between-candles) |
+## String
+|  |
+| ------- |
+| [2165-plates-between-candles](https://github.com/kushalpatel2210/LeetCode/tree/master/2165-plates-between-candles) |
+## Binary Search
+|  |
+| ------- |
+| [2165-plates-between-candles](https://github.com/kushalpatel2210/LeetCode/tree/master/2165-plates-between-candles) |
+## Prefix Sum
+|  |
+| ------- |
+| [2165-plates-between-candles](https://github.com/kushalpatel2210/LeetCode/tree/master/2165-plates-between-candles) |
+<!---LeetCode Topics End-->
