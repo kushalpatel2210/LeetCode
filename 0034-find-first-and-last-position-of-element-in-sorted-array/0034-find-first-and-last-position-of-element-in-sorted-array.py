@@ -1,24 +1,39 @@
 class Solution:
     def searchRange(self, nums: List[int], target: int) -> List[int]:
+        l, r = 0, len(nums) - 1
 
-        def binary_search(condition):
-            left, right = 0, len(nums)
-            while left < right:
-                mid = left + (right - left) // 2
-                if condition(mid):
-                    right = mid
+        def findFirst(l, r):
+            firstOcc = float('inf')
+            while l <= r:
+                mid = l + (r - l) // 2
+
+                if nums[mid] == target:
+                    firstOcc = min(firstOcc, mid)
+                    r = mid - 1
+                elif nums[mid] < target:
+                    l = mid + 1
                 else:
-                    left = mid + 1
-            return left
-    
-        # Find the first occurrence of the target
-        start = binary_search(lambda mid: nums[mid] >= target)
+                    r = mid - 1
+            
+            return firstOcc
         
-        # If the target doesn't exist in the array
-        if start >= len(nums) or nums[start] != target:
-            return [-1, -1]
+        def findLast(l, r):
+            lastOcc = float('-inf')
+            while l <= r:
+                mid = l + (r - l) // 2
+
+                if nums[mid] == target:
+                    lastOcc = max(lastOcc, mid)
+                    l = mid + 1
+                elif nums[mid] < target:
+                    l = mid + 1
+                else:
+                    r = mid - 1
+            return lastOcc
         
-        # Find the last occurrence of the target
-        end = binary_search(lambda mid: nums[mid] > target) - 1
-        
-        return [start, end]
+        findFirstOcc = findFirst(l, r)
+        findLastOcc = findLast(l, r)
+
+        return [-1 if findFirstOcc == float('inf') else findFirstOcc, -1 if findLastOcc == float('-inf') else findLastOcc]
+
+            
