@@ -2,6 +2,7 @@
 - 0001-two-sum
 - 0002-add-two-numbers
 - 0003-longest-substring-without-repeating-characters
+- 0008-string-to-integer-atoi
 - 0011-container-with-most-water
 - 0012-integer-to-roman
 - 0013-roman-to-integer
@@ -242,11 +243,3 @@
 - 2888-minimum-index-of-a-valid-split
 - 2917-count-pairs-whose-sum-is-less-than-target
 - 3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## String
-|  |
-| ------- |
-| [0008-string-to-integer-atoi](https://github.com/kushalpatel2210/LeetCode/tree/master/0008-string-to-integer-atoi) |
-<!---LeetCode Topics End-->
