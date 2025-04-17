@@ -4,6 +4,7 @@ class Solution:
         sign = None
         signCount = 0
         newS = s.lstrip()
+        
         for i, c in enumerate(newS):
             if c == ' ':
                 break
