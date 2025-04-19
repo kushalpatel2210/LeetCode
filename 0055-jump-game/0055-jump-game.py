@@ -1,5 +1,17 @@
 class Solution:
     def canJump(self, nums: List[int]) -> bool:
+        goal = len(nums) - 1
+
+        for i in range(len(nums) -2, -1, -1):
+            if i + nums[i] >= goal:
+                goal = i 
+        
+        return goal == 0
+
+'''
+# DP: Top Down 
+class Solution:
+    def canJump(self, nums: List[int]) -> bool:
         memo = dict()
 
         def backtrack(i):
@@ -19,3 +31,4 @@ class Solution:
             return False
         
         return backtrack(0)
+'''
