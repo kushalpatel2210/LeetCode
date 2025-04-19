@@ -26,6 +26,7 @@
 - 0045-jump-game-ii
 - 0046-permutations
 - 0049-group-anagrams
+- 0053-maximum-subarray
 - 0055-jump-game
 - 0056-merge-intervals
 - 0058-length-of-last-word
@@ -246,19 +247,3 @@
 - 2888-minimum-index-of-a-valid-split
 - 2917-count-pairs-whose-sum-is-less-than-target
 - 3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0053-maximum-subarray](https://github.com/kushalpatel2210/LeetCode/tree/master/0053-maximum-subarray) |
-## Divide and Conquer
-|  |
-| ------- |
-| [0053-maximum-subarray](https://github.com/kushalpatel2210/LeetCode/tree/master/0053-maximum-subarray) |
-## Dynamic Programming
-|  |
-| ------- |
-| [0053-maximum-subarray](https://github.com/kushalpatel2210/LeetCode/tree/master/0053-maximum-subarray) |
-<!---LeetCode Topics End-->
