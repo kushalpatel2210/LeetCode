@@ -78,6 +78,7 @@
 - 0167-two-sum-ii-input-array-is-sorted
 - 0169-majority-element
 - 0189-rotate-array
+- 0198-house-robber
 - 0199-binary-tree-right-side-view
 - 0200-number-of-islands
 - 0202-happy-number
@@ -248,15 +249,3 @@
 - 2888-minimum-index-of-a-valid-split
 - 2917-count-pairs-whose-sum-is-less-than-target
 - 3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0198-house-robber](https://github.com/kushalpatel2210/LeetCode/tree/master/0198-house-robber) |
-## Dynamic Programming
-|  |
-| ------- |
-| [0198-house-robber](https://github.com/kushalpatel2210/LeetCode/tree/master/0198-house-robber) |
-<!---LeetCode Topics End-->
