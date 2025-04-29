@@ -253,3 +253,19 @@
 - 2917-count-pairs-whose-sum-is-less-than-target
 - 3213-count-subarrays-where-max-element-appears-at-least-k-times
 - 3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Math
+|  |
+| ------- |
+| [0062-unique-paths](https://github.com/kushalpatel2210/LeetCode/tree/master/0062-unique-paths) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0062-unique-paths](https://github.com/kushalpatel2210/LeetCode/tree/master/0062-unique-paths) |
+## Combinatorics
+|  |
+| ------- |
+| [0062-unique-paths](https://github.com/kushalpatel2210/LeetCode/tree/master/0062-unique-paths) |
+<!---LeetCode Topics End-->
