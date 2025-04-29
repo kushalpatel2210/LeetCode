@@ -31,6 +31,7 @@
 - 0055-jump-game
 - 0056-merge-intervals
 - 0058-length-of-last-word
+- 0062-unique-paths
 - 0069-sqrtx
 - 0070-climbing-stairs
 - 0071-simplify-path
@@ -253,19 +254,3 @@
 - 2917-count-pairs-whose-sum-is-less-than-target
 - 3213-count-subarrays-where-max-element-appears-at-least-k-times
 - 3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Math
-|  |
-| ------- |
-| [0062-unique-paths](https://github.com/kushalpatel2210/LeetCode/tree/master/0062-unique-paths) |
-## Dynamic Programming
-|  |
-| ------- |
-| [0062-unique-paths](https://github.com/kushalpatel2210/LeetCode/tree/master/0062-unique-paths) |
-## Combinatorics
-|  |
-| ------- |
-| [0062-unique-paths](https://github.com/kushalpatel2210/LeetCode/tree/master/0062-unique-paths) |
-<!---LeetCode Topics End-->
