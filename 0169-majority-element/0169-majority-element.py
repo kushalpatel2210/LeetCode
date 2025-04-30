@@ -1,8 +1,8 @@
-from collections import Counter
+# Boyer-Moore Voting Algorithm
 
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
-        count = res = 0 
+        count = res = 0
 
         for num in nums:
             if count == 0:
