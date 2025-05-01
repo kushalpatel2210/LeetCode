@@ -255,3 +255,31 @@
 - 2917-count-pairs-whose-sum-is-less-than-target
 - 3213-count-subarrays-where-max-element-appears-at-least-k-times
 - 3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [2180-maximum-number-of-tasks-you-can-assign](https://github.com/kushalpatel2210/LeetCode/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
+## Binary Search
+|  |
+| ------- |
+| [2180-maximum-number-of-tasks-you-can-assign](https://github.com/kushalpatel2210/LeetCode/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
+## Greedy
+|  |
+| ------- |
+| [2180-maximum-number-of-tasks-you-can-assign](https://github.com/kushalpatel2210/LeetCode/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
+## Queue
+|  |
+| ------- |
+| [2180-maximum-number-of-tasks-you-can-assign](https://github.com/kushalpatel2210/LeetCode/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
+## Sorting
+|  |
+| ------- |
+| [2180-maximum-number-of-tasks-you-can-assign](https://github.com/kushalpatel2210/LeetCode/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
+## Monotonic Queue
+|  |
+| ------- |
+| [2180-maximum-number-of-tasks-you-can-assign](https://github.com/kushalpatel2210/LeetCode/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
+<!---LeetCode Topics End-->
