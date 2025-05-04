@@ -3,26 +3,27 @@ from collections import Counter
 
 class Solution:
     def reorganizeString(self, s: str) -> str:
+        maxHeap = []
         counter = Counter(s)
-        maxHeap = [(-frq, val) for val, frq in counter.items()]
-        heapq.heapify(maxHeap)
-
         res = ""
-        prev = None
+
+        for c, frq in counter.items():
+            heapq.heappush(maxHeap, (-frq, c))
+        
+        prev = None 
         while maxHeap or prev:
+            # Solution does not exists
             if prev and not maxHeap:
                 return ""
-            
-            frq, char = heapq.heappop(maxHeap)
+            frq, c = heapq.heappop(maxHeap)
+            res += c
             frq += 1
-            res += char
 
             if prev:
                 heapq.heappush(maxHeap, prev)
                 prev = None
 
             if frq != 0:
-                prev = (frq, char) 
+                prev = (frq, c)
         
         return res
-
