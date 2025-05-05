@@ -251,6 +251,7 @@
 - 2552-maximum-sum-of-distinct-subarrays-with-length-k
 - 2573-remove-nodes-from-linked-list
 - 2576-minimum-penalty-for-a-shop
+- 2690-house-robber-iv
 - 2743-debounce
 - 2809-create-hello-world-function
 - 2876-number-of-employees-who-met-the-target
@@ -258,15 +259,3 @@
 - 2917-count-pairs-whose-sum-is-less-than-target
 - 3213-count-subarrays-where-max-element-appears-at-least-k-times
 - 3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [2690-house-robber-iv](https://github.com/kushalpatel2210/LeetCode/tree/master/2690-house-robber-iv) |
-## Binary Search
-|  |
-| ------- |
-| [2690-house-robber-iv](https://github.com/kushalpatel2210/LeetCode/tree/master/2690-house-robber-iv) |
-<!---LeetCode Topics End-->
