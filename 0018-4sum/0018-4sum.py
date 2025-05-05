@@ -1,27 +1,24 @@
 class Solution:
     def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
         nums.sort()
-        res = set()
+        quadruplets = set()
 
-        for i in range(len(nums)):
+        for i, num in enumerate(nums):
             for j in range(i + 1, len(nums)):
-                currSum = nums[i] + nums [j]
-                if j + 1 < len(nums):
-                    pair = self.pairSum(j + 1, len(nums) - 1, target - currSum, nums)
-                    if pair:
-                        res.add(tuple([nums[i], nums[j]] + pair))
-        
-        return [list(quadraple) for quadraple in res]
+                twoSum = num + nums[j]
+                l, r = j + 1, len(nums) - 1
 
-    def pairSum(self, left, right, target, nums):
-        while left < right:
-            currSum = nums[left] + nums[right]
+                while l < r:
+                    four_sum = twoSum + nums[l] + nums[r]
 
-            if currSum == target:
-                return [nums[left], nums[right]]
-            elif currSum < target:
-                left += 1
-            else:
-                right -= 1
+                    if four_sum == target:
+                        quadruplets.add((num, nums[j], nums[l], nums[r]))
+                        l += 1
+                        r -= 1
+                    elif four_sum > target:
+                        r -= 1
+                    else:
+                        l += 1
         
-        return []
+
+        return [list(tpl) for tpl in quadruplets]
