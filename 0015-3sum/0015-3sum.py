@@ -4,6 +4,9 @@ class Solution:
         res = set()
 
         for i in range(len(nums)):
+            if nums[i] > 0:
+                break
+                
             left, right = i + 1, len(nums) - 1
 
             while left < right:
