@@ -3,14 +3,9 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        start = 0
+        left = 0
 
-        for i, num in enumerate(nums):
-            if num != 0:
-                nums[start] = num
-                start += 1
-        
-        while start < len(nums):
-            nums[start] = 0
-            start += 1
-            
+        for right in range(len(nums)):
+            if nums[right] != 0:
+                nums[left], nums[right] = nums[right], nums[left]
+                left += 1
