@@ -5,12 +5,15 @@ class Solution:
         """
         start = 0
 
-        for num in nums:
-            if num != 0:
-                nums[start] = num
-                start += 1
-        
         while start < len(nums):
-            nums[start] = 0
-            start += 1
+            if nums[start] != 0:
+                start += 1
+            else:
+                curr = start + 1
+                while curr < len(nums) and nums[curr] == 0:
+                    curr += 1
+                if curr != len(nums):
+                    nums[start] = nums[curr]
+                    nums[curr] = 0  
+                start += 1
             
