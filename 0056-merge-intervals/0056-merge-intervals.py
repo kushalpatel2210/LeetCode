@@ -1,19 +1,18 @@
 class Solution:
-    def isOverlapping(self, interval1, interval2):
-        start = max(interval1[0], interval2[0])
-        end = min(interval1[1], interval2[1])
-        return end - start >= 0
-
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
-        intervals.sort(key=lambda pair:pair[0])
-        res = [intervals[0]]
-
+        res = list()
+        intervals.sort(key=lambda x:x[0])
+        
         for interval in intervals:
-            currInterval = res[-1]
-
-            if self.isOverlapping(currInterval, interval):
-                res[-1] = [min(interval[0], currInterval[0]), max(interval[1], currInterval[1])]
-            else:
+            if not res:
                 res.append(interval)
+            else:
+                lastElement = res.pop()
+                if interval[0] <= lastElement[1]:
+                    end = max(lastElement[1], interval[1])
+                    res.append([lastElement[0], end])
+                else:
+                    res.append(lastElement)
+                    res.append(interval)
 
         return res
