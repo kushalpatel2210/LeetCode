@@ -1,58 +1,28 @@
-# Topological Sort
-from collections import deque
+from collections import defaultdict, deque
 
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
-        preMap = { i: [] for i in range(numCourses) }
-        indegree = [0] * numCourses
-        for crs, pre in prerequisites:
-            preMap[crs].append(pre)
-            indegree[pre] += 1
-
+        preMap = defaultdict(list)
+        inDegree = [0] * numCourses
         q = deque()
-        for n in range(numCourses):
-            if indegree[n] == 0:
-                q.append(n)
+
+        for crs, prq in prerequisites:
+            preMap[crs].append(prq)
+            inDegree[prq] += 1
+
+        for i in range(len(inDegree)):
+            if inDegree[i] == 0:
+                q.append(i)
         
-        finish = 0
+        courses = 0
         while q:
             node = q.popleft()
-            finish += 1
-            for pre in preMap[node]:
-                indegree[pre] -= 1
-                if indegree[pre] == 0:
-                    q.append(pre)
-        
-        return finish == numCourses
+            courses += 1
 
-'''
-# DFS
-class Solution:
-    def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
-        preMap = { i: [] for i in range(numCourses)}
-        visitSet = set()
+            for prq in preMap[node]:
+                inDegree[prq] -= 1
 
-        for crs, preq in prerequisites:
-            preMap[crs].append(preq)
+                if inDegree[prq] == 0:
+                    q.append(prq)
 
-        def dfs(crs):
-            if crs in visitSet:
-                return False
-            if preMap[crs] == []:
-                return True
-            
-            visitSet.add(crs)
-            for pre in preMap[crs]:
-                if not dfs(pre):
-                    return False
-            
-            visitSet.remove(crs)
-            preMap[crs] = []
-            return True
-        
-        for course in range(numCourses):
-            if not dfs(course):
-                return False
-        
-        return True
-'''
+        return courses == numCourses
