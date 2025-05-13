@@ -1,4 +1,4 @@
-from collections import Counter
+from collections import defaultdict
 import heapq
 
 class Solution:
@@ -9,7 +9,7 @@ class Solution:
         for num, frq in counter.items():
             heapq.heappush(minHeap, (frq, num))
 
-            while len(minHeap) > k:
+            if len(minHeap) > k:
                 heapq.heappop(minHeap)
-
-        return [num for frq, num in minHeap]
+        
+        return [x[1] for x in minHeap]
