@@ -11,10 +11,10 @@ class Solution:
             heapq.heappush(maxHeap, (-frq, c))
         
         prev = None 
-        while maxHeap or prev:
+        while maxHeap:
             # Solution does not exists
-            if prev and not maxHeap:
-                return ""
+            # if prev and not maxHeap:
+            #     return ""
             frq, c = heapq.heappop(maxHeap)
             res += c
             frq += 1
@@ -26,5 +26,8 @@ class Solution:
                 prev = (frq, c)
             else:
                 prev = None
+        else:
+            if prev:
+                return ""
         
         return res
