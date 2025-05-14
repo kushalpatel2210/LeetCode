@@ -3,10 +3,10 @@ class Solution:
         maxSum = nums[0]
         currSum = 0
 
-        for n in nums:
+        for num in nums:
             if currSum < 0:
                 currSum = 0
-            currSum += n
+            currSum += num
             maxSum = max(maxSum, currSum)
         
         return maxSum
