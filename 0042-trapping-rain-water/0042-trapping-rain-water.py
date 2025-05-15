@@ -13,16 +13,10 @@ class Solution:
         for i in range(len(height) - 1, -1, -1):
             if i + 1 < len(height):
                 maxRight[i] = (right)
-            right = max(right, height[i])
-
-        # print(maxLeft)
-        # print(maxRight)
+            right = max(right, height[i])   
         
         for i in range(len(height)):
-            # print(f"i {i} maxlLeft[i] {maxLeft[i]} maxRight[i] {maxRight[i]}")
             containerSize = min(maxLeft[i], maxRight[i])
-            # print(f"containerSize {containerSize}")
             trappedWater += (max(containerSize - height[i], 0))
-            # print(trappedWater)
 
         return trappedWater
