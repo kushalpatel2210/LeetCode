@@ -3,20 +3,17 @@ class Solution:
         rows, cols = len(grid), len(grid[0])
 
         def dfs(i, j):
-            if not (0 <= i < rows or 0 <= j < cols):
-                return False
+            if not (0 <= i < rows and 0 <= j < cols):
+                return
             
             if grid[i][j] == "0":
-                return False
+                return
             
             grid[i][j] = "0"
             
             for deltaI, deltaJ in [(1, 0), (-1, 0), (0, 1), (0, -1)]:
                 newI, newJ = i + deltaI, j + deltaJ
-                if 0 <= newI < rows and 0 <= newJ < cols and grid[newI][newJ] == "1":
-                    dfs(newI, newJ)
-            
-            return True
+                dfs(newI, newJ)
         
         noOfIslands = 0
         for i in range(rows):
