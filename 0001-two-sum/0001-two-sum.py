@@ -4,9 +4,7 @@ class Solution:
 
         for i, num in enumerate(nums):
             diff = target - num
-
             if diff in hashMap:
                 return [hashMap[diff], i]
-            else:
-                hashMap[num] = i
+            hashMap[num] = i
         
