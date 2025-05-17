@@ -1,13 +1,12 @@
-from collections import defaultdict
-
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
-        sCount, tCount = defaultdict(int), defaultdict(int)
+        if len(s) != len(t):
+            return False 
+            
+        sCount, tCount = dict(), dict()
 
-        for c in s:
-            sCount[c] += 1
-        
-        for c in t:
-            tCount[c] += 1
+        for i in range(len(s)):
+            sCount[s[i]] = 1 + sCount.get(s[i], 0)
+            tCount[t[i]] = 1 + tCount.get(t[i], 0)
         
         return sCount == tCount
