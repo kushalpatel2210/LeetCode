@@ -1,5 +1,17 @@
 class Solution:
     def countSubarrays(self, nums: List[int]) -> int:
+        res = 0
+
+        for i in range(1, len(nums) - 1):
+            currSum = nums[i - 1] + nums[i + 1]
+            if currSum == nums[i] / 2:
+                res += 1
+        
+        return res
+
+'''
+class Solution:
+    def countSubarrays(self, nums: List[int]) -> int:
         currSum = 0
         i = 0
         res = 0
@@ -21,4 +33,4 @@ class Solution:
             i += 1
         
         return res
-
+'''
