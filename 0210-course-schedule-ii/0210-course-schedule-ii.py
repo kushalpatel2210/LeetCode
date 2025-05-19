@@ -1,30 +1,32 @@
+# Topological Sort
 from collections import defaultdict, deque
 
 class Solution:
     def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
-        preMap = defaultdict(list)
         q = deque()
-        inDegree = [0] * numCourses 
-        seq = list()
+        courses = defaultdict(list)
+        inDegree = [0] * numCourses
+        res = []
 
         for crs, preq in prerequisites:
-            preMap[crs].append(preq)
+            courses[crs].append(preq)
             inDegree[preq] += 1
         
-        for i in range(numCourses):
+        for i in range(len(inDegree)):
             if inDegree[i] == 0:
                 q.append(i)
         
-        processed = 0
+        coursesTaken = 0
+
         while q:
-            node = q.popleft()
-            seq.append(node)
-            processed += 1
+            currCrs = q.popleft()
+            res.append(currCrs)
+            coursesTaken += 1
 
-            for preq in preMap[node]:
-                inDegree[preq] -= 1
+            for course in courses[currCrs]:
+                inDegree[course] -= 1
 
-                if inDegree[preq] == 0:
-                    q.append(preq)
-        
-        return [] if processed != numCourses else seq[::-1]
+                if inDegree[course] == 0:
+                    q.append(course)
+
+        return res[::-1] if coursesTaken == numCourses else []
