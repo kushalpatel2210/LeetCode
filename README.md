@@ -261,3 +261,19 @@
 - 3213-count-subarrays-where-max-element-appears-at-least-k-times
 - 3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i
 - 3685-count-subarrays-of-length-three-with-a-condition
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Tree
+|  |
+| ------- |
+| [0103-binary-tree-zigzag-level-order-traversal](https://github.com/kushalpatel2210/LeetCode/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0103-binary-tree-zigzag-level-order-traversal](https://github.com/kushalpatel2210/LeetCode/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
+## Binary Tree
+|  |
+| ------- |
+| [0103-binary-tree-zigzag-level-order-traversal](https://github.com/kushalpatel2210/LeetCode/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
+<!---LeetCode Topics End-->
