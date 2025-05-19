@@ -13,14 +13,17 @@ class Solution:
         res = []
         i = 0
 
+        if not root:
+            return []
+
         while q:
             currLevel = []
 
             for _ in range(len(q)):
                 node = q.popleft()
 
-                if node:
-                    currLevel.append(node.val)
+                # if node:
+                currLevel.append(node.val)
 
                 if node and node.left:
                     q.append(node.left)
