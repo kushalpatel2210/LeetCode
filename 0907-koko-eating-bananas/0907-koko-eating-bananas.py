@@ -2,24 +2,25 @@ import math
 
 class Solution:
     def minEatingSpeed(self, piles: List[int], h: int) -> int:
-        minSpeed = 1
-        maxSpeed = max(piles)
-        speed = float('inf')
-
-        def canFinishPiles(speed):
-            currHours = 0
-            for pile in piles:
-                currHours += math.ceil(pile/speed)
-            return currHours <= h
-
-        while minSpeed <= maxSpeed:
-            midSpeed = minSpeed + (maxSpeed - minSpeed) // 2
-            KokoCanFinishPiles = canFinishPiles(midSpeed)
-
-            if KokoCanFinishPiles:
-                speed = min(speed, midSpeed)
-                maxSpeed = midSpeed - 1
-            else:
-                minSpeed = midSpeed + 1
+        minSpeed = float('inf')
         
-        return speed
+        def timeTaken(speed):
+            totalTime = 0
+
+            for pile in piles:
+                totalTime += math.ceil(pile/speed)
+            
+            return totalTime
+        
+        l, r = 1, max(piles)
+
+        while l <= r:
+            m = l + (r - l) // 2
+
+            if timeTaken(m) <= h:
+                minSpeed = min(minSpeed, m)
+                r = m - 1
+            else:
+                l = m + 1
+        
+        return minSpeed
