@@ -7,12 +7,13 @@ class Solution:
 
             if nums[m] == target:
                 return m
-            elif nums[m] >= nums[l]:
+            
+            if nums[m] >= nums[l]: # Left
                 if target >= nums[l] and target < nums[m]:
                     r = m - 1
                 else:
                     l = m + 1
-            else:
+            else: # Right
                 if target <= nums[r] and target > nums[m]:
                     l = m + 1
                 else:
