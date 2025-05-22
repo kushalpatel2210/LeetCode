@@ -8,12 +8,14 @@ class Solution:
             if nums[m] == target:
                 return m
             
-            if nums[m] >= nums[l]: # Left
+            if nums[m] >= nums[l]:
+                # left
                 if target >= nums[l] and target < nums[m]:
                     r = m - 1
                 else:
                     l = m + 1
-            else: # Right
+            else:
+                # right
                 if target <= nums[r] and target > nums[m]:
                     l = m + 1
                 else:
