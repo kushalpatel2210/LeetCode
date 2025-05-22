@@ -11,7 +11,7 @@ class Solution:
                 if nums[m] == target:
                     leftMost = min(leftMost, m)
                     r = m - 1
-                if nums[m] < target:
+                elif nums[m] < target:
                     l = m + 1
                 else:
                     r = m - 1
@@ -28,7 +28,7 @@ class Solution:
                 if nums[m] == target:
                     rightMost = max(rightMost, m)
                     l = m + 1
-                if nums[m] < target:
+                elif nums[m] < target:
                     l = m + 1
                 else:
                     r = m - 1
