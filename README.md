@@ -262,3 +262,15 @@
 - 3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/kushalpatel2210/LeetCode/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
+## Binary Search
+|  |
+| ------- |
+| [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/kushalpatel2210/LeetCode/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
+<!---LeetCode Topics End-->
