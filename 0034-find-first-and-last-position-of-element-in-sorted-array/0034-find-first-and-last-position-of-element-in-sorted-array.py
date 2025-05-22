@@ -1,38 +1,26 @@
 class Solution:
+    def binarySearch(self, nums, target, leftBias):
+        i = -1 
+        l, r = 0, len(nums) - 1
+
+        while l <= r:
+            m = l + (r - l) // 2
+            
+            if nums[m] == target:
+                i = m
+                if leftBias:
+                    r = m - 1
+                else:
+                    l = m + 1
+            elif nums[m] < target:
+                l = m + 1
+            else:
+                r = m - 1
+        
+        return i
+
     def searchRange(self, nums: List[int], target: int) -> List[int]:
-        
-        def leftMostTarget():
-            leftMost = float('inf')
-            l, r = 0, len(nums) - 1
-
-            while l <= r:
-                m = l + (r - l) // 2
-                
-                if nums[m] == target:
-                    leftMost = min(leftMost, m)
-                    r = m - 1
-                elif nums[m] < target:
-                    l = m + 1
-                else:
-                    r = m - 1
-            
-            return leftMost if leftMost != float('inf') else -1
-        
-        def rightMostTarget():
-            rightMost = float('-inf')
-            l, r = 0, len(nums) - 1
-
-            while l <= r:
-                m = l + (r - l) // 2
-
-                if nums[m] == target:
-                    rightMost = max(rightMost, m)
-                    l = m + 1
-                elif nums[m] < target:
-                    l = m + 1
-                else:
-                    r = m - 1
-            
-            return rightMost if rightMost != float('-inf') else -1
-
-        return [leftMostTarget(), rightMostTarget()]
+        leftMost = self.binarySearch(nums, target, True)
+        rightMost = self.binarySearch(nums, target, False)
+    
+        return [leftMost, rightMost]
