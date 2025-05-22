@@ -2,12 +2,14 @@ from collections import defaultdict
 
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        res = defaultdict(list)
+        hashMap = defaultdict(list)
 
         for word in strs:
-            count = [0] * 26
+            signature = [0] * 26
+
             for c in word:
-                count[ord(c) - ord('a')] += 1
-            res[tuple(count)].append(word)
+                signature[ord(c) - ord('a')] += 1
+            
+            hashMap[tuple(signature)].append(word)
         
-        return list(res.values())
+        return list(hashMap.values())
