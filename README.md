@@ -262,3 +262,15 @@
 - 3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [0033-search-in-rotated-sorted-array](https://github.com/kushalpatel2210/LeetCode/tree/master/0033-search-in-rotated-sorted-array) |
+## Binary Search
+|  |
+| ------- |
+| [0033-search-in-rotated-sorted-array](https://github.com/kushalpatel2210/LeetCode/tree/master/0033-search-in-rotated-sorted-array) |
+<!---LeetCode Topics End-->
