@@ -4,9 +4,7 @@ class Solution:
 
         for num in arr:
             diffs.append(abs(num - x))
-        
-        print(diffs)
-        
+                
         i = 0
         currSum, minSum = 0, float('inf')
         idx = float('inf')
@@ -15,8 +13,6 @@ class Solution:
 
             if j - i + 1 < k:
                 continue
-
-            # print(currSum, minSum)
 
             if currSum < minSum:
                 minSum = currSum
