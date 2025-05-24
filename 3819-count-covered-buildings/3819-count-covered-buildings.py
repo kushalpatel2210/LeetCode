@@ -14,13 +14,11 @@ class Solution:
             x_to_y[x].sort()
         
         for y in y_to_x:
-            y_to_x[y].sort()
-        
+            y_to_x[y].sort()      
 
         for x, y in buildings:
             horizontalBuildings = y_to_x[y]
             verticalBuildings = x_to_y[x]
-
 
             if horizontalBuildings[0] < x < horizontalBuildings[-1] and verticalBuildings[0] < y < verticalBuildings[-1]:
                 count += 1
