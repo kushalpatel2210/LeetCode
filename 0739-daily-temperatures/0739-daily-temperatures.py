@@ -1,13 +1,13 @@
 class Solution:
     def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
-        stack = [] # (day, temp) monolithic decreasing stack
         res = [0] * len(temperatures)
+        stack = [] # Monolithic decreasing stack
 
-        for i, temp in enumerate(temperatures):
+        for i, temp in enumerate(temperatures):            
             while stack and stack[-1][1] < temp:
-                day, prevTemp = stack.pop()
+                day, tempAtGivenDay = stack.pop()
                 res[day] = i - day
-            
-            stack.append((i, temp))
 
+            stack.append((i, temp))
+            
         return res
