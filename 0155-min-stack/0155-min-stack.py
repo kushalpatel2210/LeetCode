@@ -11,8 +11,7 @@ class MinStack:
             self.stack2.append(val)
 
     def pop(self) -> None:
-        ele = self.stack1[-1]
-        self.stack1.pop()
+        ele = self.stack1.pop()
 
         if self.stack2 and self.stack2[-1] == ele:
             self.stack2.pop()
