@@ -29,6 +29,7 @@
 - 0045-jump-game-ii
 - 0046-permutations
 - 0049-group-anagrams
+- 0050-powx-n
 - 0053-maximum-subarray
 - 0054-spiral-matrix
 - 0055-jump-game
@@ -264,15 +265,3 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Math
-|  |
-| ------- |
-| [0050-powx-n](https://github.com/kushalpatel2210/LeetCode/tree/master/0050-powx-n) |
-## Recursion
-|  |
-| ------- |
-| [0050-powx-n](https://github.com/kushalpatel2210/LeetCode/tree/master/0050-powx-n) |
-<!---LeetCode Topics End-->
