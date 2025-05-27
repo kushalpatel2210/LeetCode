@@ -3,7 +3,7 @@ class Solution:
         stack = [] # Monolithic increasing 
         
         for n in num:
-            while stack and k and int(stack[-1]) > int(n):
+            while stack and k and stack[-1] > n:
                 stack.pop()
                 k -= 1
             
