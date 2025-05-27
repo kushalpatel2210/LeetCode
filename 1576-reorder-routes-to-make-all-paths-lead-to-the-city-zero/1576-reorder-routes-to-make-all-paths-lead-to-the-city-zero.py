@@ -2,9 +2,9 @@ from collections import defaultdict
 
 class Solution:
     def minReorder(self, n: int, connections: List[List[int]]) -> int:
-        neighbors = defaultdict(list)
-        edges = set()
-        visited = set()
+        neighbors = defaultdict(list) # adj list
+        edges = set() # unique connections
+        visited = set() # to avoid visiting same citt
         changes = 0
 
         for a, b in connections:
@@ -23,5 +23,4 @@ class Solution:
                     dfs(neighbor)
         
         dfs(0)
-        
         return changes
