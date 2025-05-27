@@ -7,10 +7,11 @@ class Solution:
         maxHeap = []
         res = []
 
-        for word, freq in counter.items():
-            heapq.heappush(maxHeap, (-freq, word))
+        for word, frq in counter.items():
+            heapq.heappush(maxHeap, (-frq, word))
         
         for _ in range(k):
-            res.append(heapq.heappop(maxHeap)[1])
+            frq, word = heapq.heappop(maxHeap)
+            res.append(word)
 
         return res
