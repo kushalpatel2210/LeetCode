@@ -267,3 +267,19 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Depth-First Search
+|  |
+| ------- |
+| [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/kushalpatel2210/LeetCode/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
+## Breadth-First Search
+|  |
+| ------- |
+| [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/kushalpatel2210/LeetCode/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
+## Graph
+|  |
+| ------- |
+| [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/kushalpatel2210/LeetCode/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
+<!---LeetCode Topics End-->
