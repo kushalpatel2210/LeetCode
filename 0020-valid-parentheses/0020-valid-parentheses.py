@@ -1,20 +1,14 @@
 class Solution:
     def isValid(self, s: str) -> bool:
         stack = []
-        parentheses = {
-            ']': '[',
-            ')': '(',
-            '}': '{'
-        }
+        hashMap = {')': '(', '}':'{', ']': '['}
 
         for c in s:
-            if c in parentheses:
-                if stack and stack[-1] == parentheses[c]:
-                    stack.pop()
-                else:
-                    return False
-            else:
+            if c in '{([':
                 stack.append(c)
+            else:
+                if not stack or stack[-1] != hashMap[c]:
+                    return False
+                stack.pop()
         
-        return len(stack) == 0
-
+        return True if not stack else False
