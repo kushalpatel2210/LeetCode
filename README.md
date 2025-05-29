@@ -114,6 +114,7 @@
 - 0287-find-the-duplicate-number
 - 0290-word-pattern
 - 0300-longest-increasing-subsequence
+- 0303-range-sum-query-immutable
 - 0304-range-sum-query-2d-immutable
 - 0322-coin-change
 - 0328-odd-even-linked-list
@@ -267,19 +268,3 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0303-range-sum-query-immutable](https://github.com/kushalpatel2210/LeetCode/tree/master/0303-range-sum-query-immutable) |
-## Design
-|  |
-| ------- |
-| [0303-range-sum-query-immutable](https://github.com/kushalpatel2210/LeetCode/tree/master/0303-range-sum-query-immutable) |
-## Prefix Sum
-|  |
-| ------- |
-| [0303-range-sum-query-immutable](https://github.com/kushalpatel2210/LeetCode/tree/master/0303-range-sum-query-immutable) |
-<!---LeetCode Topics End-->
