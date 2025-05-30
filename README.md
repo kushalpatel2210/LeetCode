@@ -224,6 +224,7 @@
 - 1621-number-of-subsequences-that-satisfy-the-given-sum-condition
 - 1635-number-of-good-pairs
 - 1651-shuffle-string
+- 1656-count-good-triplets
 - 1666-make-the-string-great
 - 1762-furthest-building-you-can-reach
 - 1765-merge-in-between-linked-lists
@@ -268,15 +269,3 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [1656-count-good-triplets](https://github.com/kushalpatel2210/LeetCode/tree/master/1656-count-good-triplets) |
-## Enumeration
-|  |
-| ------- |
-| [1656-count-good-triplets](https://github.com/kushalpatel2210/LeetCode/tree/master/1656-count-good-triplets) |
-<!---LeetCode Topics End-->
