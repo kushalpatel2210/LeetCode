@@ -101,6 +101,7 @@
 - 0219-contains-duplicate-ii
 - 0225-implement-stack-using-queues
 - 0226-invert-binary-tree
+- 0227-basic-calculator-ii
 - 0228-summary-ranges
 - 0229-majority-element-ii
 - 0230-kth-smallest-element-in-a-bst
@@ -270,19 +271,3 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Math
-|  |
-| ------- |
-| [0227-basic-calculator-ii](https://github.com/kushalpatel2210/LeetCode/tree/master/0227-basic-calculator-ii) |
-## String
-|  |
-| ------- |
-| [0227-basic-calculator-ii](https://github.com/kushalpatel2210/LeetCode/tree/master/0227-basic-calculator-ii) |
-## Stack
-|  |
-| ------- |
-| [0227-basic-calculator-ii](https://github.com/kushalpatel2210/LeetCode/tree/master/0227-basic-calculator-ii) |
-<!---LeetCode Topics End-->
