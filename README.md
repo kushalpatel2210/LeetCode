@@ -39,6 +39,7 @@
 - 0069-sqrtx
 - 0070-climbing-stairs
 - 0071-simplify-path
+- 0072-edit-distance
 - 0073-set-matrix-zeroes
 - 0074-search-a-2d-matrix
 - 0075-sort-colors
@@ -269,15 +270,3 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## String
-|  |
-| ------- |
-| [0072-edit-distance](https://github.com/kushalpatel2210/LeetCode/tree/master/0072-edit-distance) |
-## Dynamic Programming
-|  |
-| ------- |
-| [0072-edit-distance](https://github.com/kushalpatel2210/LeetCode/tree/master/0072-edit-distance) |
-<!---LeetCode Topics End-->
