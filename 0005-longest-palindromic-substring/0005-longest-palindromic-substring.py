@@ -1,26 +1,25 @@
 class Solution:
+    def expandPalindrome(self, left, right, s):
+        while left > 0 and right < len(s) - 1 and s[left - 1] == s[right + 1]:
+            left -= 1
+            right += 1
+        return (left, right - left + 1)
+
     def longestPalindrome(self, s: str) -> str:
-        res = ''
-        resLength = 0
+        start = maxLength = 0
 
-        for i in range(len(s)):
-            # Odd length
-            l = r = i
-            while l >= 0 and r < len(s) and s[l] == s[r]:
-                if (r - l + 1) > resLength:
-                    res = s[l : r + 1]
-                    resLength = r - l + 1
-                l -= 1
-                r += 1
-            
-            # Even length
-            l, r = i, i + 1
-            while l >= 0 and r < len(s) and s[l] == s[r]:
-                if (r - l + 1) > resLength:
-                    res = s[l : r + 1]
-                    resLength = r - l + 1
-                l -= 1
-                r += 1
+        for center in range(len(s)):
+            # odd length 'c'
+            oddStart, oddMaxLength = self.expandPalindrome(center, center, s)
+            if oddMaxLength > maxLength:
+                start = oddStart
+                maxLength = oddMaxLength
+
+            # even length like 'cc'
+            if center < len(s) - 1 and s[center] == s[center + 1]:
+                evenStart, evenMaxLength = self.expandPalindrome(center, center + 1, s)
+                if evenMaxLength > maxLength:
+                    maxLength = evenMaxLength
+                    start = evenStart
         
-        return res
-
+        return s[start: start + maxLength]
