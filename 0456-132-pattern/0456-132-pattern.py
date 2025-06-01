@@ -13,5 +13,4 @@ class Solution:
             minEle = min(minEle, num)
             stack.append((num, minEle))
 
-        
         return False
