@@ -9,8 +9,9 @@ class Solution:
             
             if stack and stack[-1][1] < num:
                 return True
-            
-            stack.append((num, minEle))
+
             minEle = min(minEle, num)
+            stack.append((num, minEle))
+
         
         return False
