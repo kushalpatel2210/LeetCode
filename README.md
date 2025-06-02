@@ -275,3 +275,19 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [1019-squares-of-a-sorted-array](https://github.com/kushalpatel2210/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
+## Two Pointers
+|  |
+| ------- |
+| [1019-squares-of-a-sorted-array](https://github.com/kushalpatel2210/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
+## Sorting
+|  |
+| ------- |
+| [1019-squares-of-a-sorted-array](https://github.com/kushalpatel2210/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
+<!---LeetCode Topics End-->
