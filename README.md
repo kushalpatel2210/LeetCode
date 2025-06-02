@@ -274,3 +274,23 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [2289-minimum-operations-to-make-the-array-alternating](https://github.com/kushalpatel2210/LeetCode/tree/master/2289-minimum-operations-to-make-the-array-alternating) |
+## Hash Table
+|  |
+| ------- |
+| [2289-minimum-operations-to-make-the-array-alternating](https://github.com/kushalpatel2210/LeetCode/tree/master/2289-minimum-operations-to-make-the-array-alternating) |
+## Greedy
+|  |
+| ------- |
+| [2289-minimum-operations-to-make-the-array-alternating](https://github.com/kushalpatel2210/LeetCode/tree/master/2289-minimum-operations-to-make-the-array-alternating) |
+## Counting
+|  |
+| ------- |
+| [2289-minimum-operations-to-make-the-array-alternating](https://github.com/kushalpatel2210/LeetCode/tree/master/2289-minimum-operations-to-make-the-array-alternating) |
+<!---LeetCode Topics End-->
