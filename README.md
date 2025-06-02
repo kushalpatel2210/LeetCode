@@ -70,6 +70,7 @@
 - 0125-valid-palindrome
 - 0128-longest-consecutive-sequence
 - 0134-gas-station
+- 0136-single-number
 - 0138-copy-list-with-random-pointer
 - 0139-word-break
 - 0141-linked-list-cycle
@@ -275,15 +276,3 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0136-single-number](https://github.com/kushalpatel2210/LeetCode/tree/master/0136-single-number) |
-## Bit Manipulation
-|  |
-| ------- |
-| [0136-single-number](https://github.com/kushalpatel2210/LeetCode/tree/master/0136-single-number) |
-<!---LeetCode Topics End-->
