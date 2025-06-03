@@ -2,21 +2,21 @@ class Solution:
     def exclusiveTime(self, n: int, logs: List[str]) -> List[int]:
         exclusive_times = [0] * n
         call_stack = []
-        last_recorded_time = -1
+        prev_rec_time = -1
 
         for log in logs:
-            function_id, operation, timestamp = log.split(":")
-            function_id = int(function_id)
-            timestamp = int(timestamp)
+            f_id, op, ts = log.split(":")
+            f_id = int(f_id)
+            ts = int(ts)
 
-            if operation == 'start':
+            if op == "start":
                 if call_stack:
-                    exclusive_times[call_stack[-1]] += timestamp - last_recorded_time
-                call_stack.append(function_id)
-                last_recorded_time = timestamp
+                    exclusive_times[call_stack[-1]] += ts - prev_rec_time
+                call_stack.append(f_id)
+                prev_rec_time = ts
             else:
-                in_progress_function_id = call_stack.pop()
-                exclusive_times[in_progress_function_id] += timestamp - last_recorded_time + 1
-                last_recorded_time = timestamp + 1
-
+                prev_f_id = call_stack.pop()
+                exclusive_times[prev_f_id] += ts - prev_rec_time + 1
+                prev_rec_time = ts + 1
+        
         return exclusive_times
