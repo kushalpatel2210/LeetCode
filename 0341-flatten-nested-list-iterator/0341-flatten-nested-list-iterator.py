@@ -31,7 +31,7 @@ class NestedIterator:
         
     
     def hasNext(self) -> bool:
-        return len(self.stack) > 0
+        return self.stack
     
     def dfs(self, nestedL):
         for n in nestedL:
