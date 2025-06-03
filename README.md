@@ -279,3 +279,15 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [0636-exclusive-time-of-functions](https://github.com/kushalpatel2210/LeetCode/tree/master/0636-exclusive-time-of-functions) |
+## Stack
+|  |
+| ------- |
+| [0636-exclusive-time-of-functions](https://github.com/kushalpatel2210/LeetCode/tree/master/0636-exclusive-time-of-functions) |
+<!---LeetCode Topics End-->
