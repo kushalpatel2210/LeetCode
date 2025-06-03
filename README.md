@@ -157,6 +157,7 @@
 - 0572-subtree-of-another-tree
 - 0605-can-place-flowers
 - 0621-task-scheduler
+- 0636-exclusive-time-of-functions
 - 0643-maximum-average-subarray-i
 - 0649-dota2-senate
 - 0658-find-k-closest-elements
@@ -279,15 +280,3 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0636-exclusive-time-of-functions](https://github.com/kushalpatel2210/LeetCode/tree/master/0636-exclusive-time-of-functions) |
-## Stack
-|  |
-| ------- |
-| [0636-exclusive-time-of-functions](https://github.com/kushalpatel2210/LeetCode/tree/master/0636-exclusive-time-of-functions) |
-<!---LeetCode Topics End-->
