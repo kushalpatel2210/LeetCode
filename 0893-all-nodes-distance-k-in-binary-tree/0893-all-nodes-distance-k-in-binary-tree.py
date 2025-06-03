@@ -18,7 +18,7 @@ class Solution:
                 mapParent(node.right, node)
         
         def dfs(node, remainingDistance):
-            if not node or node in visited:
+            if not node or node in visited or remainingDistance < 0:
                 return 
             
             visited.add(node)
