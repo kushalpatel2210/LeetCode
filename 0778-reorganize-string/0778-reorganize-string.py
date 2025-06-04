@@ -18,10 +18,9 @@ class Solution:
 
             if prev:
                 heapq.heappush(maxHeap, prev)
+                prev = None
                 
             if frq != 0:
-                prev = (frq, c)
-            else:
-                prev = None
+                prev = (frq, c)                
         
         return res if not prev else ""
