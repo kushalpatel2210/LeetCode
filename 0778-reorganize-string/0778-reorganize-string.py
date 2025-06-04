@@ -12,9 +12,6 @@ class Solution:
         
         prev = None 
         while maxHeap:
-            # Solution does not exists
-            # if prev and not maxHeap:
-            #     return ""
             frq, c = heapq.heappop(maxHeap)
             res += c
             frq += 1
@@ -26,8 +23,5 @@ class Solution:
                 prev = (frq, c)
             else:
                 prev = None
-        else:
-            if prev:
-                return ""
         
-        return res
+        return res if not prev else ""
