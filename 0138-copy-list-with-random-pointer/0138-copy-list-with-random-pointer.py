@@ -11,20 +11,19 @@ class Solution:
     def copyRandomList(self, head: 'Optional[Node]') -> 'Optional[Node]':
         headNode = head
         dummy = dummyNode = res = Node(0)
-        hashMap = dict()
+        hashMap = {}
 
         while headNode:
             dummy.next = Node(headNode.val)
             hashMap[headNode] = dummy.next
-            headNode = headNode.next
             dummy = dummy.next
+            headNode = headNode.next
         
         dummyNode = dummyNode.next
         while head:
             if head.random:
                 dummyNode.random = hashMap[head.random]
-            head = head.next
             dummyNode = dummyNode.next
+            head = head.next
         
         return res.next
-
