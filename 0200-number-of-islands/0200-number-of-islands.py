@@ -5,16 +5,16 @@ class Solution:
 
         def dfs(i, j):
             if not (0 <= i < n and 0 <= j < m):
-                return False
+                return
             
-            grid[i][j] = 0
+            if grid[i][j] == "0":
+                return
+            
+            grid[i][j] = "0"
 
             for deltaI, deltaJ in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
                 newI, newJ = i + deltaI, j + deltaJ
-                if 0 <= newI < n and 0 <= newJ < m and grid[newI][newJ] == "1":
-                    dfs(newI, newJ)
-            
-            return True
+                dfs(newI, newJ)
         
         for i in range(n):
             for j in range(m):
