@@ -8,8 +8,8 @@ class Solution:
         coursesTaken = 0
 
         for crs, preq in prerequisites:
-            schedule[crs].append(preq)
-            inDegree[preq] += 1
+            schedule[preq].append(crs)
+            inDegree[crs] += 1
             
         for i in range(numCourses):
             if inDegree[i] == 0:
