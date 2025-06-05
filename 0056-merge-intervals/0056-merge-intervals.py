@@ -7,12 +7,10 @@ class Solution:
             if not res:
                 res.append(interval)
             else:
-                lastEle = res.pop()
-                if interval[0] > lastEle[1]:
-                    res.append(lastEle)
+                if res[-1][1] < interval[0]:
                     res.append(interval)
                 else:
-                    newIntervalEnd = max(lastEle[1], interval[1])
-                    res.append([lastEle[0], newIntervalEnd])
+                    oldInterval = res.pop()
+                    res.append([min(oldInterval[0], interval[0]), max(oldInterval[1], interval[1])])
 
         return res
