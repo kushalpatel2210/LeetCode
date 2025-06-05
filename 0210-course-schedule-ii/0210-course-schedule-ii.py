@@ -9,8 +9,8 @@ class Solution:
         res = []
 
         for crs, preq in prerequisites:
-            schedule[crs].append(preq)
-            inDegree[preq] += 1
+            schedule[preq].append(crs)
+            inDegree[crs] += 1
         
         for i in range(numCourses):
             if inDegree[i] == 0:
@@ -27,4 +27,4 @@ class Solution:
                 if inDegree[course] == 0:
                     q.append(course)
         
-        return res[::-1] if completedCourses == numCourses else []
+        return res if completedCourses == numCourses else []
