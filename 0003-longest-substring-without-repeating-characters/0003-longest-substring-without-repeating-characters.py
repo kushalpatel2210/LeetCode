@@ -1,18 +1,18 @@
-from collections import defaultdict
+from collections import Counter
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        counter = defaultdict(int)
-        i = 0
-        res = float('-inf')
+        counter = Counter()
+        l = 0
+        longest = float('-inf')
 
-        for j in range(len(s)):
-            counter[s[j]] += 1
+        for r in range(len(s)):
+            counter[s[r]] += 1
 
-            while counter[s[j]] > 1:
-                counter[s[i]] -= 1
-                i += 1
-            
-            res = max(res, j - i + 1)
+            while counter[s[r]] > 1:
+                counter[s[l]] -= 1
+                l += 1
+                    
+            longest = max(longest, r - l + 1)
         
-        return res if res != float('-inf') else 0
+        return 0 if longest == float('-inf') else longest
