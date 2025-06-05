@@ -280,3 +280,15 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [0056-merge-intervals](https://github.com/kushalpatel2210/LeetCode/tree/master/0056-merge-intervals) |
+## Sorting
+|  |
+| ------- |
+| [0056-merge-intervals](https://github.com/kushalpatel2210/LeetCode/tree/master/0056-merge-intervals) |
+<!---LeetCode Topics End-->
