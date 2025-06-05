@@ -1,31 +1,28 @@
-from collections import defaultdict
+from collections import Counter
 
 class Solution:
-    def maxGain(self, nums, targetVal, k):
-        maxGain, currGain = 0, 0
+    def maxOccurences(self, nums, target, k):
+        maxCount = currCount = 0
 
         for num in nums:
             if num == k:
-                currGain -= 1
+                currCount -= 1
             
-            if num == targetVal:
-                currGain += 1
+            if num == target:
+                currCount += 1
             
-            if currGain < 0:
-                currGain = 0    
+            if currCount < 0:
+                currCount = 0
             
-            maxGain = max(maxGain, currGain)
-
-        return maxGain
+            maxCount = max(maxCount, currCount)
+        
+        return maxCount
 
     def maxFrequency(self, nums: List[int], k: int) -> int:
-        hashMap = defaultdict(int)
-        maxFrequency = float('-inf')
+        counter = Counter(nums)
+        maxFreq = 0
 
-        for num in nums:
-            hashMap[num] += 1
+        for key, frq in counter.items():
+            maxFreq = max(maxFreq, self.maxOccurences(nums, key, k))
         
-        for num, frq in hashMap.items():
-            maxFrequency = max(maxFrequency, self.maxGain(nums, num, k))
-
-        return hashMap[k] + maxFrequency
+        return counter[k] + maxFreq
