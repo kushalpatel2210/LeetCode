@@ -16,16 +16,13 @@ class Solution:
                 q.append(i)
         
         while q:
-            n = len(q) # current length of the queue
-            
-            for _ in range(n):
-                crs = q.popleft()
-                coursesTaken += 1
+            crs = q.popleft()
+            coursesTaken += 1
 
-                for course in schedule[crs]:
-                    inDegree[course] -= 1
+            for course in schedule[crs]:
+                inDegree[course] -= 1
 
-                    if inDegree[course] == 0:
-                        q.append(course)
+                if inDegree[course] == 0:
+                    q.append(course)
         
         return coursesTaken == numCourses
