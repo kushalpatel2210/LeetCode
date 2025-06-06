@@ -280,3 +280,23 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [2833-count-zero-request-servers](https://github.com/kushalpatel2210/LeetCode/tree/master/2833-count-zero-request-servers) |
+## Hash Table
+|  |
+| ------- |
+| [2833-count-zero-request-servers](https://github.com/kushalpatel2210/LeetCode/tree/master/2833-count-zero-request-servers) |
+## Sliding Window
+|  |
+| ------- |
+| [2833-count-zero-request-servers](https://github.com/kushalpatel2210/LeetCode/tree/master/2833-count-zero-request-servers) |
+## Sorting
+|  |
+| ------- |
+| [2833-count-zero-request-servers](https://github.com/kushalpatel2210/LeetCode/tree/master/2833-count-zero-request-servers) |
+<!---LeetCode Topics End-->
