@@ -4,6 +4,7 @@
 - 0003-longest-substring-without-repeating-characters
 - 0005-longest-palindromic-substring
 - 0008-string-to-integer-atoi
+- 0009-palindrome-number
 - 0011-container-with-most-water
 - 0012-integer-to-roman
 - 0013-roman-to-integer
@@ -284,11 +285,3 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Math
-|  |
-| ------- |
-| [0009-palindrome-number](https://github.com/kushalpatel2210/LeetCode/tree/master/0009-palindrome-number) |
-<!---LeetCode Topics End-->
