@@ -14,6 +14,7 @@
 - 0019-remove-nth-node-from-end-of-list
 - 0020-valid-parentheses
 - 0021-merge-two-sorted-lists
+- 0022-generate-parentheses
 - 0026-remove-duplicates-from-sorted-array
 - 0027-remove-element
 - 0028-find-the-index-of-the-first-occurrence-in-a-string
@@ -282,19 +283,3 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## String
-|  |
-| ------- |
-| [0022-generate-parentheses](https://github.com/kushalpatel2210/LeetCode/tree/master/0022-generate-parentheses) |
-## Dynamic Programming
-|  |
-| ------- |
-| [0022-generate-parentheses](https://github.com/kushalpatel2210/LeetCode/tree/master/0022-generate-parentheses) |
-## Backtracking
-|  |
-| ------- |
-| [0022-generate-parentheses](https://github.com/kushalpatel2210/LeetCode/tree/master/0022-generate-parentheses) |
-<!---LeetCode Topics End-->
