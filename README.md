@@ -281,3 +281,19 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Hash Table
+|  |
+| ------- |
+| [0013-roman-to-integer](https://github.com/kushalpatel2210/LeetCode/tree/master/0013-roman-to-integer) |
+## Math
+|  |
+| ------- |
+| [0013-roman-to-integer](https://github.com/kushalpatel2210/LeetCode/tree/master/0013-roman-to-integer) |
+## String
+|  |
+| ------- |
+| [0013-roman-to-integer](https://github.com/kushalpatel2210/LeetCode/tree/master/0013-roman-to-integer) |
+<!---LeetCode Topics End-->
