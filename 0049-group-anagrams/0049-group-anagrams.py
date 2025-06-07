@@ -12,4 +12,4 @@ class Solution:
             
             hashMap[tuple(key)].append(s)
         
-        return [list(x) for x in hashMap.values()]
+        return list(hashMap.values())
