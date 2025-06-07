@@ -142,6 +142,7 @@
 - 0399-evaluate-division
 - 0402-remove-k-digits
 - 0424-longest-repeating-character-replacement
+- 0433-minimum-genetic-mutation
 - 0437-path-sum-iii
 - 0441-arranging-coins
 - 0443-string-compression
@@ -285,19 +286,3 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Hash Table
-|  |
-| ------- |
-| [0433-minimum-genetic-mutation](https://github.com/kushalpatel2210/LeetCode/tree/master/0433-minimum-genetic-mutation) |
-## String
-|  |
-| ------- |
-| [0433-minimum-genetic-mutation](https://github.com/kushalpatel2210/LeetCode/tree/master/0433-minimum-genetic-mutation) |
-## Breadth-First Search
-|  |
-| ------- |
-| [0433-minimum-genetic-mutation](https://github.com/kushalpatel2210/LeetCode/tree/master/0433-minimum-genetic-mutation) |
-<!---LeetCode Topics End-->
