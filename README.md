@@ -214,6 +214,7 @@
 - 1205-defanging-an-ip-address
 - 1216-print-zero-even-odd
 - 1231-replace-elements-with-greatest-element-on-right-side
+- 1239-largest-1-bordered-square
 - 1250-longest-common-subsequence
 - 1304-longest-happy-string
 - 1319-unique-number-of-occurrences
@@ -281,19 +282,3 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [1239-largest-1-bordered-square](https://github.com/kushalpatel2210/LeetCode/tree/master/1239-largest-1-bordered-square) |
-## Dynamic Programming
-|  |
-| ------- |
-| [1239-largest-1-bordered-square](https://github.com/kushalpatel2210/LeetCode/tree/master/1239-largest-1-bordered-square) |
-## Matrix
-|  |
-| ------- |
-| [1239-largest-1-bordered-square](https://github.com/kushalpatel2210/LeetCode/tree/master/1239-largest-1-bordered-square) |
-<!---LeetCode Topics End-->
