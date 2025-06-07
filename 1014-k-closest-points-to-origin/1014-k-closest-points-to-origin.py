@@ -1,4 +1,3 @@
-import math
 import heapq
 
 class Solution:
@@ -6,7 +5,7 @@ class Solution:
         maxHeap = []
 
         for x, y in points:
-            distance = math.sqrt(x ** 2 + y ** 2)
+            distance = x ** 2 + y ** 2 # if you do not take sqrt, it's ok as well
             heapq.heappush(maxHeap, (-distance, (x, y)))
 
             if len(maxHeap) > k:
