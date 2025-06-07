@@ -1,9 +1,9 @@
-import random 
+import random
 
 class RandomizedSet:
 
     def __init__(self):
-        self.hashMap = dict() # val -> idx
+        self.hashMap = {} # num -> idx
         self.nums = []
 
     def insert(self, val: int) -> bool:
@@ -16,18 +16,17 @@ class RandomizedSet:
     def remove(self, val: int) -> bool:
         if val not in self.hashMap:
             return False
-        
-        idx = self.hashMap[val]
-        lastElement = self.nums[-1]
-        self.hashMap[lastElement] = idx 
-        self.nums[idx] = lastElement
-        self.nums.pop()
-        del self.hashMap[val]
-        return True
 
+        indexOfVal = self.hashMap[val]
+        lastElement = self.nums[-1]
+        self.nums[indexOfVal] = lastElement
+        self.hashMap[lastElement] = indexOfVal
+        del self.hashMap[val]
+        self.nums.pop()
+        return True
+        
     def getRandom(self) -> int:
         return random.choice(self.nums)
-
 
 # Your RandomizedSet object will be instantiated and called as such:
 # obj = RandomizedSet()
