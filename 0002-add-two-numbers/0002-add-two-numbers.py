@@ -19,8 +19,8 @@ class Solution:
                 currSum += l2.val
                 l2 = l2.next
             
-            carry = currSum // 10
             node.next = ListNode(currSum % 10)
+            carry = currSum // 10
             node = node.next
         
         if carry:
