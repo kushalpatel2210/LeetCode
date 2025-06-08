@@ -84,6 +84,7 @@
 - 0146-lru-cache
 - 0150-evaluate-reverse-polish-notation
 - 0151-reverse-words-in-a-string
+- 0152-maximum-product-subarray
 - 0153-find-minimum-in-rotated-sorted-array
 - 0155-min-stack
 - 0160-intersection-of-two-linked-lists
@@ -288,15 +289,3 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0152-maximum-product-subarray](https://github.com/kushalpatel2210/LeetCode/tree/master/0152-maximum-product-subarray) |
-## Dynamic Programming
-|  |
-| ------- |
-| [0152-maximum-product-subarray](https://github.com/kushalpatel2210/LeetCode/tree/master/0152-maximum-product-subarray) |
-<!---LeetCode Topics End-->
