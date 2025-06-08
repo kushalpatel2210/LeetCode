@@ -9,5 +9,5 @@ class Solution:
 
             if len(minHeap) > k:
                 heapq.heappop(minHeap)
-
+        
         return minHeap[0]
