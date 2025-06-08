@@ -152,6 +152,7 @@
 - 0455-assign-cookies
 - 0456-132-pattern
 - 0496-next-greater-element-i
+- 0503-next-greater-element-ii
 - 0525-contiguous-array
 - 0535-encode-and-decode-tinyurl
 - 0540-single-element-in-a-sorted-array
@@ -290,19 +291,3 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0503-next-greater-element-ii](https://github.com/kushalpatel2210/LeetCode/tree/master/0503-next-greater-element-ii) |
-## Stack
-|  |
-| ------- |
-| [0503-next-greater-element-ii](https://github.com/kushalpatel2210/LeetCode/tree/master/0503-next-greater-element-ii) |
-## Monotonic Stack
-|  |
-| ------- |
-| [0503-next-greater-element-ii](https://github.com/kushalpatel2210/LeetCode/tree/master/0503-next-greater-element-ii) |
-<!---LeetCode Topics End-->
