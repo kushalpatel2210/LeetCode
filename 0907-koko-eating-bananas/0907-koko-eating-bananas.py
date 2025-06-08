@@ -2,25 +2,25 @@ import math
 
 class Solution:
     def minEatingSpeed(self, piles: List[int], h: int) -> int:
-        minSpeed = float('inf')
-        
-        def timeTaken(speed):
-            totalTime = 0
-
-            for pile in piles:
-                totalTime += math.ceil(pile/speed)
-            
-            return totalTime
-        
         l, r = 1, max(piles)
+        ans = float('inf')
+
+        def timeTakenToEatAllBananas(speed):
+            time = 0
+            for pile in piles:
+                time += math.ceil(pile / speed)
+            
+            return time
 
         while l <= r:
             m = l + (r - l) // 2
 
-            if timeTaken(m) <= h:
-                minSpeed = min(minSpeed, m)
-                r = m - 1
-            else:
+            time = timeTakenToEatAllBananas(m)
+
+            if time > h:
                 l = m + 1
+            else:
+                ans = min(ans, m)
+                r = m - 1
         
-        return minSpeed
+        return ans
