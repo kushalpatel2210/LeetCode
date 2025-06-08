@@ -292,3 +292,15 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Stack
+|  |
+| ------- |
+| [0155-min-stack](https://github.com/kushalpatel2210/LeetCode/tree/master/0155-min-stack) |
+## Design
+|  |
+| ------- |
+| [0155-min-stack](https://github.com/kushalpatel2210/LeetCode/tree/master/0155-min-stack) |
+<!---LeetCode Topics End-->
