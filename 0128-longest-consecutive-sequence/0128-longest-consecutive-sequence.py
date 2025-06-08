@@ -1,16 +1,16 @@
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
         uniqueNums = set(nums)
-        lcs = float('-inf')
+        longest = 0
 
         for num in uniqueNums:
-            if num - 1 in uniqueNums:
-                continue
-            
-            res = 0
-            while num in uniqueNums:
-                res += 1
-                num += 1
-            lcs = max(lcs, res)
+            if num - 1 not in uniqueNums:
+                currLength = 0
+
+                while num in uniqueNums:
+                    currLength += 1
+                    num += 1
+                
+                longest = max(longest, currLength)
         
-        return lcs if lcs != float('-inf') else 0
+        return longest
