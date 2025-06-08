@@ -8,12 +8,12 @@ class Solution:
                 return
             
             if total > target or i >= len(candidates):
-                return 
+                return
             
-            currPath.append(candidates[i]) # append
-            backtrack(i, currPath, total + candidates[i]) # explore
-            currPath.pop() # pop
-            backtrack(i + 1, currPath, total) # explore
+            currPath.append(candidates[i]) # include
+            backtrack(i, currPath, total + candidates[i])
+            currPath.pop() # does not include
+            backtrack(i + 1, currPath, total)
         
         backtrack(0, [], 0)
 
