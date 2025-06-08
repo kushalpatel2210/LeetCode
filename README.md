@@ -288,3 +288,15 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [0152-maximum-product-subarray](https://github.com/kushalpatel2210/LeetCode/tree/master/0152-maximum-product-subarray) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0152-maximum-product-subarray](https://github.com/kushalpatel2210/LeetCode/tree/master/0152-maximum-product-subarray) |
+<!---LeetCode Topics End-->
