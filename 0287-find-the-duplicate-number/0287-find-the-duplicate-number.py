@@ -1,6 +1,8 @@
+# Floyd's algorithm 
+
 class Solution:
     def findDuplicate(self, nums: List[int]) -> int:
-        slow, fast = 0, 0
+        slow, fast = 0, 0 
 
         while True:
             slow = nums[slow]
@@ -9,7 +11,7 @@ class Solution:
             if slow == fast:
                 break
         
-        slow2 = 0
+        slow2 = 0    
         while True:
             slow = nums[slow]
             slow2 = nums[slow2]
