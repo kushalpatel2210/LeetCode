@@ -287,3 +287,15 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Two Pointers
+|  |
+| ------- |
+| [0443-string-compression](https://github.com/kushalpatel2210/LeetCode/tree/master/0443-string-compression) |
+## String
+|  |
+| ------- |
+| [0443-string-compression](https://github.com/kushalpatel2210/LeetCode/tree/master/0443-string-compression) |
+<!---LeetCode Topics End-->
