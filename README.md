@@ -145,6 +145,7 @@
 - 0399-evaluate-division
 - 0402-remove-k-digits
 - 0417-pacific-atlantic-water-flow
+- 0419-battleships-in-a-board
 - 0424-longest-repeating-character-replacement
 - 0433-minimum-genetic-mutation
 - 0437-path-sum-iii
@@ -297,19 +298,3 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0419-battleships-in-a-board](https://github.com/kushalpatel2210/LeetCode/tree/master/0419-battleships-in-a-board) |
-## Depth-First Search
-|  |
-| ------- |
-| [0419-battleships-in-a-board](https://github.com/kushalpatel2210/LeetCode/tree/master/0419-battleships-in-a-board) |
-## Matrix
-|  |
-| ------- |
-| [0419-battleships-in-a-board](https://github.com/kushalpatel2210/LeetCode/tree/master/0419-battleships-in-a-board) |
-<!---LeetCode Topics End-->
