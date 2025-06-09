@@ -301,3 +301,23 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [0917-boats-to-save-people](https://github.com/kushalpatel2210/LeetCode/tree/master/0917-boats-to-save-people) |
+## Two Pointers
+|  |
+| ------- |
+| [0917-boats-to-save-people](https://github.com/kushalpatel2210/LeetCode/tree/master/0917-boats-to-save-people) |
+## Greedy
+|  |
+| ------- |
+| [0917-boats-to-save-people](https://github.com/kushalpatel2210/LeetCode/tree/master/0917-boats-to-save-people) |
+## Sorting
+|  |
+| ------- |
+| [0917-boats-to-save-people](https://github.com/kushalpatel2210/LeetCode/tree/master/0917-boats-to-save-people) |
+<!---LeetCode Topics End-->
