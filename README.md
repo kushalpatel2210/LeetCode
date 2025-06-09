@@ -296,3 +296,23 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [1072-next-greater-node-in-linked-list](https://github.com/kushalpatel2210/LeetCode/tree/master/1072-next-greater-node-in-linked-list) |
+## Linked List
+|  |
+| ------- |
+| [1072-next-greater-node-in-linked-list](https://github.com/kushalpatel2210/LeetCode/tree/master/1072-next-greater-node-in-linked-list) |
+## Stack
+|  |
+| ------- |
+| [1072-next-greater-node-in-linked-list](https://github.com/kushalpatel2210/LeetCode/tree/master/1072-next-greater-node-in-linked-list) |
+## Monotonic Stack
+|  |
+| ------- |
+| [1072-next-greater-node-in-linked-list](https://github.com/kushalpatel2210/LeetCode/tree/master/1072-next-greater-node-in-linked-list) |
+<!---LeetCode Topics End-->
