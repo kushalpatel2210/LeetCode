@@ -3,6 +3,7 @@
 - 0002-add-two-numbers
 - 0003-longest-substring-without-repeating-characters
 - 0005-longest-palindromic-substring
+- 0006-zigzag-conversion
 - 0008-string-to-integer-atoi
 - 0009-palindrome-number
 - 0011-container-with-most-water
@@ -299,11 +300,3 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## String
-|  |
-| ------- |
-| [0006-zigzag-conversion](https://github.com/kushalpatel2210/LeetCode/tree/master/0006-zigzag-conversion) |
-<!---LeetCode Topics End-->
