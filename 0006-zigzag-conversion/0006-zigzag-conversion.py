@@ -3,13 +3,16 @@ class Solution:
         if numRows == 1:
             return s
         
-        res = []
-        increment = 2 * (numRows - 1)
-        for r in range(numRows):
-            for i in range(r, len(s), increment):
-                res.append(s[i])
-                if r > 0 and r < numRows - 1 and i + increment - 2 * r < len(s):
-                    res.append(s[i + increment - 2 * r])
+        r = 0
+        going_down = False
+        res = [''] * numRows
+
+        for c in s:
+            res[r] += c
+
+            if r == 0 or r == numRows - 1:
+                going_down = not going_down
+            
+            r = r + 1 if going_down else r - 1
         
         return "".join(res)
-
