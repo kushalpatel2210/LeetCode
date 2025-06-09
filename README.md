@@ -211,6 +211,7 @@
 - 1023-time-based-key-value-store
 - 1036-rotting-oranges
 - 1046-max-consecutive-ones-iii
+- 1049-minimum-domino-rotations-for-equal-row
 - 1056-capacity-to-ship-packages-within-d-days
 - 1071-greatest-common-divisor-of-strings
 - 1112-find-words-that-can-be-formed-by-characters
@@ -294,15 +295,3 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [1049-minimum-domino-rotations-for-equal-row](https://github.com/kushalpatel2210/LeetCode/tree/master/1049-minimum-domino-rotations-for-equal-row) |
-## Greedy
-|  |
-| ------- |
-| [1049-minimum-domino-rotations-for-equal-row](https://github.com/kushalpatel2210/LeetCode/tree/master/1049-minimum-domino-rotations-for-equal-row) |
-<!---LeetCode Topics End-->
