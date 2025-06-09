@@ -299,3 +299,19 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Math
+|  |
+| ------- |
+| [0556-next-greater-element-iii](https://github.com/kushalpatel2210/LeetCode/tree/master/0556-next-greater-element-iii) |
+## Two Pointers
+|  |
+| ------- |
+| [0556-next-greater-element-iii](https://github.com/kushalpatel2210/LeetCode/tree/master/0556-next-greater-element-iii) |
+## String
+|  |
+| ------- |
+| [0556-next-greater-element-iii](https://github.com/kushalpatel2210/LeetCode/tree/master/0556-next-greater-element-iii) |
+<!---LeetCode Topics End-->
