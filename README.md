@@ -212,6 +212,7 @@
 - 1013-fibonacci-number
 - 1014-k-closest-points-to-origin
 - 1019-squares-of-a-sorted-array
+- 1021-distribute-coins-in-binary-tree
 - 1023-time-based-key-value-store
 - 1036-rotting-oranges
 - 1046-max-consecutive-ones-iii
@@ -301,19 +302,3 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Tree
-|  |
-| ------- |
-| [1021-distribute-coins-in-binary-tree](https://github.com/kushalpatel2210/LeetCode/tree/master/1021-distribute-coins-in-binary-tree) |
-## Depth-First Search
-|  |
-| ------- |
-| [1021-distribute-coins-in-binary-tree](https://github.com/kushalpatel2210/LeetCode/tree/master/1021-distribute-coins-in-binary-tree) |
-## Binary Tree
-|  |
-| ------- |
-| [1021-distribute-coins-in-binary-tree](https://github.com/kushalpatel2210/LeetCode/tree/master/1021-distribute-coins-in-binary-tree) |
-<!---LeetCode Topics End-->
