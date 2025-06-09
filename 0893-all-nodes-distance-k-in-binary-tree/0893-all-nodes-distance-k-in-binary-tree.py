@@ -16,11 +16,11 @@ class Solution:
                 parentMap[node] = parent
                 mapParent(node.left, node)
                 mapParent(node.right, node)
-        
+            
         def dfs(node, remainingDistance):
             if not node or node in visited or remainingDistance < 0:
-                return 
-            
+                return
+
             visited.add(node)
 
             if remainingDistance == 0:
