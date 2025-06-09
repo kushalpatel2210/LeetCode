@@ -3,24 +3,22 @@ class Solution:
         charsList = list(str(n))
         n = len(charsList)
 
-        # Find the first decreasing element from the end
+        # find first decreasing element
         i = n - 2
         while i >= 0 and charsList[i] >= charsList[i + 1]:
             i -= 1
         
         if i < 0:
-            return - 1
+            return -1 
         
-        # find the smallest digit greater than charsList[i]
+        # find next greater element than charsList[i]
         j = n - 1
-        while charsList[j] <= charsList[i]:
+        while j >= 0 and charsList[i] >= charsList[j]:
             j -= 1
-
+        
+        # reverse the biggest permutation starting from i + 1
         charsList[i], charsList[j] = charsList[j], charsList[i]
 
-        # Step 4: Reverse the suffix (i+1 to end)
-        charsList[i+1:] = reversed(charsList[i+1:])
-
-        nextGreater = int("".join(charsList))
-        
-        return nextGreater if nextGreater <= 2**31 - 1 else -1
+        charsList[i + 1:] = reversed(charsList[i + 1:])
+        res = int("".join(charsList))
+        return res if res <= 2 **31 - 1 else -1
