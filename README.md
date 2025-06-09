@@ -89,6 +89,7 @@
 - 0153-find-minimum-in-rotated-sorted-array
 - 0155-min-stack
 - 0160-intersection-of-two-linked-lists
+- 0162-find-peak-element
 - 0167-two-sum-ii-input-array-is-sorted
 - 0169-majority-element
 - 0189-rotate-array
@@ -293,15 +294,3 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0162-find-peak-element](https://github.com/kushalpatel2210/LeetCode/tree/master/0162-find-peak-element) |
-## Binary Search
-|  |
-| ------- |
-| [0162-find-peak-element](https://github.com/kushalpatel2210/LeetCode/tree/master/0162-find-peak-element) |
-<!---LeetCode Topics End-->
