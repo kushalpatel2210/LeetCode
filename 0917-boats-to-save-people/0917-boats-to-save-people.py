@@ -10,7 +10,7 @@ class Solution:
             r -= 1
             count += 1
 
-            while l <= r and people[l] <= remainingCap:
+            if l <= r and people[l] <= remainingCap:
                 l += 1
         
         return count
