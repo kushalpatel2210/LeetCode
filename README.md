@@ -295,3 +295,23 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [1631-number-of-sub-arrays-with-odd-sum](https://github.com/kushalpatel2210/LeetCode/tree/master/1631-number-of-sub-arrays-with-odd-sum) |
+## Math
+|  |
+| ------- |
+| [1631-number-of-sub-arrays-with-odd-sum](https://github.com/kushalpatel2210/LeetCode/tree/master/1631-number-of-sub-arrays-with-odd-sum) |
+## Dynamic Programming
+|  |
+| ------- |
+| [1631-number-of-sub-arrays-with-odd-sum](https://github.com/kushalpatel2210/LeetCode/tree/master/1631-number-of-sub-arrays-with-odd-sum) |
+## Prefix Sum
+|  |
+| ------- |
+| [1631-number-of-sub-arrays-with-odd-sum](https://github.com/kushalpatel2210/LeetCode/tree/master/1631-number-of-sub-arrays-with-odd-sum) |
+<!---LeetCode Topics End-->
