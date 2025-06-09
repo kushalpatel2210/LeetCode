@@ -301,3 +301,19 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Tree
+|  |
+| ------- |
+| [1021-distribute-coins-in-binary-tree](https://github.com/kushalpatel2210/LeetCode/tree/master/1021-distribute-coins-in-binary-tree) |
+## Depth-First Search
+|  |
+| ------- |
+| [1021-distribute-coins-in-binary-tree](https://github.com/kushalpatel2210/LeetCode/tree/master/1021-distribute-coins-in-binary-tree) |
+## Binary Tree
+|  |
+| ------- |
+| [1021-distribute-coins-in-binary-tree](https://github.com/kushalpatel2210/LeetCode/tree/master/1021-distribute-coins-in-binary-tree) |
+<!---LeetCode Topics End-->
