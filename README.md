@@ -302,3 +302,31 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [3751-maximum-frequency-after-subarray-operation](https://github.com/kushalpatel2210/LeetCode/tree/master/3751-maximum-frequency-after-subarray-operation) |
+## Hash Table
+|  |
+| ------- |
+| [3751-maximum-frequency-after-subarray-operation](https://github.com/kushalpatel2210/LeetCode/tree/master/3751-maximum-frequency-after-subarray-operation) |
+## Dynamic Programming
+|  |
+| ------- |
+| [3751-maximum-frequency-after-subarray-operation](https://github.com/kushalpatel2210/LeetCode/tree/master/3751-maximum-frequency-after-subarray-operation) |
+## Greedy
+|  |
+| ------- |
+| [3751-maximum-frequency-after-subarray-operation](https://github.com/kushalpatel2210/LeetCode/tree/master/3751-maximum-frequency-after-subarray-operation) |
+## Enumeration
+|  |
+| ------- |
+| [3751-maximum-frequency-after-subarray-operation](https://github.com/kushalpatel2210/LeetCode/tree/master/3751-maximum-frequency-after-subarray-operation) |
+## Prefix Sum
+|  |
+| ------- |
+| [3751-maximum-frequency-after-subarray-operation](https://github.com/kushalpatel2210/LeetCode/tree/master/3751-maximum-frequency-after-subarray-operation) |
+<!---LeetCode Topics End-->
