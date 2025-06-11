@@ -3,7 +3,7 @@ class Solution:
         maxCount = float('-inf')
         l = 0
         currCount = 0
-        vowels = 'aeiou'
+        vowels = {'a', 'e', 'i', 'o', 'u'}
 
         for r in range(len(s)):
             if s[r] in vowels:
