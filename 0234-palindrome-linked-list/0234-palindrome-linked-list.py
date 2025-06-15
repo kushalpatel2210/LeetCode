@@ -4,27 +4,37 @@
 #         self.val = val
 #         self.next = next
 class Solution:
-    def isPalindrome(self, head: Optional[ListNode]) -> bool:
-        slow, fast = head, head.next
+    def find_mid(self, node):
+        slow, fast = node, node
 
         while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
         
-        secondHalf = slow.next
-        slow.next = None
+        return slow
 
+    def reverse(self, node):
         prev = None
-        while secondHalf:
-            temp = secondHalf.next
-            secondHalf.next = prev
-            prev = secondHalf
-            secondHalf = temp
-        
-        while head and prev:
-            if head.val != prev.val:
-                return False
-            head = head.next
-            prev = prev.next
+        curr = node
 
+        while curr:
+            nxt = curr.next
+            curr.next = prev
+            prev = curr
+            curr = nxt
+        
+        return prev
+
+    def isPalindrome(self, head: Optional[ListNode]) -> bool:
+        mid = self.find_mid(head)
+        second_head = self.reverse(mid)
+
+        ptr1, ptr2 = head, second_head
+
+        while ptr1 and ptr2:
+            if ptr1.val != ptr2.val:
+                return False
+            ptr1 = ptr1.next
+            ptr2 = ptr2.next
+        
         return True
