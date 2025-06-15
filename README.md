@@ -302,3 +302,15 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Math
+|  |
+| ------- |
+| [1529-max-difference-you-can-get-from-changing-an-integer](https://github.com/kushalpatel2210/LeetCode/tree/master/1529-max-difference-you-can-get-from-changing-an-integer) |
+## Greedy
+|  |
+| ------- |
+| [1529-max-difference-you-can-get-from-changing-an-integer](https://github.com/kushalpatel2210/LeetCode/tree/master/1529-max-difference-you-can-get-from-changing-an-integer) |
+<!---LeetCode Topics End-->
