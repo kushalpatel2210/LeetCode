@@ -183,6 +183,7 @@
 - 0735-asteroid-collision
 - 0739-daily-temperatures
 - 0744-network-delay-time
+- 0766-flatten-a-multilevel-doubly-linked-list
 - 0772-construct-quad-tree
 - 0778-reorganize-string
 - 0782-jewels-and-stones
@@ -303,19 +304,3 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Linked List
-|  |
-| ------- |
-| [0766-flatten-a-multilevel-doubly-linked-list](https://github.com/kushalpatel2210/LeetCode/tree/master/0766-flatten-a-multilevel-doubly-linked-list) |
-## Depth-First Search
-|  |
-| ------- |
-| [0766-flatten-a-multilevel-doubly-linked-list](https://github.com/kushalpatel2210/LeetCode/tree/master/0766-flatten-a-multilevel-doubly-linked-list) |
-## Doubly-Linked List
-|  |
-| ------- |
-| [0766-flatten-a-multilevel-doubly-linked-list](https://github.com/kushalpatel2210/LeetCode/tree/master/0766-flatten-a-multilevel-doubly-linked-list) |
-<!---LeetCode Topics End-->
