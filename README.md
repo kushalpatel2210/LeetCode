@@ -242,6 +242,7 @@
 - 1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold
 - 1450-delete-leaves-with-a-given-value
 - 1528-kids-with-the-greatest-number-of-candies
+- 1529-max-difference-you-can-get-from-changing-an-integer
 - 1544-count-good-nodes-in-binary-tree
 - 1567-maximum-number-of-vowels-in-a-substring-of-given-length
 - 1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero
@@ -302,15 +303,3 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Math
-|  |
-| ------- |
-| [1529-max-difference-you-can-get-from-changing-an-integer](https://github.com/kushalpatel2210/LeetCode/tree/master/1529-max-difference-you-can-get-from-changing-an-integer) |
-## Greedy
-|  |
-| ------- |
-| [1529-max-difference-you-can-get-from-changing-an-integer](https://github.com/kushalpatel2210/LeetCode/tree/master/1529-max-difference-you-can-get-from-changing-an-integer) |
-<!---LeetCode Topics End-->
