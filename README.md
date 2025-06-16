@@ -305,3 +305,19 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Hash Table
+|  |
+| ------- |
+| [0202-happy-number](https://github.com/kushalpatel2210/LeetCode/tree/master/0202-happy-number) |
+## Math
+|  |
+| ------- |
+| [0202-happy-number](https://github.com/kushalpatel2210/LeetCode/tree/master/0202-happy-number) |
+## Two Pointers
+|  |
+| ------- |
+| [0202-happy-number](https://github.com/kushalpatel2210/LeetCode/tree/master/0202-happy-number) |
+<!---LeetCode Topics End-->
