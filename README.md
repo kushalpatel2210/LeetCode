@@ -275,6 +275,7 @@
 - 2095-minimum-number-of-swaps-to-make-the-string-balanced
 - 2112-minimum-difference-between-highest-and-lowest-of-k-scores
 - 2137-final-value-of-variable-after-performing-operations
+- 2144-maximum-difference-between-increasing-elements
 - 2165-plates-between-candles
 - 2180-maximum-number-of-tasks-you-can-assign
 - 2215-finding-3-digit-even-numbers
@@ -304,11 +305,3 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [2144-maximum-difference-between-increasing-elements](https://github.com/kushalpatel2210/LeetCode/tree/master/2144-maximum-difference-between-increasing-elements) |
-<!---LeetCode Topics End-->
