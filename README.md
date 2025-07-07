@@ -2,6 +2,7 @@
 - 0001-two-sum
 - 0002-add-two-numbers
 - 0003-longest-substring-without-repeating-characters
+- 0004-median-of-two-sorted-arrays
 - 0005-longest-palindromic-substring
 - 0006-zigzag-conversion
 - 0008-string-to-integer-atoi
@@ -305,19 +306,3 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0004-median-of-two-sorted-arrays](https://github.com/kushalpatel2210/LeetCode/tree/master/0004-median-of-two-sorted-arrays) |
-## Binary Search
-|  |
-| ------- |
-| [0004-median-of-two-sorted-arrays](https://github.com/kushalpatel2210/LeetCode/tree/master/0004-median-of-two-sorted-arrays) |
-## Divide and Conquer
-|  |
-| ------- |
-| [0004-median-of-two-sorted-arrays](https://github.com/kushalpatel2210/LeetCode/tree/master/0004-median-of-two-sorted-arrays) |
-<!---LeetCode Topics End-->
