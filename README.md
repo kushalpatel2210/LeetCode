@@ -306,3 +306,19 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## String
+|  |
+| ------- |
+| [1818-maximum-score-from-removing-substrings](https://github.com/kushalpatel2210/LeetCode/tree/master/1818-maximum-score-from-removing-substrings) |
+## Stack
+|  |
+| ------- |
+| [1818-maximum-score-from-removing-substrings](https://github.com/kushalpatel2210/LeetCode/tree/master/1818-maximum-score-from-removing-substrings) |
+## Greedy
+|  |
+| ------- |
+| [1818-maximum-score-from-removing-substrings](https://github.com/kushalpatel2210/LeetCode/tree/master/1818-maximum-score-from-removing-substrings) |
+<!---LeetCode Topics End-->
