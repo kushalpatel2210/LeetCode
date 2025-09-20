@@ -3,14 +3,9 @@ class Solution:
         if len(s) != len(t):
             return False
         
-        counter = [0] * 26
-
+        countS, countT = {}, {}
         for i in range(len(s)):
-            counter[ord(s[i]) - ord('a')] += 1
-            counter[ord(t[i]) - ord('a')] -= 1
+            countS[s[i]] = 1 + countS.get(s[i], 0)
+            countT[t[i]] = 1 + countT.get(t[i], 0)
         
-        for val in counter:
-            if val != 0:
-                return False
-        
-        return True
+        return countS == countT
