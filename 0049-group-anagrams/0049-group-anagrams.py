@@ -12,4 +12,4 @@ class Solution:
             
             hashMap[tuple(frq)].append(word)
         
-        return [list(values) for values in hashMap.values()]
+        return list(hashMap.values())
