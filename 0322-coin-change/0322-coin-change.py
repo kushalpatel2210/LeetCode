@@ -14,7 +14,8 @@ class Solution:
                 if target - coin >= 0:
                     res = min(res, 1 + dp(target - coin))
             memo[target] = res
+            
             return res
-
+        
         minCoins = dp(amount)
         return minCoins if minCoins != float('inf') else -1
