@@ -15,8 +15,7 @@ class Solution:
             res += 1
             if count > 1:
                 for s in str(count):
-                        chars[res] = s
-                        res += 1
+                    chars[res] = s
+                    res += 1
         
         return res
-            
