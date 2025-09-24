@@ -16,10 +16,9 @@ class RandomizedSet:
     def remove(self, val: int) -> bool:
         if val in self.hashMap:
             idx = self.hashMap[val]
-            lastIdx = len(self.numbers) - 1
-            lastNumber = self.numbers[lastIdx]
+            lastNumber = self.numbers[-1]
             self.hashMap[lastNumber] = idx
-            self.numbers[lastIdx], self.numbers[idx] = self.numbers[idx], self.numbers[lastIdx]
+            self.numbers[idx] = lastNumber
             self.numbers.pop()
             del self.hashMap[val]
             return True
