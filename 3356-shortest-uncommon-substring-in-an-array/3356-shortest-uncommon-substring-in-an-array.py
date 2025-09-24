@@ -13,11 +13,7 @@ class Solution:
         
         for key in subStringsMap:
             values = sorted(list(subStringsMap[key]), key=lambda x: (len(x), x))    
-            combinedSet = set()
-
-            for i in range(len(subStringsMap)):
-                if i != key:
-                    combinedSet = combinedSet.union(subStringsMap[i])
+            combinedSet = set().union(*(subStringsMap[i] for i in range(len(subStringsMap)) if i != key))
             
             res = ''
             for subString in values:
