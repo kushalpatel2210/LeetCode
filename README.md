@@ -308,3 +308,27 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/kushalpatel2210/LeetCode/tree/master/0381-insert-delete-getrandom-o1-duplicates-allowed) |
+## Hash Table
+|  |
+| ------- |
+| [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/kushalpatel2210/LeetCode/tree/master/0381-insert-delete-getrandom-o1-duplicates-allowed) |
+## Math
+|  |
+| ------- |
+| [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/kushalpatel2210/LeetCode/tree/master/0381-insert-delete-getrandom-o1-duplicates-allowed) |
+## Design
+|  |
+| ------- |
+| [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/kushalpatel2210/LeetCode/tree/master/0381-insert-delete-getrandom-o1-duplicates-allowed) |
+## Randomized
+|  |
+| ------- |
+| [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/kushalpatel2210/LeetCode/tree/master/0381-insert-delete-getrandom-o1-duplicates-allowed) |
+<!---LeetCode Topics End-->
