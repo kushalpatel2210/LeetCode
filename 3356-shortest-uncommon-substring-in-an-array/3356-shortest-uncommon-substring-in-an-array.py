@@ -1,48 +1,53 @@
 class TrieNode:
     def __init__(self):
         self.children = {}
-        self.count = 0  # number of distinct words containing this substring
+        # set of word indices that contain this substring
+        self.word_ids = set()
 
+class Trie:
+    def __init__(self):
+        self.root = TrieNode()
 
-class Solution:
-    def buildTrie(self, arr):
-        root = TrieNode()
-        for word in arr:
-            visited_nodes = set()  # track nodes visited for this word
-            n = len(word)
-            for i in range(n):
-                node = root
-                for j in range(i, n):
-                    ch = word[j]
-                    if ch not in node.children:
-                        node.children[ch] = TrieNode()
-                    node = node.children[ch]
-
-                    # increment count only once per word per node
-                    if node not in visited_nodes:
-                        node.count += 1
-                        visited_nodes.add(node)
-        return root
-
-    def findUniqueSubstring(self, word, root):
+    def insert(self, word, word_id):
         n = len(word)
-        best = None
         for i in range(n):
-            node = root
-            substring = ""
+            curr = self.root
             for j in range(i, n):
                 ch = word[j]
-                if ch not in node.children:
+                if ch not in curr.children:
+                    curr.children[ch] = TrieNode()
+                curr = curr.children[ch]
+                curr.word_ids.add(word_id)
+    
+    def find(self, word, word_id):
+        best = ""
+        for i in range(len(word)):
+            curr = self.root
+            substring = ""
+            for j in range(i, len(word)):
+                ch = word[j]
+                if ch not in curr.children:
                     break
-                node = node.children[ch]
+                curr = curr.children[ch]
                 substring += ch
-                if node.count == 1:  # unique substring found
-                    if best is None or len(substring) < len(best) or \
-                       (len(substring) == len(best) and substring < best):
+
+                if curr.word_ids == {word_id}:
+                    if (best == "" or len(substring) < len(best) or (len(substring) == len(best) and substring < best)):
                         best = substring
                     break
-        return best if best else ""
+        
+        return best
+        
 
-    def shortestSubstrings(self, arr):
-        root = self.buildTrie(arr)
-        return [self.findUniqueSubstring(word, root) for word in arr]
+class Solution:
+    def shortestSubstrings(self, arr: List[str]) -> List[str]:
+        trie = Trie()
+
+        for idx, word in enumerate(arr):
+            trie.insert(word, idx)
+        
+        result = []
+        for idx, word in enumerate(arr):
+            result.append(trie.find(word, idx))
+        
+        return result
