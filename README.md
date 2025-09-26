@@ -306,15 +306,8 @@
 - 3171-minimum-equal-sum-of-two-arrays-after-replacing-zeros
 - 3213-count-subarrays-where-max-element-appears-at-least-k-times
 - 3356-shortest-uncommon-substring-in-an-array
+- 3451-string-compression-iii
 - 3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## String
-|  |
-| ------- |
-| [3451-string-compression-iii](https://github.com/kushalpatel2210/LeetCode/tree/master/3451-string-compression-iii) |
-<!---LeetCode Topics End-->
