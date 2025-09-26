@@ -10,6 +10,7 @@ class Solution:
             while i < len(word) and (count < 9 and word[i] == ch):
                 i += 1
                 count += 1
+                
             res += str(count)
             res += ch
 
