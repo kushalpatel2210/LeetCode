@@ -1,16 +1,16 @@
 class Node:
     def __init__(self, type_, value=None, children=None):
-        self.type = type_       # "Const", "Var", "Op"
-        self.value = value      # integer, variable name, or operator
+        self.type = type_ # "const", "var" or "op"
+        self.value = value
         self.children = children or []
 
 class Solution:
-    def is_number(self, s: str) -> bool:
+    def is_number(self, s):
         return s.lstrip('-').isdigit()
 
-    def get_tokens(self, expr: str):
-        """Tokenize keeping balanced parentheses intact."""
+    def get_tokens(self, expr):
         tokens, curr, bal = [], [], 0
+
         for c in expr:
             if c == '(':
                 bal += 1
@@ -24,54 +24,49 @@ class Solution:
                     curr = []
             else:
                 curr.append(c)
+        
         if curr:
             tokens.append("".join(curr))
+        
         return tokens
 
-    def buildTree(self, expr: str) -> Node:
-        """Parse Lisp-like string into a Node tree."""
-        expr = expr.strip()
-        if expr[0] != '(':
-            # Base case: number or variable
+    def build_tree(self, expr):
+        if expr[0] != "(":
             if self.is_number(expr):
-                return Node("Const", int(expr))
+                return Node("const", int(expr))
             else:
-                return Node("Var", expr)
-
-        # Remove outer parentheses
+                return Node("var", expr)
+        
         expr = expr[1:-1]
         tokens = self.get_tokens(expr)
         op = tokens[0]
-        children = [self.buildTree(tok) for tok in tokens[1:]]
-        return Node("Op", value=op, children=children)
-
-    def evalTree(self, node: Node, env: list[dict]) -> int:
-        """Evaluate AST recursively with environment (scope)."""
-        if node.type == "Const":
+        children = [self.build_tree(tok) for tok in tokens[1:]]
+        return Node("op", op, children)
+    
+    def eval_tree(self, node, env):
+        if node.type == "const":
             return node.value
-
-        if node.type == "Var":
+        
+        if node.type == "var":
             for scope in reversed(env):
                 if node.value in scope:
                     return scope[node.value]
-
-        if node.type == "Op":
+        
+        if node.type == "op":
             if node.value == "add":
-                return self.evalTree(node.children[0], env) + self.evalTree(node.children[1], env)
-
+                return self.eval_tree(node.children[0], env) + self.eval_tree(node.children[1], env)
             elif node.value == "mult":
-                return self.evalTree(node.children[0], env) * self.evalTree(node.children[1], env)
-
+                return self.eval_tree(node.children[0], env) * self.eval_tree(node.children[1], env)
             elif node.value == "let":
                 new_env = env + [{}]
-                # assign variables in pairs, last child is final expression
-                for i in range(0, len(node.children) - 1, 2):
-                    var = node.children[i].value   # must be Var
-                    val = self.evalTree(node.children[i+1], new_env)
+
+                for i in range(0, len(node.children) -1, 2):
+                    var = node.children[i].value
+                    val = self.eval_tree(node.children[i + 1], new_env)
                     new_env[-1][var] = val
-                return self.evalTree(node.children[-1], new_env)
+                
+                return self.eval_tree(node.children[-1], new_env)
 
     def evaluate(self, expression: str) -> int:
-        """Main entry (like in LeetCode)."""
-        root = self.buildTree(expression)
-        return self.evalTree(root, [{}])
+        root = self.build_tree(expression)
+        return self.eval_tree(root, [{}])
