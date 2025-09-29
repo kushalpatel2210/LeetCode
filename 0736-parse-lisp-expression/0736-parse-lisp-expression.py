@@ -4,7 +4,6 @@ class Node:
         self.value = value      # integer, variable name, or operator
         self.children = children or []
 
-
 class Solution:
     def is_number(self, s: str) -> bool:
         return s.lstrip('-').isdigit()
@@ -55,7 +54,6 @@ class Solution:
             for scope in reversed(env):
                 if node.value in scope:
                     return scope[node.value]
-            raise NameError(f"Unbound variable {node.value}")
 
         if node.type == "Op":
             if node.value == "add":
