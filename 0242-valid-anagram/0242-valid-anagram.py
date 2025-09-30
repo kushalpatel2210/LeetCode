@@ -3,9 +3,9 @@ class Solution:
         if len(s) != len(t):
             return False
         
-        countS, countT = {}, {}
+        count_s, count_t = [0] * 26, [0] * 26
         for i in range(len(s)):
-            countS[s[i]] = 1 + countS.get(s[i], 0)
-            countT[t[i]] = 1 + countT.get(t[i], 0)
+            count_s[ord(s[i]) - ord('a')] += 1
+            count_t[ord(t[i]) - ord('a')] += 1
         
-        return countS == countT
+        return count_s == count_t
