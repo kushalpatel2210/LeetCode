@@ -3,20 +3,20 @@ import bisect
 class HitCounter:
 
     def __init__(self):
-        self.counts = list()
         self.timestamps = list()
+        self.counts = list()
 
     def hit(self, timestamp: int) -> None:
         if self.timestamps and self.timestamps[-1] == timestamp:
             self.counts[-1] += 1
         else:
-            self.timestamps.append(timestamp)
             self.counts.append(1)
+            self.timestamps.append(timestamp)
 
     def getHits(self, timestamp: int) -> int:
         start_window = timestamp - 300 + 1
         index = bisect.bisect_left(self.timestamps, start_window)
-        return sum(self.counts[index:])
+        return sum(self.counts[index:])         
 
 
 # Your HitCounter object will be instantiated and called as such:
