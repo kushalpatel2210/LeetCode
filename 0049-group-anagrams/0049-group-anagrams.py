@@ -5,11 +5,11 @@ class Solution:
         hashMap = defaultdict(list)
 
         for word in strs:
-            frq = [0] * 26
-
-            for c in word:
-                frq[ord(c) - ord('a')] += 1
+            counter = [0] * 26
             
-            hashMap[tuple(frq)].append(word)
+            for c in word:
+                counter[ord(c) - ord('a')] += 1
+            
+            hashMap[tuple(counter)].append(word)
         
         return list(hashMap.values())
