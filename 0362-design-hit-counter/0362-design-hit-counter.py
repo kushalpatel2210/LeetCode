@@ -1,22 +1,18 @@
-import bisect 
+from collections import deque
 
 class HitCounter:
 
     def __init__(self):
-        self.counts = list()
-        self.timestamps = list()
+        self.q = deque()        
 
     def hit(self, timestamp: int) -> None:
-        if self.timestamps and self.timestamps[-1] == timestamp:
-            self.counts[-1] += 1
-        else:
-            self.counts.append(1)
-            self.timestamps.append(timestamp)
+        self.q.append(timestamp)
 
     def getHits(self, timestamp: int) -> int:
-        start_window = timestamp - 300 + 1
-        index = bisect.bisect_left(self.timestamps, start_window)
-        return sum(self.counts[index:])
+        while self.q and self.q[0] <= timestamp - 300:
+            self.q.popleft()
+        return len(self.q)
+
 
 # Your HitCounter object will be instantiated and called as such:
 # obj = HitCounter()
