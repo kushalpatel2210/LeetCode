@@ -15,14 +15,14 @@ class RandomizedCollection:
     def remove(self, val: int) -> bool:
         if not self.hashMap[val]:
             return False
-
-        indexOfVal = self.hashMap[val].pop()
-        lastIndex = len(self.nums) -1
+        
+        lastElementIndex = len(self.nums) - 1
         lastElement = self.nums[-1]
-        self.hashMap[lastElement].add(indexOfVal)
+        indexOfVal = self.hashMap[val].pop()
         self.nums[indexOfVal] = lastElement
+        self.hashMap[lastElement].add(indexOfVal)
+        self.hashMap[lastElement].discard(lastElementIndex)
         self.nums.pop()
-        self.hashMap[lastElement].discard(lastIndex)
         return True
 
     def getRandom(self) -> int:
