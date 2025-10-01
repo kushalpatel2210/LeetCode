@@ -1,6 +1,6 @@
 class TrieNode:
     def __init__(self):
-        self.children = dict()
+        self.children = dict() # str -> TrieNode
         self.word_ids = set()
 
 class Trie:
@@ -14,11 +14,13 @@ class Trie:
             curr = self.root
             for j in range(i, n):
                 ch = word[j]
+
                 if ch not in curr.children:
                     curr.children[ch] = TrieNode()
+                
                 curr = curr.children[ch]
                 curr.word_ids.add(word_id)
-    
+
     def find(self, word, word_id):
         n = len(word)
         best = ""
@@ -39,7 +41,7 @@ class Trie:
                     if (best == "" or len(substring) < len(best) or (len(substring) == len(best) and substring < best)):
                         best = substring
                     break
-
+        
         return best
 
 class Solution:
@@ -51,7 +53,6 @@ class Solution:
         
         res = []
         for i, word in enumerate(arr):
-            shortest = trie.find(word, i)
-            res.append(shortest)
+            res.append(trie.find(word, i))
         
         return res
