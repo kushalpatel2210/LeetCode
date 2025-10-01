@@ -4,25 +4,25 @@ import random
 class RandomizedCollection:
 
     def __init__(self):
-        self.hashMap = defaultdict(set)
-        self.nums = list()        
+        self.nums = list()
+        self.hashMap = defaultdict(set)         
 
     def insert(self, val: int) -> bool:
         self.hashMap[val].add(len(self.nums))
         self.nums.append(val)
-        return len(self.hashMap[val]) == 1
+        return True if len(self.hashMap[val]) == 1 else False
 
     def remove(self, val: int) -> bool:
         if not self.hashMap[val]:
             return False
 
-        removeIdx = self.hashMap[val].pop()
-        lastIdx = len(self.nums) - 1
+        indexOfVal = self.hashMap[val].pop()
+        lastIndex = len(self.nums) -1
         lastElement = self.nums[-1]
-        self.nums[removeIdx] = lastElement
-        self.hashMap[lastElement].add(removeIdx)
-        self.hashMap[lastElement].discard(lastIdx)
+        self.hashMap[lastElement].add(indexOfVal)
+        self.nums[indexOfVal] = lastElement
         self.nums.pop()
+        self.hashMap[lastElement].discard(lastIndex)
         return True
 
     def getRandom(self) -> int:
