@@ -122,6 +122,7 @@
 - 0236-lowest-common-ancestor-of-a-binary-tree
 - 0238-product-of-array-except-self
 - 0242-valid-anagram
+- 0271-encode-and-decode-strings
 - 0274-h-index
 - 0283-move-zeroes
 - 0287-find-the-duplicate-number
@@ -312,19 +313,3 @@
 - 3685-count-subarrays-of-length-three-with-a-condition
 - 3751-maximum-frequency-after-subarray-operation
 - 3819-count-covered-buildings
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0271-encode-and-decode-strings](https://github.com/kushalpatel2210/LeetCode/tree/master/0271-encode-and-decode-strings) |
-## String
-|  |
-| ------- |
-| [0271-encode-and-decode-strings](https://github.com/kushalpatel2210/LeetCode/tree/master/0271-encode-and-decode-strings) |
-## Design
-|  |
-| ------- |
-| [0271-encode-and-decode-strings](https://github.com/kushalpatel2210/LeetCode/tree/master/0271-encode-and-decode-strings) |
-<!---LeetCode Topics End-->
