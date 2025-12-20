@@ -1,5 +1,11 @@
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
+        return len(set(nums)) < len(nums)
+
+"""
+Sol 1:
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
         unique = set()
 
         for num in nums:
@@ -8,3 +14,4 @@ class Solution:
             unique.add(num)
         
         return False
+"""
