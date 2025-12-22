@@ -25,7 +25,5 @@ class Solution:
                     k -= 1
                     while j < k and nums[j] == nums[j - 1]:
                         j += 1
-                    while j < k and nums[k] == nums[k + 1]:
-                        k -= 1
         
         return res
