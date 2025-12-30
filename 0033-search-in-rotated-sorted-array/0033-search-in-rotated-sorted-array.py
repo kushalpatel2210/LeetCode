@@ -8,14 +8,15 @@ class Solution:
             if nums[m] == target:
                 return m
             
-            if nums[m] >= nums[l]: # move left
-                if nums[l] <= target < nums[m]:
-                    r = m -1
-                else:
-                    l = m + 1
-            else: # move right
+            if nums[m] < nums[r]: # right is sorted
                 if nums[m] < target <= nums[r]:
                     l = m + 1
                 else:
-                    r = m -1
+                    r = m - 1
+            else: 
+                if nums[l] <= target < nums[m]:
+                    r = m - 1
+                else:
+                    l = m + 1
+        
         return -1
