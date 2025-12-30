@@ -2,7 +2,7 @@ class Solution:
     def findMin(self, nums: List[int]) -> int:
         l, r = 0, len(nums) - 1
 
-        while l < r:
+        while l < r: # when both ptrs are equal we stop searching
             m = l + (r - l) // 2
 
             if nums[m] < nums[r]:
